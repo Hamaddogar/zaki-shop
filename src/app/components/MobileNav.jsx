@@ -18,9 +18,9 @@ export default function MobileNav({ open, setOpen }) {
                 aria-labelledby="mobile-navbar"
                 scroll={'body'}
                 sx={{
-                    '& .MuiBackdrop-root': { backgroundColor: 'transparent' },
-                    '& .MuiDialog-container': { padding: '30px 20px', minHeight: 'calc(100vh - 60px)' },
-                    '& .MuiPaper-root': { backdropFilter: 'blur(14px)', borderRadius: '40px', background: 'rgba(15, 21, 70, 0.38)', color: '#FFFFFF', padding: '40px 35px' },
+                    '& .MuiBackdrop-root': { backdropFilter: 'blur(14px) !important',backgroundColor: 'transparent' },
+                    '& .MuiDialog-container': { padding: '20px', minHeight: 'calc(100vh - 40px)' },
+                    '& .MuiPaper-root': {  borderRadius: '40px', background: 'rgba(15, 21, 70, 0.38)', color: '#FFFFFF', padding: '40px 35px' },
                 }}
             >
                 <Stack direction='row' alignItems='center' justifyContent={'space-between'}>
