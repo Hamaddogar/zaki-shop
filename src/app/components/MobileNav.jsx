@@ -1,0 +1,78 @@
+'use client'
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import { Box, ButtonBase, Stack, Typography } from '@mui/material';
+import { closeIcon, downIcon, drawerLogo, facebookIcon, languageIcon, linkedinIcon, twitterIcon } from './reuse/icons';
+import header from '@/app/styles/header.module.css';
+
+export default function MobileNav({ open, setOpen }) {
+    const handleClose = () => setOpen(false);
+
+    return (
+        <div>
+            <Dialog
+                fullScreen={true}
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="mobile-navbar"
+                scroll={'body'}
+                sx={{
+                    '& .MuiBackdrop-root': { backgroundColor: 'transparent' },
+                    '& .MuiDialog-container': { padding: '30px 20px', minHeight: 'calc(100vh - 60px)' },
+                    '& .MuiPaper-root': { backdropFilter: 'blur(14px)', borderRadius: '40px', background: 'rgba(15, 21, 70, 0.38)', color: '#FFFFFF', padding: '40px 35px' },
+                }}
+            >
+                <Stack direction='row' alignItems='center' justifyContent={'space-between'}>
+                    <Box>{drawerLogo}</Box>
+                    <Box onClick={handleClose}>{closeIcon}</Box>
+                </Stack>
+
+                <Stack mt={'100px'} sx={{ position: 'relative', height: 'calc(100% - 150px)' }} justifyContent={'space-between'}>
+                    <Box >
+                        <Typography className={header['inner-nav-title']}>
+                            Welcome to <br />  Over Zaki
+                        </Typography>
+                        <Stack spacing={'17px'} mt={'40px'}>
+                            <ButtonBase color='secondary' className={header['inner-nav-login']} >Login</ButtonBase>
+                            <ButtonBase color='primary' className={header['inner-nav-signup']} >Sign up</ButtonBase>
+                            <Button
+                                className={header['inner-nav-language']}
+                                startIcon={languageIcon}
+                                endIcon={downIcon}
+                                color='white'
+                            // onClick={handleClick}
+                            >
+                                <span>English</span>
+                            </Button>
+                        </Stack>
+                    </Box>
+
+                    <Box >
+                        <Typography className={header['inner-nav-footer']} >Follow us in social media</Typography>
+                        <Stack direction='row' alignItems={'center'} spacing={2} >
+
+                            <a
+                                href="https://vercel.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >{facebookIcon}</a>
+
+                            <a
+                                href="https://vercel.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >{linkedinIcon}</a>
+
+                            <a
+                                href="https://vercel.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >{twitterIcon}</a>
+                        </Stack>
+                    </Box>
+                </Stack>
+            </Dialog>
+        </div>
+    );
+}

@@ -6,10 +6,11 @@ import Picture from './reuse/Picture'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import { languageIcon, downIcon, logoSM, menuIcon } from './reuse/icons';
+import { languageIcon, downIcon } from './reuse/icons';
+import MobileNav from './MobileNav';
 
 const Header = () => {
-
+  const [openNav, setOpenNav] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -19,18 +20,16 @@ const Header = () => {
     setAnchorEl(null);
   };
 
-  const handleMenu = () => {
-
-  }
+  const handleMenu = () => setOpenNav(true)
 
   return (
     <Box>
       <Box className={header['main-mobile']}>
         <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
           <Picture center={false} src={'/logoxs.png'} width={200} height={47} alt={'logo'} />
-
           <Picture onClick={handleMenu} center={false} src={'/menu.png'} width={37} height={37} alt={'logo'} />
         </Stack>
+        <MobileNav open={openNav} setOpen={setOpenNav} />
       </Box>
       <Stack width={{ xs: '95%', md: '80%' }} sx={{ margin: 'auto' }} direction='row' alignItems='center' justifyContent={'space-between'} className={header.main}>
         <Picture center={false} src={'/logo-md.png'} width={200} height={47} alt={'logo'} periorty className={header.logomd} />

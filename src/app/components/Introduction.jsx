@@ -6,13 +6,11 @@ import { Box, Button, Grid, Stack, Typography } from '@mui/material'
 import { arrowForward } from './reuse/icons'
 
 const Introduction = () => {
-  const [playing, setPlaying] = React.useState(true)
-
-
+  const [playing] = React.useState(false)
 
   return (
     <div className={home.main}>
-      <Box pt={{ xs: 20, sm: 40 }} pb={10}
+      <Box pt={{ xs: 15, sm: 30 }} pb={10}
         width={{ xs: '90%', md: '80%' }}
         margin={'auto'}
       >
