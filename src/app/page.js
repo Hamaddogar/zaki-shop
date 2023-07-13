@@ -1,9 +1,14 @@
-import styles from './page.module.css'
+import React from 'react'
+import Introduction from './components/Introduction';
+import Header from './components/Header';
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className={styles.main}>
-      Home Page
-    </main>
+    <div>
+      <Header />
+      <Introduction />
+    </div>
   )
 }
+
+export default Home

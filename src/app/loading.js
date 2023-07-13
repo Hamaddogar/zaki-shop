@@ -1,10 +1,13 @@
+import styles from '@/app/styles/common.module.css'
+
+
+
 const Loading = () => {
     return (
-        <div>
-            <section>
-                Loading
-            </section>
-        </div>
+        <section className={styles.loading_section}>
+            <div className={styles.loading}>
+            </div>
+        </section>
     );
 };
 
