@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import home from '@/app/styles/home.module.css'
 import Picture from './reuse/Picture'

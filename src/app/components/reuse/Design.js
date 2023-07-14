@@ -1,3 +1,4 @@
+'use client'
 export const MUIDesign = {
     textField: {
         // boxShadow: `0px 1px 0px 0px rgba(0, 0, 0, 0.02), 0px 1px 3px 0px rgba(50, 50, 93, 0.15)`,
