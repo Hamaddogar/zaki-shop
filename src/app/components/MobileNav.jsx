@@ -9,7 +9,6 @@ import { Slide } from 'react-awesome-reveal';
 
 export default function MobileNav({ open, setOpen }) {
     const handleClose = () => setOpen(false);
-
     return (
         <div>
             <Dialog
