@@ -28,11 +28,9 @@ const Introduction = () => {
             </Box>
 
             <Box mt={{ xs: 5 }} textAlign={{ xs: 'center', lg: 'left' }}>
-              {/* <Bounce triggerOnce delay={900} effect="flash" > */}
                 <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
                   Start Now
                 </Button>
-              {/* </Bounce> */}
             </Box>
           </Grid>
           <Grid item xs={12} lg={6}>

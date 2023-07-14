@@ -4,7 +4,7 @@ import home from '@/app/styles/home.module.css'
 import Picture from './reuse/Picture'
 import { Box, Button, ButtonBase, Grid, Stack, Typography } from '@mui/material'
 import { miniFace } from './reuse/icons'
-import { Bounce, Fade, Rotate, Slide } from 'react-awesome-reveal'
+import { Zoom, Fade, Rotate, Slide } from 'react-awesome-reveal'
 import { WritingAnimation } from './reuse/Animation'
 
 const DownloadApp = () => {
@@ -24,7 +24,7 @@ const DownloadApp = () => {
           <Box textAlign={{ xs: 'center', lg: 'left' }} width={'80%'} margin='auto'>
             <Typography className={home['subtitle-2']} mb={'10px'} sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}><WritingAnimation text={`Download Me Now`} />{miniFace}</Typography>
             <Typography color='primary' className={home.normal} mb={'17px'}>
-              <Fade triggerOnce big>
+              <Fade triggerOnce>
                 Start you business now with me
               </Fade>
             </Typography>
@@ -40,14 +40,14 @@ const DownloadApp = () => {
                 </ButtonBase>
               </Slide>
             </Stack>
-            <Bounce triggerOnce cascade AttentionSeeker={'heartBeat'} >
+            <Zoom direction='up' triggerOnce cascade>
               <Button className={home.QRBtn}
                 startIcon={<Picture center={false} src={'/qr.png'} width={90} height={90} alt='' />}
                 disableRipple
               >
                 <span>Scan Me {miniFace}</span>
               </Button>
-            </Bounce>
+            </Zoom>
           </Box>
         </Grid>
       </Grid>
