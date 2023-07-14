@@ -26,7 +26,7 @@ const MobileApp = () => {
 
         <Grid item xs={12} lg={6}>
           <Box p={4}>
-            <Slide triggerOnce direction='right'>
+            <Slide triggerOnce cascade direction='right'>
               <Picture src={'/mobileapp.png'} width={500} height={500} alt='MobileApp' />
             </Slide>
           </Box>

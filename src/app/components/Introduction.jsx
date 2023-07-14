@@ -23,16 +23,16 @@ const Introduction = () => {
                 <WritingAnimation text='What i do !' />
               </Typography>
               <Typography color='primary' className={home.subtitle}>
-                <Slide triggerOnce direction='up' >i can do websites, Mobile App, Marketing & Invoices</Slide>
+                i can do websites, Mobile App, Marketing & Invoices
               </Typography>
             </Box>
 
             <Box mt={{ xs: 5 }} textAlign={{ xs: 'center', lg: 'left' }}>
-              <Bounce triggerOnce delay={900} effect="flash" >
+              {/* <Bounce triggerOnce delay={900} effect="flash" > */}
                 <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
                   Start Now
                 </Button>
-              </Bounce>
+              {/* </Bounce> */}
             </Box>
           </Grid>
           <Grid item xs={12} lg={6}>

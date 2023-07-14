@@ -29,18 +29,18 @@ const DownloadApp = () => {
               </Fade>
             </Typography>
             <Stack direction={'row'} alignItems='center' justifyContent={{ xs: 'center', lg: 'flex-start' }} spacing={1.5} mb={'20px'}>
-              <Slide triggerOnce direction='right'>
+              <Slide triggerOnce cascade direction='right'>
                 <ButtonBase disableRipple>
                   <Picture center={false} src={'/astore.png'} width={180} height={70} alt='' />
                 </ButtonBase>
               </Slide>
-              <Slide triggerOnce direction='left'>
+              <Slide triggerOnce cascade direction='left'>
                 <ButtonBase disableRipple>
                   <Picture center={false} src={'/gplay.png'} width={170} height={60} alt='' />
                 </ButtonBase>
               </Slide>
             </Stack>
-            <Bounce triggerOnce AttentionSeeker={'heartBeat'} >
+            <Bounce triggerOnce cascade AttentionSeeker={'heartBeat'} >
               <Button className={home.QRBtn}
                 startIcon={<Picture center={false} src={'/qr.png'} width={90} height={90} alt='' />}
                 disableRipple

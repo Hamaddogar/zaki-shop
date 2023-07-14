@@ -14,7 +14,7 @@ const Marketing = () => {
       <Grid direction={{ xs: 'column-reverse', lg: 'row' }} container alignItems={'center'} justifyContent={'space-between'} p={{ xs: '50px 0px 0px 0px', lg: '110px 0px 110px 0px' }}>
         <Grid item xs={12} lg={6}>
           <Box p={4}>
-          <Slide triggerOnce direction='left'>
+          <Slide triggerOnce cascade direction='left'>
             <Picture src={'/marketing.png'} width={487} height={487} alt='marketing' />
             </Slide>
           </Box>

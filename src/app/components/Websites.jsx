@@ -14,7 +14,7 @@ const Websites = () => {
       <Grid container direction={{ xs: 'column-reverse', lg: 'row' }} alignItems={'center'} justifyContent={'space-between'} pt={{ xs: '50px', lg: '0px' }}>
         <Grid item xs={12} lg={6}>
           <Box p={4}>
-          <Slide triggerOnce direction='left'>
+          <Slide triggerOnce cascade direction='left'>
             <Picture src={'/websites.png'} width={1000} height={1000} alt='websites' />
             </Slide>
           </Box>

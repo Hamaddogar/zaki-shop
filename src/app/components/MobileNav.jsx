@@ -54,7 +54,7 @@ export default function MobileNav({ open, setOpen }) {
                     <Box >
                         <Typography className={header['inner-nav-footer']} >Follow us in social media</Typography>
                         <Stack direction='row' alignItems={'center'} spacing={2} >
-                            <Slide triggerOnce direction='up' cascade>
+                            <Slide triggerOnce cascade direction='up'>
                                 <a
                                     href="https://vercel.com"
                                     target="_blank"
