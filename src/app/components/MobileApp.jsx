@@ -1,9 +1,8 @@
-'use client'
 import React from 'react'
 import home from '@/app/styles/home.module.css'
 import Picture from './reuse/Picture'
 import { Box, Button, Grid, Typography } from '@mui/material'
-import { arrowForward, arrowForwardSecond } from './reuse/icons'
+import { arrowForward } from './reuse/icons'
 import { Slide } from 'react-awesome-reveal'
 import { WritingAnimation } from './reuse/Animation'
 

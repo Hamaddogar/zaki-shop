@@ -5,7 +5,7 @@ import Picture from './reuse/Picture'
 import { Box, Button, Grid, Stack, Typography } from '@mui/material'
 import { arrowForward } from './reuse/icons'
 import { WritingAnimation } from './reuse/Animation'
-import { Bounce, JackInTheBox, Slide, Zoom } from 'react-awesome-reveal'
+import { JackInTheBox, Zoom } from 'react-awesome-reveal'
 
 const Introduction = () => {
   const [playing] = React.useState(false)
@@ -28,19 +28,19 @@ const Introduction = () => {
             </Box>
 
             <Box mt={{ xs: 5 }} textAlign={{ xs: 'center', lg: 'left' }}>
-                <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
-                  Start Now
-                </Button>
+              <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
+                Start Now
+              </Button>
             </Box>
           </Grid>
           <Grid item xs={12} lg={6}>
             <Box p={4}>
-              <JackInTheBox triggerOnce >
+              <JackInTheBox cascade triggerOnce >
                 <Picture src={'/face.png'} width={600} height={460} alt='' periorty />
               </JackInTheBox>
             </Box>
             <Stack direction={'row'} justifyContent={'center'} alignItems={'center'} spacing={2}>
-              <Zoom triggerOnce cascade >
+              <Zoom triggerOnce cascade>
                 {!playing && <Picture center={false} src={'/playIcon.png'} alt='' width={58} height={58} />}
                 {!playing && <Picture center={false} src={'/muteIcon.png'} alt='' width={58} height={58} />}
                 {playing && <Picture center={false} src={'/stopIcon.png'} alt='' width={58} height={58} />}
