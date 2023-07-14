@@ -40,7 +40,7 @@ const Header = () => {
           <Button className={header.language}
             startIcon={languageIcon}
             endIcon={downIcon}
-            color='white'
+            color='info'
             onClick={handleClick}
           >
             <span>English</span>

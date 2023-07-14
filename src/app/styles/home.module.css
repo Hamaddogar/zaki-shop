@@ -5,7 +5,7 @@
 }
 
 .title {
-  color: #0F1546;
+  /* color: #0F1546; */
   font-size: 80px;
   font-style: normal;
   font-weight: 900;
@@ -13,14 +13,22 @@
 }
 
 .subtitle {
-  color: #0F1546;
+  /* color: #0F1546; */
   font-size: 51px;
   font-style: normal;
   font-weight: 500;
   line-height: 64px;
 }
 
-.startBtn {
+.subtitle-2 {
+  color: #0F1546;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.primaryBtn {
   border-radius: 100px;
   border: 4px solid #0F1546;
   width: 200px;
@@ -29,6 +37,112 @@
   text-transform: capitalize;
 }
 
+/* common  */
+.secondaryBtn {
+  border-radius: 100px;
+  border: 4px solid #36F9BD;
+  width: 200px;
+  height: 62px;
+  justify-content: space-around;
+  text-transform: capitalize;
+}
+
+.title-moon {
+  color: #FFFFFF;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 84px;
+}
+
+.text-moon {
+  color: #FFFFFF;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title-primary {
+  color: #0F1546;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 84px;
+}
+
+.text-primary {
+  color: #0F1546;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.normal {
+  color: #0F1546;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* websites section */
+.websites {
+  min-height: 791px;
+  background: #0F1546;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MobileApp {
+  min-height: 791px;
+  background: #36F9BD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marketing {
+  min-height: 791px;
+  background: #0F1546;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Invoices {
+  min-height: 791px;
+  background: #36F9BD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.QRBtn {
+  min-width: 360px;
+  gap: 30px;
+  padding: 10px 20px;
+  justify-content: space-between;
+  border-radius: 27px;
+  border: 3px solid #0F1546;
+  color: #0F1546;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.QRBtn span {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.emailBtn{
+  background: #75F7BB;
+  border-radius: 100px;
+  padding: 10px 20px;
+}
 
 
 
@@ -42,5 +156,33 @@
   .subtitle {
     font-size: 21px;
     line-height: 29px;
+  }
+
+  .title-moon {
+    font-size: 30px;
+    line-height: 84px;
+  }
+
+  .text-moon {
+    font-size: 21px;
+    line-height: 29px;
+  }
+
+
+  .title-primary {
+    font-size: 30px;
+    line-height: 84px;
+  }
+
+  .text-primary {
+    font-size: 21px;
+    line-height: 29px;
+  }
+
+  .subtitle-2{
+    font-size: 30px;
+  }
+  .normal{
+    font-size: 18px;
   }
 }

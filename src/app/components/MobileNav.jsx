@@ -40,7 +40,9 @@ export default function MobileNav({ open, setOpen }) {
                                 className={header['inner-nav-language']}
                                 startIcon={languageIcon}
                                 endIcon={downIcon}
-                                color='white'
+                                color='info'
+                                disableTouchRipple
+                                disableRipple
                             // onClick={handleClick}
                             >
                                 <span>English</span>

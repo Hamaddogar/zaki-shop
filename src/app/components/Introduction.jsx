@@ -16,13 +16,13 @@ const Introduction = () => {
       >
         <Grid container alignItems={'center'} rowGap={6} justifyContent={'space-between'}>
           <Grid item xs={12} lg={6}>
-            <Box textAlign={{xs:'center',lg:'left'}}>
-            <Typography className={home.title}>What i do !</Typography>
-            <Typography className={home.subtitle}>i can do websites, Mobile App, Marketing & Invoices</Typography>
+            <Box textAlign={{ xs: 'center', lg: 'left' }}>
+              <Typography color='primary' className={home.title}>What i do !</Typography>
+              <Typography color='primary' className={home.subtitle}>i can do websites, Mobile App, Marketing & Invoices</Typography>
             </Box>
 
-            <Box mt={{ xs: 5 }} textAlign={{xs:'center',lg:'left'}}>
-              <Button variant='outlined' color='primary' className={home.startBtn} endIcon={arrowForward} >
+            <Box mt={{ xs: 5 }} textAlign={{ xs: 'center', lg: 'left' }}>
+              <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
                 Start Now
               </Button>
             </Box>
