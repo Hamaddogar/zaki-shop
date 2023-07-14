@@ -8,6 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { languageIcon, downIcon } from './reuse/icons';
 import MobileNav from './MobileNav';
+import { Slide } from 'react-awesome-reveal'
 
 const Header = () => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -32,20 +33,21 @@ const Header = () => {
         <MobileNav open={openNav} setOpen={setOpenNav} />
       </Box>
       <Stack width={{ xs: '95%', md: '80%' }} sx={{ margin: 'auto' }} direction='row' alignItems='center' justifyContent={'space-between'} className={header.main}>
-        <Picture center={false} src={'/logo-md.png'} width={200} height={47} alt={'logo'} periorty className={header.logomd} />
+        <Slide triggerOnce direction='right'> <Picture center={false} src={'/logo-md.png'} width={200} height={47} alt={'logo'} periorty className={header.logomd} /></Slide>
 
-
-        <Stack direction={'row'} alignItems={'center'} spacing={3}>
-          <ButtonBase color='primary' className={header.login} >Login</ButtonBase>
-          <Button className={header.language}
-            startIcon={languageIcon}
-            endIcon={downIcon}
-            color='white'
-            onClick={handleClick}
-          >
-            <span>English</span>
-          </Button>
-        </Stack>
+        <Slide triggerOnce direction='left'>
+          <Stack direction={'row'} alignItems={'center'} spacing={3}>
+            <ButtonBase color='primary' className={header.login} >Login</ButtonBase>
+            <Button className={header.language}
+              startIcon={languageIcon}
+              endIcon={downIcon}
+              color='info'
+              onClick={handleClick}
+            >
+              <span>English</span>
+            </Button>
+          </Stack>
+        </Slide>
       </Stack>
       <Menu
         anchorEl={anchorEl}

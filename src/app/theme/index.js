@@ -7,11 +7,8 @@ const theme = createTheme({
       main: '#0F1546', // Customize your primary color
     },
     secondary: {
-      main: '#f50057', // Customize your secondary color
+      main: '#1BFCB6', // Customize your secondary color
     },
-    "white": {
-      main: '#FFFFFF',
-    }
     // You can add more colors here, like error, warning, success, etc.
   },
   typography: {

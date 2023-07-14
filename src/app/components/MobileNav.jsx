@@ -5,6 +5,7 @@ import Dialog from '@mui/material/Dialog';
 import { Box, ButtonBase, Stack, Typography } from '@mui/material';
 import { closeIcon, downIcon, drawerLogo, facebookIcon, languageIcon, linkedinIcon, twitterIcon } from './reuse/icons';
 import header from '@/app/styles/header.module.css';
+import { Slide } from 'react-awesome-reveal';
 
 export default function MobileNav({ open, setOpen }) {
     const handleClose = () => setOpen(false);
@@ -18,9 +19,9 @@ export default function MobileNav({ open, setOpen }) {
                 aria-labelledby="mobile-navbar"
                 scroll={'body'}
                 sx={{
-                    '& .MuiBackdrop-root': { backdropFilter: 'blur(14px) !important',backgroundColor: 'transparent' },
+                    '& .MuiBackdrop-root': { backdropFilter: 'blur(14px) !important', backgroundColor: 'transparent' },
                     '& .MuiDialog-container': { padding: '20px', minHeight: 'calc(100vh - 40px)' },
-                    '& .MuiPaper-root': {  borderRadius: '40px', background: 'rgba(15, 21, 70, 0.38)', color: '#FFFFFF', padding: '40px 35px' },
+                    '& .MuiPaper-root': { borderRadius: '40px', background: 'rgba(15, 21, 70, 0.38)', color: '#FFFFFF', padding: '40px 35px' },
                 }}
             >
                 <Stack direction='row' alignItems='center' justifyContent={'space-between'}>
@@ -40,7 +41,9 @@ export default function MobileNav({ open, setOpen }) {
                                 className={header['inner-nav-language']}
                                 startIcon={languageIcon}
                                 endIcon={downIcon}
-                                color='white'
+                                color='info'
+                                disableTouchRipple
+                                disableRipple
                             // onClick={handleClick}
                             >
                                 <span>English</span>
@@ -51,24 +54,25 @@ export default function MobileNav({ open, setOpen }) {
                     <Box >
                         <Typography className={header['inner-nav-footer']} >Follow us in social media</Typography>
                         <Stack direction='row' alignItems={'center'} spacing={2} >
+                            <Slide triggerOnce cascade direction='up'>
+                                <a
+                                    href="https://vercel.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >{facebookIcon}</a>
 
-                            <a
-                                href="https://vercel.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >{facebookIcon}</a>
+                                <a
+                                    href="https://vercel.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >{linkedinIcon}</a>
 
-                            <a
-                                href="https://vercel.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >{linkedinIcon}</a>
-
-                            <a
-                                href="https://vercel.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >{twitterIcon}</a>
+                                <a
+                                    href="https://vercel.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >{twitterIcon}</a>
+                            </Slide>
                         </Stack>
                     </Box>
                 </Stack>
