@@ -5,7 +5,7 @@ import Dialog from '@mui/material/Dialog';
 import { Box, ButtonBase, Stack, Typography } from '@mui/material';
 import { closeIcon, downIcon, drawerLogo, facebookIcon, languageIcon, linkedinIcon, twitterIcon } from './reuse/icons';
 import header from '@/app/styles/header.module.css';
-import { Slide } from 'react-awesome-reveal';
+// import { Slide } from 'react-awesome-reveal';
 
 export default function MobileNav({ open, setOpen }) {
     const handleClose = () => setOpen(false);
@@ -53,7 +53,7 @@ export default function MobileNav({ open, setOpen }) {
                     <Box >
                         <Typography className={header['inner-nav-footer']} >Follow us in social media</Typography>
                         <Stack direction='row' alignItems={'center'} spacing={2} >
-                            <Slide triggerOnce cascade direction='up'>
+                            {/* <Slide triggerOnce cascade direction='up'> */}
                                 <a
                                     href="https://vercel.com"
                                     target="_blank"
@@ -71,7 +71,7 @@ export default function MobileNav({ open, setOpen }) {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >{twitterIcon}</a>
-                            </Slide>
+                            {/* </Slide> */}
                         </Stack>
                     </Box>
                 </Stack>

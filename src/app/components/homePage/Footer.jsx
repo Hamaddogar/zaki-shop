@@ -5,7 +5,7 @@ import { Box, ButtonBase, Grid, Hidden, InputAdornment, Stack, TextField, Typogr
 import { arrowForwardEmail, footerfacebook, footerinstagram, footerlinkedin, footertiktok } from '../reuse/icons'
 import home from '@/app/styles/home.module.css'
 import { MUIDesign } from '../reuse/Design'
-import { Slide } from 'react-awesome-reveal'
+// import { Slide } from 'react-awesome-reveal'
 
 const Footer = () => {
     return (
@@ -13,15 +13,15 @@ const Footer = () => {
             <Grid container rowSpacing={2} alignItems={'center'} justifyContent={{ xs: 'center', md: 'space-between' }} pb={'40px'} px={{ xs: '30px', lg: '40px' }}>
                 <Grid item xs={12} md='auto'>
                     <Box textAlign={'center'}>
-                        <Slide triggerOnce cascade direction='right' >
+                        {/* <Slide triggerOnce cascade direction='right' > */}
                             <Picture center={false} src={'/footer-logo.png'} width={180} height={80} alt='' />
-                        </Slide>
+                        {/* </Slide> */}
                     </Box>
                 </Grid>
                 <Hidden mdUp>
                     <Grid item xs={12} sm={6} md='auto'>
                         <Stack direction={{ xs: 'column', md: 'row' }} alignItems='center' justifyContent='center' spacing={1}>
-                            <Slide triggerOnce cascade direction='right'>
+                            {/* <Slide triggerOnce cascade direction='right'> */}
                                 <Typography sx={{ color: '#000', fontSize: '13px', fontWeight: 500 }}>Subscribe to our newsletter today!</Typography>
                                 <Box>
                                     <TextField
@@ -36,32 +36,32 @@ const Footer = () => {
                                         }}
                                     />
                                 </Box>
-                            </Slide>
+                            {/* </Slide> */}
                         </Stack>
                     </Grid>
                 </Hidden>
                 <Grid item xs={6} md='auto'>
                     <Stack direction='row' alignItems='center' justifyContent={{ xs: 'flex-start', sm: 'center' }} spacing={1}>
-                        <Slide triggerOnce cascade direction='up'>
+                        {/* <Slide triggerOnce cascade direction='up'> */}
                             <Box>{footerfacebook}</Box>
                             <Box>{footerinstagram}</Box>
                             <Box>{footertiktok}</Box>
                             <Box>{footerlinkedin}</Box>
-                        </Slide>
+                        {/* </Slide> */}
                     </Stack>
                 </Grid>
 
                 <Grid item xs={6} md='auto'>
-                    <Slide triggerOnce cascade direction='up' >
+                    {/* <Slide triggerOnce cascade direction='up' > */}
                         <Typography textAlign={{ xs: 'right', sm: 'center' }} sx={{ color: '#000', fontWeight: 500 }} fontSize={{ xs: '14px', sm: '16px' }}>
                             ©2023 Over Zaki
                         </Typography>
-                    </Slide>
+                    {/* </Slide> */}
                 </Grid>
                 <Hidden mdDown>
                     <Grid item xs={12} md='auto'>
                         <Stack direction={{ xs: 'column', md: 'row' }} alignItems='center' justifyContent='center' spacing={1}>
-                            <Slide triggerOnce cascade direction='left'>
+                            {/* <Slide triggerOnce cascade direction='left'> */}
                                 <Typography sx={{ color: '#000', fontSize: '13px', fontWeight: 500 }}>Subscribe to our newsletter today!</Typography>
                                 <Box>
                                     <TextField
@@ -76,7 +76,7 @@ const Footer = () => {
                                         }}
                                     />
                                 </Box>
-                            </Slide>
+                            {/* </Slide> */}
                         </Stack>
                     </Grid>
                 </Hidden>

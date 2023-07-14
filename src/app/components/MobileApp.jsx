@@ -4,7 +4,7 @@ import home from '@/app/styles/home.module.css'
 import Picture from './reuse/Picture'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForward } from './reuse/icons'
-import { Slide } from 'react-awesome-reveal'
+// import { Slide } from 'react-awesome-reveal'
 import { WritingAnimation } from './reuse/Animation'
 
 const MobileApp = () => {
@@ -26,9 +26,9 @@ const MobileApp = () => {
 
         <Grid item xs={12} lg={6}>
           <Box p={4}>
-            <Slide triggerOnce cascade direction='right'>
+            {/* <Slide triggerOnce cascade direction='right'> */}
               <Picture src={'/mobileapp.png'} width={500} height={500} alt='MobileApp' />
-            </Slide>
+            {/* </Slide> */}
           </Box>
         </Grid>
       </Grid>

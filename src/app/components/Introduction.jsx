@@ -5,7 +5,7 @@ import Picture from './reuse/Picture'
 import { Box, Button, Grid, Stack, Typography } from '@mui/material'
 import { arrowForward } from './reuse/icons'
 import { WritingAnimation } from './reuse/Animation'
-import { JackInTheBox, Zoom } from 'react-awesome-reveal'
+// import { JackInTheBox, Zoom } from 'react-awesome-reveal'
 
 const Introduction = () => {
   const [playing] = React.useState(false)
@@ -35,17 +35,17 @@ const Introduction = () => {
           </Grid>
           <Grid item xs={12} lg={6}>
             <Box p={4}>
-              <JackInTheBox cascade triggerOnce >
+              {/* <JackInTheBox cascade triggerOnce > */}
                 <Picture src={'/face.png'} width={600} height={460} alt='' periorty />
-              </JackInTheBox>
+              {/* </JackInTheBox> */}
             </Box>
             <Stack direction={'row'} justifyContent={'center'} alignItems={'center'} spacing={2}>
-              <Zoom triggerOnce cascade>
+              {/* <Zoom triggerOnce cascade> */}
                 {!playing && <Picture center={false} src={'/playIcon.png'} alt='' width={58} height={58} />}
                 {!playing && <Picture center={false} src={'/muteIcon.png'} alt='' width={58} height={58} />}
                 {playing && <Picture center={false} src={'/stopIcon.png'} alt='' width={58} height={58} />}
                 {playing && <Picture center={false} src={'/unmuteIcon.png'} alt='' width={58} height={58} />}
-              </Zoom>
+              {/* </Zoom> */}
             </Stack>
           </Grid>
         </Grid>

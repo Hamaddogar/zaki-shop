@@ -5,7 +5,7 @@ import Picture from './reuse/Picture'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForward } from './reuse/icons'
 import { WritingAnimation } from './reuse/Animation'
-import { Slide } from 'react-awesome-reveal'
+// import { Slide } from 'react-awesome-reveal'
 
 const Invoices = () => {
 
@@ -26,9 +26,9 @@ const Invoices = () => {
 
         <Grid item xs={12} lg={6}>
           <Box p={4}>
-          <Slide triggerOnce cascade direction='right'>
+            {/* <Slide triggerOnce cascade direction='right'> */}
             <Picture src={'/invoices.png'} width={500} height={500} alt='invoices' />
-            </Slide>
+            {/* </Slide> */}
           </Box>
         </Grid>
       </Grid>

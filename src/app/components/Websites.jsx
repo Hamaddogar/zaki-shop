@@ -4,7 +4,7 @@ import home from '@/app/styles/home.module.css'
 import Picture from './reuse/Picture'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForwardSecond } from './reuse/icons'
-import { Slide } from 'react-awesome-reveal'
+// import { Slide } from 'react-awesome-reveal'
 import { WritingAnimation } from './reuse/Animation'
 
 const Websites = () => {
@@ -14,9 +14,9 @@ const Websites = () => {
       <Grid container direction={{ xs: 'column-reverse', lg: 'row' }} alignItems={'center'} justifyContent={'space-between'} pt={{ xs: '50px', lg: '0px' }}>
         <Grid item xs={12} lg={6}>
           <Box p={4}>
-          <Slide triggerOnce cascade direction='left'>
+            {/* <Slide triggerOnce cascade direction='left'> */}
             <Picture src={'/websites.png'} width={1000} height={1000} alt='websites' />
-            </Slide>
+            {/* </Slide> */}
           </Box>
         </Grid>
         <Grid item xs={12} lg={6}>
