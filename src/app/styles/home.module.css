@@ -90,6 +90,7 @@
 /* websites section */
 .websites {
   min-height: 791px;
+  overflow-x: hidden;
   background: #0F1546;
   display: flex;
   align-items: center;
@@ -98,6 +99,7 @@
 
 .MobileApp {
   min-height: 791px;
+  overflow-x: hidden;
   background: #36F9BD;
   display: flex;
   align-items: center;
@@ -106,6 +108,7 @@
 
 .marketing {
   min-height: 791px;
+  overflow-x: hidden;
   background: #0F1546;
   display: flex;
   align-items: center;
@@ -114,6 +117,7 @@
 
 .Invoices {
   min-height: 791px;
+  overflow-x: hidden;
   background: #36F9BD;
   display: flex;
   align-items: center;
@@ -154,7 +158,7 @@
   }
 
   .subtitle {
-    font-size: 21px;
+    font-size: 24px;
     line-height: 29px;
   }
 
@@ -164,7 +168,7 @@
   }
 
   .text-moon {
-    font-size: 21px;
+    font-size: 24px;
     line-height: 29px;
   }
 
@@ -175,7 +179,7 @@
   }
 
   .text-primary {
-    font-size: 21px;
+    font-size: 24px;
     line-height: 29px;
   }
 
@@ -183,6 +187,13 @@
     font-size: 30px;
   }
   .normal{
+    font-size: 18px;
+  }
+  .QRBtn {
+    min-width: 260px;
+    gap: 10px;
+  }
+  .QRBtn span{
     font-size: 18px;
   }
 }

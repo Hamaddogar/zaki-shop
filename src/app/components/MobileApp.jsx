@@ -4,15 +4,17 @@ import home from '@/app/styles/home.module.css'
 import Picture from './reuse/Picture'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForward, arrowForwardSecond } from './reuse/icons'
+import { Slide } from 'react-awesome-reveal'
+import { WritingAnimation } from './reuse/Animation'
 
 const MobileApp = () => {
 
   return (
     <div className={home.MobileApp}>
-      <Grid direction={{ xs: 'column-reverse', lg: 'row' }} container alignItems={'center'} rowGap={-6} justifyContent={'space-between'} py={{ xs: '110px', lg: '0px' }}>
+      <Grid container alignItems={'center'} rowGap={-6} justifyContent={'space-between'} p={{ xs: '50px 0px 0px 0px', lg: '110px 0px 110px 0px' }}>
         <Grid item xs={12} lg={6}>
           <Box textAlign={{ xs: 'center', lg: 'left' }} width={'80%'} margin='auto'>
-            <Typography className={home['title-primary']} mb={4}>Mobile Apps</Typography>
+            <Typography className={home['title-primary']} mb={4}><WritingAnimation text='Mobile Apps' /> </Typography>
             <Typography mb={{ xs: 5 }} className={home['text-primary']}>
               Our IA can generate and create a beautiful website whatever your field of activity
             </Typography>
@@ -24,7 +26,9 @@ const MobileApp = () => {
 
         <Grid item xs={12} lg={6}>
           <Box p={4}>
-            <Picture src={'/mobileapp.png'} width={500} height={500} alt='MobileApp' />
+            <Slide triggerOnce direction='right'>
+              <Picture src={'/mobileapp.png'} width={500} height={500} alt='MobileApp' />
+            </Slide>
           </Box>
         </Grid>
       </Grid>

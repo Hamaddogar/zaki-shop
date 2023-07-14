@@ -1,4 +1,5 @@
 
+"use client"
 export const arrowForward = <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 34 32" fill="none">
     <path d="M1.36035 16H27.4837" stroke="#0F1546" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     <path d="M22.2695 21.3333L27.4829 16" stroke="#0F1546" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

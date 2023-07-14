@@ -4,6 +4,8 @@ import home from '@/app/styles/home.module.css'
 import Picture from './reuse/Picture'
 import { Box, Button, Grid, Stack, Typography } from '@mui/material'
 import { arrowForward } from './reuse/icons'
+import { WritingAnimation } from './reuse/Animation'
+import { Bounce, JackInTheBox, Slide, Zoom } from 'react-awesome-reveal'
 
 const Introduction = () => {
   const [playing] = React.useState(false)
@@ -17,25 +19,35 @@ const Introduction = () => {
         <Grid container alignItems={'center'} rowGap={6} justifyContent={'space-between'}>
           <Grid item xs={12} lg={6}>
             <Box textAlign={{ xs: 'center', lg: 'left' }}>
-              <Typography color='primary' className={home.title}>What i do !</Typography>
-              <Typography color='primary' className={home.subtitle}>i can do websites, Mobile App, Marketing & Invoices</Typography>
+              <Typography color='primary' className={home.title}>
+                <WritingAnimation text='What i do !' />
+              </Typography>
+              <Typography color='primary' className={home.subtitle}>
+                <Slide triggerOnce direction='up' >i can do websites, Mobile App, Marketing & Invoices</Slide>
+              </Typography>
             </Box>
 
             <Box mt={{ xs: 5 }} textAlign={{ xs: 'center', lg: 'left' }}>
-              <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
-                Start Now
-              </Button>
+              <Bounce triggerOnce delay={900} effect="flash" >
+                <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
+                  Start Now
+                </Button>
+              </Bounce>
             </Box>
           </Grid>
           <Grid item xs={12} lg={6}>
             <Box p={4}>
-              <Picture src={'/face.png'} width={600} height={460} alt='' periorty />
+              <JackInTheBox triggerOnce >
+                <Picture src={'/face.png'} width={600} height={460} alt='' periorty />
+              </JackInTheBox>
             </Box>
             <Stack direction={'row'} justifyContent={'center'} alignItems={'center'} spacing={2}>
-              {!playing && <Picture center={false} src={'/playIcon.png'} alt='' width={58} height={58} />}
-              {!playing && <Picture center={false} src={'/muteIcon.png'} alt='' width={58} height={58} />}
-              {playing && <Picture center={false} src={'/stopIcon.png'} alt='' width={58} height={58} />}
-              {playing && <Picture center={false} src={'/unmuteIcon.png'} alt='' width={58} height={58} />}
+              <Zoom triggerOnce cascade >
+                {!playing && <Picture center={false} src={'/playIcon.png'} alt='' width={58} height={58} />}
+                {!playing && <Picture center={false} src={'/muteIcon.png'} alt='' width={58} height={58} />}
+                {playing && <Picture center={false} src={'/stopIcon.png'} alt='' width={58} height={58} />}
+                {playing && <Picture center={false} src={'/unmuteIcon.png'} alt='' width={58} height={58} />}
+              </Zoom>
             </Stack>
           </Grid>
         </Grid>
