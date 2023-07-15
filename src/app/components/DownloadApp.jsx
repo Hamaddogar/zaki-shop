@@ -13,7 +13,7 @@ const DownloadApp = () => {
     <div className={home.DownloadApp}>
       <Grid direction={{ xs: 'column-reverse', lg: 'row' }} container alignItems={'center'} justifyContent={'space-between'} p={{ xs: '50px 0px 0px 0px', lg: '110px 0px 0px 0px' }}>
         <Grid item xs={12} lg={7}>
-          <Box p={4}>
+          <Box>
             {/* <Rotate triggerOnce direction='left'> */}
               <Picture src={'/downloadmenow.png'} width={1080} height={540} alt='Download App' />
             {/* </Rotate> */}

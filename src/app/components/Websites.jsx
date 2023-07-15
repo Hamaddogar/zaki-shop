@@ -11,16 +11,16 @@ const Websites = () => {
 
   return (
     <div className={home.websites}>
-      <Grid container direction={{ xs: 'column-reverse', lg: 'row' }} alignItems={'center'} justifyContent={'space-between'} pt={{ xs: '50px', lg: '0px' }}>
+      <Grid className={home.ac} container direction={{ xs: 'column-reverse', lg: 'row' }} alignItems={'center'} justifyContent={'space-between'} pt={{ xs: '50px', lg: '0px' }}>
         <Grid item xs={12} lg={6}>
-          <Box p={4}>
+          <Box >
             {/* <Slide triggerOnce cascade direction='left'> */}
             <Picture src={'/websites.png'} width={1000} height={1000} alt='websites' />
             {/* </Slide> */}
           </Box>
         </Grid>
         <Grid item xs={12} lg={6}>
-          <Box textAlign={{ xs: 'center', lg: 'left' }} width={'80%'} margin='auto'>
+          <Box textAlign={{ xs: 'center', lg: 'left' }}>
             <Typography color='info' className={home['title-moon']} mb={4}><WritingAnimation text='Websites' /></Typography>
             <Typography mb={{ xs: 5 }} color='info' className={home['text-moon']}>Our IA can generate and create a beautiful website whatever your field of activity </Typography>
             <Button color='secondary' className={home.secondaryBtn} endIcon={arrowForwardSecond} >

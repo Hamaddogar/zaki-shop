@@ -12,13 +12,13 @@ const Introduction = () => {
 
   return (
     <div className={home.main}>
-      <Box pt={{ xs: 15, sm: 30 }} pb={10}
+      <Box pt={{ xs: '150px', sm: '290px', md:'265' }} pb={10}
         width={{ xs: '90%', md: '80%' }}
         margin={'auto'}
       >
         <Grid container alignItems={'center'} rowGap={6} justifyContent={'space-between'}>
           <Grid item xs={12} lg={6}>
-            <Box textAlign={{ xs: 'center', lg: 'left' }}>
+            <Box textAlign={{ xs: 'center', lg: 'left' }} width={{ xs: '80%', md: '100%' }} margin='auto'>
               <Typography color='primary' className={home.title}>
                 <WritingAnimation text='What i do !' />
               </Typography>

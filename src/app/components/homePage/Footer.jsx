@@ -10,7 +10,7 @@ import { MUIDesign } from '../reuse/Design'
 const Footer = () => {
     return (
         <div>
-            <Grid container rowSpacing={2} alignItems={'center'} justifyContent={{ xs: 'center', md: 'space-between' }} pb={'40px'} px={{ xs: '30px', lg: '40px' }}>
+            <Grid container rowSpacing={2} alignItems={'center'} justifyContent={{ xs: 'center', md: 'space-between' }} py={'35px'} px={{ xs: '30px', lg: '40px' }}>
                 <Grid item xs={12} md='auto'>
                     <Box textAlign={'center'}>
                         {/* <Slide triggerOnce cascade direction='right' > */}

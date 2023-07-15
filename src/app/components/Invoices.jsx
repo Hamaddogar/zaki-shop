@@ -11,9 +11,9 @@ const Invoices = () => {
 
   return (
     <div className={home.Invoices}>
-      <Grid container alignItems={'center'} rowGap={-6} justifyContent={'space-between'} p={{ xs: '50px 0px 0px 0px', lg: '110px 0px 110px 0px' }}>
+      <Grid className={home.ac} container alignItems={'center'} justifyContent={'space-between'} p={{ xs: '50px 0px 0px 0px', lg: '110px 0px 110px 0px' }}>
         <Grid item xs={12} lg={6}>
-          <Box textAlign={{ xs: 'center', lg: 'left' }} width={'80%'} margin='auto'>
+          <Box textAlign={{ xs: 'center', lg: 'left' }}>
             <Typography className={home['title-primary']} mb={4}><WritingAnimation text='Invoices' /></Typography>
             <Typography mb={{ xs: 5 }} className={home['text-primary']}>
               Our IA can generate and create a beautiful website whatever your field of activity
@@ -25,9 +25,9 @@ const Invoices = () => {
         </Grid>
 
         <Grid item xs={12} lg={6}>
-          <Box p={4}>
+          <Box >
             {/* <Slide triggerOnce cascade direction='right'> */}
-            <Picture src={'/invoices.png'} width={500} height={500} alt='invoices' />
+            <Picture src={'/invoices.png'} width={550} height={550} alt='invoices' />
             {/* </Slide> */}
           </Box>
         </Grid>

@@ -11,9 +11,9 @@ const MobileApp = () => {
 
   return (
     <div className={home.MobileApp}>
-      <Grid container alignItems={'center'} rowGap={-6} justifyContent={'space-between'} p={{ xs: '50px 0px 0px 0px', lg: '110px 0px 110px 0px' }}>
+      <Grid className={home.ac} container alignItems={'center'} rowGap={-6} justifyContent={'space-between'} p={{ xs: '50px 0px 0px 0px', lg: '110px 0px 110px 0px' }}>
         <Grid item xs={12} lg={6}>
-          <Box textAlign={{ xs: 'center', lg: 'left' }} width={'80%'} margin='auto'>
+          <Box textAlign={{ xs: 'center', lg: 'left' }}>
             <Typography className={home['title-primary']} mb={4}><WritingAnimation text='Mobile Apps' /> </Typography>
             <Typography mb={{ xs: 5 }} className={home['text-primary']}>
               Our IA can generate and create a beautiful website whatever your field of activity
@@ -25,9 +25,9 @@ const MobileApp = () => {
         </Grid>
 
         <Grid item xs={12} lg={6}>
-          <Box p={4}>
+          <Box >
             {/* <Slide triggerOnce cascade direction='right'> */}
-              <Picture src={'/mobileapp.png'} width={500} height={500} alt='MobileApp' />
+              <Picture src={'/mobileapp.png'} width={600} height={600} alt='MobileApp' />
             {/* </Slide> */}
           </Box>
         </Grid>

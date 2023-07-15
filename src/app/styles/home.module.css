@@ -86,7 +86,11 @@
   font-weight: 400;
   line-height: normal;
 }
-
+.ac{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* websites section */
 .websites {
   min-height: 791px;
@@ -142,7 +146,7 @@
   gap: 35px;
 }
 
-.emailBtn{
+.emailBtn {
   background: #75F7BB;
   border-radius: 100px;
   padding: 10px 20px;
@@ -151,10 +155,10 @@
 
 
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 600px) {
   .title {
-    font-size: 30px;
-    line-height: 84px;
+    font-size: 40px;
+    line-height: normal;
   }
 
   .subtitle {
@@ -163,8 +167,8 @@
   }
 
   .title-moon {
-    font-size: 30px;
-    line-height: 84px;
+    font-size: 40px;
+    line-height: normal;
   }
 
   .text-moon {
@@ -174,8 +178,8 @@
 
 
   .title-primary {
-    font-size: 30px;
-    line-height: 84px;
+    font-size: 40px;
+    line-height: normal;
   }
 
   .text-primary {
@@ -183,17 +187,20 @@
     line-height: 29px;
   }
 
-  .subtitle-2{
+  .subtitle-2 {
     font-size: 30px;
   }
-  .normal{
+
+  .normal {
     font-size: 18px;
   }
+
   .QRBtn {
     min-width: 260px;
     gap: 10px;
   }
-  .QRBtn span{
+
+  .QRBtn span {
     font-size: 18px;
   }
 }

@@ -11,16 +11,16 @@ const Marketing = () => {
 
   return (
     <div className={home.marketing}>
-      <Grid direction={{ xs: 'column-reverse', lg: 'row' }} container alignItems={'center'} justifyContent={'space-between'} p={{ xs: '50px 0px 0px 0px', lg: '110px 0px 110px 0px' }}>
+      <Grid className={home.ac} direction={{ xs: 'column-reverse', lg: 'row' }} container alignItems={'center'} justifyContent={'space-between'} p={{ xs: '50px 0px 50px 0px', lg: '110px 0px 110px 0px' }}>
         <Grid item xs={12} lg={6}>
-          <Box p={4}>
+          <Box pt={{xs:8,lg:0}}>
           {/* <Slide triggerOnce cascade direction='left'> */}
-            <Picture src={'/marketing.png'} width={487} height={487} alt='marketing' />
+            <Picture src={'/marketinng.png'} width={550} height={437} alt='marketing' />
             {/* </Slide> */}
           </Box>
         </Grid>
         <Grid item xs={12} lg={6}>
-          <Box textAlign={{ xs: 'center', lg: 'left' }} width={'80%'} margin='auto'>
+          <Box className={home.ac} textAlign={{ xs: 'center', lg: 'left' }}>
             <Typography className={home['title-moon']} mb={4}><WritingAnimation text='Marketing' /> </Typography>
             <Typography mb={{ xs: 5 }} className={home['text-moon']}>
               Our IA can generate and create a beautiful website whatever your field of activity
