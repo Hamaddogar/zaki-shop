@@ -27,7 +27,7 @@ const Invoices = () => {
         <Grid item xs={12} lg={6}>
           <Box >
             {/* <Slide triggerOnce cascade direction='right'> */}
-            <Picture src={'/invoices.png'} width={550} height={550} alt='invoices' />
+            <Picture src={'/invoices.png'} width={500} height={500} alt='invoices' />
             {/* </Slide> */}
           </Box>
         </Grid>
