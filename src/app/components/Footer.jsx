@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
-import Picture from '../reuse/Picture'
+import Picture from './reuse/Picture'
 import { Box, ButtonBase, Grid, Hidden, InputAdornment, Stack, TextField, Typography } from '@mui/material'
-import { arrowForwardEmail, footerfacebook, footerinstagram, footerlinkedin, footertiktok } from '../reuse/icons'
+import { arrowForwardEmail, footerfacebook, footerinstagram, footerlinkedin, footertiktok } from './reuse/icons'
 import home from '@/app/styles/home.module.css'
-import { MUIDesign } from '../reuse/Design'
+import { MUIDesign } from './reuse/Design'
 // import { Slide } from 'react-awesome-reveal'
 
 const Footer = () => {

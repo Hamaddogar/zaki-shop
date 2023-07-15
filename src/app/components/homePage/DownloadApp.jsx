@@ -1,11 +1,11 @@
 'use client'
 import React from 'react'
 import home from '@/app/styles/home.module.css'
-import Picture from './reuse/Picture'
+import Picture from '../reuse/Picture'
 import { Box, Button, ButtonBase, Grid, Stack, Typography } from '@mui/material'
-import { miniFace } from './reuse/icons'
+import { miniFace } from '../reuse/icons'
 // import { Zoom, Fade, Rotate, Slide } from 'react-awesome-reveal'
-import { WritingAnimation } from './reuse/Animation'
+import { WritingAnimation } from '../reuse/Animation'
 
 const DownloadApp = () => {
 

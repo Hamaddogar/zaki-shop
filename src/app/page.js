@@ -1,13 +1,13 @@
 'use client'
 import React from 'react'
-import Introduction from './components/Introduction';
+import Introduction from './components/homePage/Introduction';
 import Header from './components/Header';
-import Websites from './components/Websites';
-import MobileApp from './components/MobileApp';
-import Marketing from './components/Marketing';
-import Invoices from './components/Invoices';
-import DownloadApp from './components/DownloadApp';
-import Footer from './components/homePage/Footer';
+import Websites from './components/homePage/Websites';
+import MobileApp from './components/homePage/MobileApp';
+import Marketing from './components/homePage/Marketing';
+import Invoices from './components/homePage/Invoices';
+import DownloadApp from './components/homePage/DownloadApp';
+import Footer from './components/Footer';
 
 const Home = () => {
   return (
