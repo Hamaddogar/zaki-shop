@@ -1,47 +1,39 @@
 'use client'
 import React from 'react'
 import services from '@/app/styles/services.module.css'
-import Picture from './reuse/Picture'
+import Picture from '../reuse/Picture'
 import { Box, Button, Grid, Stack, Typography } from '@mui/material'
-import { arrowForward } from './reuse/icons'
-import { WritingAnimation } from './reuse/Animation'
+import { arrowForwardSecond } from '../reuse/icons'
+import { WritingAnimation } from '../reuse/Animation'
 
 const Introduction = () => {
-  const [playing] = React.useState(false)
 
   return (
     <div className={services.main}>
-      <Box pt={{ xs: '150px', sm: '290px', md:'265' }} pb={10}
+      <Box pt={{ xs: '150px', sm: '290px', md: '265' }} pb={10}
         width={{ xs: '90%', md: '80%' }}
         margin={'auto'}
       >
         <Grid container alignItems={'center'} rowGap={6} justifyContent={'space-between'}>
-          <Grid item xs={12} lg={6}>
-            <Box textAlign={{ xs: 'center', lg: 'left' }} width={{ xs: '80%', md: '100%' }} margin='auto'>
-              <Typography color='primary' className={services.title}>
-                <WritingAnimation text='What i do !' />
-              </Typography>
-              <Typography color='primary' className={services.subtitle}>
-                i can do websites, Mobile App, Marketing & Invoices
+          <Grid item xs={12}>
+            <Box width={{ xs: '80%', md: '740px' }} margin='auto' mb={.5}>
+              <Typography sx={{ color: 'white' }} className={services.subtitle}>
+                Create and customize
+              </Typography> <Typography sx={{ color: 'white' }} className={services.subtitle}>
+                your website in one minute
               </Typography>
             </Box>
 
-            <Box mt={{ xs: 5 }} textAlign={{ xs: 'center', lg: 'left' }}>
-              <Button color='primary' className={services.primaryBtn} endIcon={arrowForward} >
+            <Box my={{ xs: 5 }} textAlign='center'>
+              <Button color='secondary' className={services.secondaryBtn} endIcon={arrowForwardSecond} >
                 Start Now
               </Button>
             </Box>
           </Grid>
-          <Grid item xs={12} lg={6}>
-            <Box p={4}>
-                <Picture src={'/face.png'} width={600} height={460} alt='' periorty />
+          <Grid item xs={12} >
+            <Box>
+              {/* <Picture src={'/face.png'} width={600} height={460} alt='' periorty /> */}
             </Box>
-            <Stack direction={'row'} justifyContent={'center'} alignItems={'center'} spacing={2}>
-                {!playing && <Picture center={false} src={'/playIcon.png'} alt='' width={58} height={58} />}
-                {!playing && <Picture center={false} src={'/muteIcon.png'} alt='' width={58} height={58} />}
-                {playing && <Picture center={false} src={'/stopIcon.png'} alt='' width={58} height={58} />}
-                {playing && <Picture center={false} src={'/unmuteIcon.png'} alt='' width={58} height={58} />}
-            </Stack>
           </Grid>
         </Grid>
       </Box>

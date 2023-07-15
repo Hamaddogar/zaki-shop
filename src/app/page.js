@@ -8,11 +8,12 @@ import Marketing from './components/homePage/Marketing';
 import Invoices from './components/homePage/Invoices';
 import DownloadApp from './components/homePage/DownloadApp';
 import Footer from './components/Footer';
+import home from '@/app/styles/header.module.css'
 
 const Home = () => {
   return (
     <div>
-      <Header />
+      <Header mainStyle={home.main} />
       <Introduction />
       <Websites />
       <MobileApp />

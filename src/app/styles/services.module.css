@@ -1,32 +1,136 @@
 .main {
-  background-image: url('/background.png');
+  background-image: url('/serviceBG.png');
   background-size: 100% 100%;
   overflow: hidden;
+  min-height: 1117px;
 }
 
 .title {
-  /* color: #0F1546; */
-  font-size: 80px;
+  font-size: 53px;
   font-style: normal;
   font-weight: 900;
-  line-height: 84px;
+  line-height: 59px;
+}
+
+.titleIntegration {
+  font-style: normal;
+  font-weight: 900;
+  line-height: 59px;
+  font-size: 40px;
 }
 
 .subtitle {
-  /* color: #0F1546; */
-  font-size: 51px;
+  text-align: center;
+  font-size: 50px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 64px;
+  font-weight: 800;
+  line-height: 49px;
 }
 
-.subtitle-2 {
-  color: #0F1546;
-  font-size: 42px;
+.subtitlemain {
+  text-align: center;
+  font-size: 40px;
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 800;
+  line-height: 45px;
 }
+
+
+/* Cars Section */
+
+
+.titleContainer {
+  width: 80%;
+  max-width: 898;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+}
+
+.card {
+  max-width: 478px;
+  min-height: 323px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  background: #DDFBF2;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardIcon {
+  width: 83px;
+  height: 83px;
+  border-radius: 13px;
+  background: #37F9BD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 31px;
+  box-shadow: 0px 20px 40px #1BFCB6;
+}
+
+.cardTitle {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 18px;
+  line-height: 27px;
+}
+
+.cardMsg {
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+
+/* Integration Payments */
+.cardsMain {
+  padding: 85px 118px;
+  max-width: 1710px;
+  margin: auto;
+  min-height: 1045px;
+}
+
+.paymentMain {
+  padding: 85px 80px;
+  background: #F0F2FF;
+  min-height: 1045px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandMain {
+  padding: 85px 80px;
+  min-height: 1045px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.themeMain {
+  padding: 85px 80px;
+  background: #16204C;
+  height: 1045px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .primaryBtn {
   border-radius: 100px;
@@ -47,113 +151,87 @@
   text-transform: capitalize;
 }
 
-.title-moon {
-  color: #FFFFFF;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 84px;
-}
-
-.text-moon {
-  color: #FFFFFF;
-  font-size: 33px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.title-primary {
-  color: #0F1546;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 84px;
-}
-
-.text-primary {
-  color: #0F1546;
-  font-size: 33px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
 .normal {
-  color: #0F1546;
-  font-size: 23px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.ac{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+
+.normal2 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
+
 /* websites section */
-.websites {
-  min-height: 791px;
-  overflow-x: hidden;
-  background: #0F1546;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+@media only screen and (max-width: 1750px) {
+
+  .subtitlemain,
+  .titleIntegration {
+    font-size: 40px;
+  }
 }
 
-.MobileApp {
-  min-height: 791px;
-  overflow-x: hidden;
-  background: #36F9BD;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (min-device-width:1124px) and (max-device-width:1350px) {
+
+  .subtitlemain,
+  .titleIntegration {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .cardsMain {
+    padding: 85px 80px;
+  }
 }
 
-.marketing {
-  min-height: 791px;
-  overflow-x: hidden;
-  background: #0F1546;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (min-device-width:1024px) and (max-device-width:1124px) {
+
+  .subtitlemain,
+  .titleIntegration {
+    font-size: 27px;
+    line-height: 35px;
+  }
+  .cardsMain {
+    padding: 85px 60px;
+  }
 }
 
-.Invoices {
-  min-height: 791px;
-  overflow-x: hidden;
-  background: #36F9BD;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media only screen and (max-width: 1024px) {
+
+  .subtitlemain,
+  .titleIntegration {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .themeMain,
+  .paymentMain,
+  .brandMain,
+  .cardsMain {
+    min-height: 575px;
+    padding: 85px 40px;
+  }
 }
 
-.QRBtn {
-  min-width: 360px;
-  gap: 30px;
-  padding: 10px 20px;
-  justify-content: space-between;
-  border-radius: 27px;
-  border: 3px solid #0F1546;
-  color: #0F1546;
-  font-size: 24px;
-  text-transform: capitalize;
+@media only screen and (max-width: 450px) {
+  .titleIntegration {
+    font-size: 23px;
+    line-height: 32px;
+  }
+
+  .themeMain,
+  .paymentMain,
+  .brandMain,
+  .cardsMain {
+    min-height: auto;
+    height: 100%;
+    padding: 75px 20px;
+  }
+
 }
-
-.QRBtn span {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-}
-
-.emailBtn {
-  background: #75F7BB;
-  border-radius: 100px;
-  padding: 10px 20px;
-}
-
-
-
 
 @media only screen and (max-width: 600px) {
   .title {
@@ -166,41 +244,7 @@
     line-height: 29px;
   }
 
-  .title-moon {
-    font-size: 40px;
-    line-height: normal;
-  }
-
-  .text-moon {
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-
-  .title-primary {
-    font-size: 40px;
-    line-height: normal;
-  }
-
-  .text-primary {
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  .subtitle-2 {
-    font-size: 30px;
-  }
-
   .normal {
-    font-size: 18px;
-  }
-
-  .QRBtn {
-    min-width: 260px;
-    gap: 10px;
-  }
-
-  .QRBtn span {
     font-size: 18px;
   }
 }

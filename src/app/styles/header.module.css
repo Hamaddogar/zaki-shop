@@ -15,6 +15,24 @@
     top: 65px;
 }
 
+.mainService {
+    border-radius: 100px;
+    background: rgba(15, 21, 70, 0.35);
+    backdrop-filter: blur(12.5px);
+    margin-left: auto;
+    margin-right: auto;
+    height: 122px;
+    /* border-radius: 50px; */
+    border: .5px solid #292D58;
+    border-bottom: 0px;
+    padding: 15px 30px;
+    position: absolute;
+    margin: auto;
+    left: 0%;
+    right: 0%;
+    top: 65px;
+}
+
 .main-mobile {
     background-color: transparent;
     margin-left: auto;
@@ -109,6 +127,10 @@
         backdrop-filter: blur(5px);
     }
 
+    .mainService{
+        height: 74px;
+    }
+
     .login {
         width: 91px;
         height: 42px;
@@ -123,14 +145,17 @@
     .language span {
         font-size: 13px;
     }
-    .logomd{
+
+    .logomd {
         width: 190px;
         height: 41px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .main {
+
+    .main,
+    .mainService {
         display: none;
     }
 

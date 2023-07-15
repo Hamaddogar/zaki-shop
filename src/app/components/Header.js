@@ -11,7 +11,7 @@ import MobileNav from './MobileNav';
 import Link from 'next/link'
 // import { Slide } from 'react-awesome-reveal'
 
-const Header = () => {
+const Header = ({ mainStyle, page }) => {
   const [openNav, setOpenNav] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -22,18 +22,38 @@ const Header = () => {
     setAnchorEl(null);
   };
 
-  const handleMenu = () => setOpenNav(true)
+  const handleMenu = () => setOpenNav(true);
+  const [pageIs, setPageIs] = React.useState('home')
+
+  React.useEffect(() => {
+    if (page) setPageIs(page)
+  }, [page])
+
+
+
+
 
   return (
     <Box>
       <Box className={header['main-mobile']}>
-        <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
-          <Picture center={false} src={'/logoxs.png'} width={200} height={47} alt={'logo'} />
-          <Picture onClick={handleMenu} center={false} src={'/menu.png'} width={37} height={37} alt={'logo'} />
-        </Stack>
-        <MobileNav open={openNav} setOpen={setOpenNav} />
+        {pageIs === 'home' &&
+          <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
+            <Picture center={false} src={'/logoxs.png'} width={200} height={47} alt={'logo'} />
+            <Picture onClick={handleMenu} center={false} src={'/menu.png'} width={37} height={37} alt={'logo'} />
+          </Stack>}
+
+        {pageIs === 'services' &&
+          <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
+            <Picture center={false} src={'/logoGreen.png'} width={200} height={47} alt={'logo'} />
+            <Picture onClick={handleMenu} center={false} src={'/menuWhite.png'} width={37} height={37} alt={'logo'} />
+          </Stack>}
+
+
+
+
+        <MobileNav open={openNav} setOpen={setOpenNav} page={page} />
       </Box>
-      <Stack width={{ xs: '95%', md: '85%' }} sx={{ margin: 'auto' }} direction='row' alignItems='center' justifyContent={'space-between'} className={header.main}>
+      <Stack width={{ xs: '95%', md: '85%' }} sx={{ margin: 'auto' }} direction='row' alignItems='center' justifyContent={'space-between'} className={mainStyle}>
         {/* <Slide triggerOnce direction='right'> */}
         <Link href={'/'}>
           <Picture center={false} src={'/logo-md.png'} width={300} height={47} alt={'logo'} periorty className={header.logomd} />

@@ -12,7 +12,7 @@ const theme = createTheme({
     // You can add more colors here, like error, warning, success, etc.
   },
   typography: {
-    fontFamily: 'Roboto, sans-serif', // Customize your default font family
+    fontFamily: 'Lato, sans-serif', // Customize your default font family
     fontSize: 14, // Customize your base font size
   },
 });
