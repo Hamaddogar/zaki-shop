@@ -12,7 +12,7 @@ const MobileApp = () => {
   return (
     <div className={home.MobileApp}>
       <Grid className={home.ac} container alignItems={'center'} rowGap={-6} justifyContent={'space-between'} p={{ xs: '50px 0px 0px 0px', lg: '110px 0px 110px 0px' }}>
-        <Grid item xs={12} lg={6}>
+        <Grid item xs={12} lg={6} >
           <Box textAlign={{ xs: 'center', lg: 'left' }}>
             <Typography className={home['title-primary']} mb={4}><WritingAnimation text='Mobile Apps' /> </Typography>
             <Typography mb={{ xs: 5 }} className={home['text-primary']}>
@@ -24,10 +24,10 @@ const MobileApp = () => {
           </Box>
         </Grid>
 
-        <Grid item xs={12} lg={6}>
+        <Grid item xs={12} lg={6} >
           <Box >
             {/* <Slide triggerOnce cascade direction='right'> */}
-              <Picture src={'/mobileapp.png'} width={540} height={500} alt='MobileApp' />
+              <Picture src={'/mobileapp.png'} width={500} height={500} alt='MobileApp' />
             {/* </Slide> */}
           </Box>
         </Grid>
