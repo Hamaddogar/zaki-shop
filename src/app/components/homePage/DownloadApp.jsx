@@ -15,7 +15,7 @@ const DownloadApp = () => {
         <Grid item xs={12} lg={7}>
           <Box>
             {/* <Rotate triggerOnce direction='left'> */}
-              <Picture src={'/downloadmenow.png'} width={1080} height={540} alt='Download App' />
+              <Picture src={'/downloadmenow.png'} width={936} height={502} alt='Download App' />
             {/* </Rotate> */}
           </Box>
         </Grid>

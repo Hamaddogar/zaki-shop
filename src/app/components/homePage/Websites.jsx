@@ -16,7 +16,7 @@ const Websites = () => {
         <Grid item xs={12} lg={6}>
           <Box >
             {/* <Slide triggerOnce cascade direction='left'> */}
-            <Picture src={'/websites.png'} width={1000} height={1000} alt='websites' />
+            <Picture src={'/websites.png'} width={783} height={610} alt='websites' />
             {/* </Slide> */}
           </Box>
         </Grid>
