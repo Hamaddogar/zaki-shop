@@ -41,7 +41,7 @@
 
 .titleContainer {
   width: 80%;
-  max-width: 898;
+  max-width: 898px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
@@ -148,7 +148,7 @@
   margin: auto;
 }
 
-.planCardActive{
+.planCardActive {
   width: 100%;
   max-width: 430px;
   min-height: 724px;
@@ -191,6 +191,7 @@
   font-weight: 500;
   line-height: normal;
 }
+
 .planCardDelActive {
   color: #0F1546;
   font-family: Avenir;
@@ -248,12 +249,12 @@
   line-height: normal;
 }
 
-.planSeeMore{
+.planSeeMore {
   margin-top: 20px;
-  
+
 }
 
-.planSeeMore span{
+.planSeeMore span {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -298,17 +299,27 @@
   line-height: normal;
 }
 
-/* websites section */
 
-@media only screen and (max-width: 1750px) {
 
-  .subtitlemain,
-  .titleIntegration {
-    font-size: 40px;
+
+
+
+/* Desktop */
+@media only screen and (max-width:1500px) {
+  .planListText {
+    font-size: 15px;
+  }
+
+  .planMain {
+    min-height: 575px;
+    padding: 85px 40px;
+  }
+  .planCard{
+    padding: 30px;
   }
 }
 
-@media (min-device-width:1124px) and (max-device-width:1350px) {
+@media only screen and (max-width:1350px) {
 
   .subtitlemain,
   .titleIntegration {
@@ -321,7 +332,14 @@
   }
 }
 
-@media (min-device-width:1024px) and (max-device-width:1124px) {
+@media only screen and (max-width:1200px) {
+
+  .planListText {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width:1124px) {
 
   .subtitlemain,
   .titleIntegration {
@@ -332,8 +350,18 @@
   .cardsMain {
     padding: 85px 60px;
   }
+
+  .normal2 {
+    font-size: 16px;
+  }
 }
 
+
+
+
+
+
+/* Tablet */
 @media only screen and (max-width: 1024px) {
 
   .subtitlemain,
@@ -342,6 +370,7 @@
     line-height: 32px;
   }
 
+  .planMain,
   .themeMain,
   .paymentMain,
   .brandMain,
@@ -349,6 +378,92 @@
   .bookingMain {
     min-height: 575px;
     padding: 85px 40px;
+  }
+
+  .normal2 {
+    font-size: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .subtitle {
+    font-size: 40px;
+  }
+
+  .titleContainer {
+    width: 90%;
+  }
+
+  .cardTitle {
+    font-size: 27px;
+  }
+
+  .normal {
+    font-size: 20px;
+  }
+
+  .normal2 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .subtitle {
+    font-size: 35px;
+  }
+
+  .cardTitle {
+    font-size: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .subtitle {
+    font-size: 30px;
+  }
+
+  .cardTitle {
+    font-size: 23px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    line-height: 29px;
+  }
+
+  .normal {
+    font-size: 18px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .normal {
+    font-size: 17px;
+  }
+
+  .normal2,
+  .planListText {
+    font-size: 14px;
   }
 }
 
@@ -358,6 +473,7 @@
     line-height: 32px;
   }
 
+  .planMain,
   .themeMain,
   .paymentMain,
   .brandMain,
@@ -368,20 +484,11 @@
     padding: 75px 20px;
   }
 
-}
-
-@media only screen and (max-width: 600px) {
-  .title {
-    font-size: 40px;
-    line-height: normal;
+  .cardTitle {
+    font-size: 22px;
   }
 
-  .subtitle {
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  .normal {
+  .cardTitle {
     font-size: 18px;
   }
 }

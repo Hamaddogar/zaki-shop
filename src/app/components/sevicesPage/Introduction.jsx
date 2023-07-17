@@ -10,11 +10,11 @@ const Introduction = () => {
 
   return (
     <div className={services.main}>
-      <Box pt={{ xs: '150px', sm: '290px', md: '265' }} pb={10}
-        width={{ xs: '90%', md: '80%' }}
+      <Box pt={{ xs: '150px', sm: '290px', md: '435px' }} pb={10}
+        width={{ xs: '90%', }}
         margin={'auto'}
       >
-        <Grid container alignItems={'center'} rowGap={6} justifyContent={'space-between'}>
+        <Grid container alignItems={'center'} justifyContent={'space-between'}>
           <Grid item xs={12}>
             <Box width={{ xs: '80%', md: '740px' }} margin='auto' mb={.5}>
               <Typography sx={{ color: 'white' }} className={services.subtitle}>
@@ -24,15 +24,16 @@ const Introduction = () => {
               </Typography>
             </Box>
 
+
+          </Grid>
+          <Grid item xs={12} >
             <Box my={{ xs: 5 }} textAlign='center'>
               <Button color='secondary' className={services.secondaryBtn} endIcon={arrowForwardSecond} >
                 Start Now
               </Button>
             </Box>
-          </Grid>
-          <Grid item xs={12} >
             <Box>
-              {/* <Picture src={'/face.png'} width={600} height={460} alt='' periorty /> */}
+              <Picture src={'/webmain.png'} width={2730} height={1920} alt='' periorty />
             </Box>
           </Grid>
         </Grid>
