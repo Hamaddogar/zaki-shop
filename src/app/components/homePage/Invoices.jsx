@@ -11,7 +11,7 @@ const Invoices = () => {
 
   return (
     <div className={home.Invoices}>
-      <Grid className={home.ac} container alignItems={'center'} justifyContent={'space-between'} p={{ xs: '50px 0px 0px 0px', lg: '110px 0px 110px 0px' }}>
+      <Grid className={home.ac} container alignItems={'center'} rowGap={6} justifyContent={'space-between'} p={{ xs: '50px 0px 50px 0px', lg: '110px 0px 110px 0px' }}>
         <Grid item xs={12} lg={6}>
           <Box textAlign={{ xs: 'center', lg: 'left' }}>
             <Typography className={home['title-primary']} mb={4}><WritingAnimation text='Invoices' /></Typography>

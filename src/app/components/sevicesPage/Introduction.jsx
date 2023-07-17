@@ -10,7 +10,7 @@ const Introduction = () => {
 
   return (
     <div className={services.main}>
-      <Box pt={{ xs: '150px', sm: '290px', md: '435px' }} pb={10}
+      <Box pt={{ xs: '150px', sm: '290px', md: '305px' }} pb={10}
         width={{ xs: '90%', }}
         margin={'auto'}
       >
