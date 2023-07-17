@@ -32,8 +32,8 @@ const Introduction = () => {
                 Start Now
               </Button>
             </Box>
-            <Box>
-              <Picture src={'/webmain.png'} width={2730} height={1920} alt='' periorty />
+            <Box width={{xs:'90%',md:'80%', lg:'70%'}} margin='auto'>
+              <Picture src={'/webmain.png'} width={1900} height={1300} alt='' periorty />
             </Box>
           </Grid>
         </Grid>
