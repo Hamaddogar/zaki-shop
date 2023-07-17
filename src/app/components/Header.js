@@ -38,13 +38,17 @@ const Header = ({ mainStyle, page }) => {
       <Box className={header['main-mobile']}>
         {pageIs === 'home' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
-            <Picture center={false} src={'/logoxs.png'} width={200} height={47} alt={'logo'} />
+            <Link href={'/'}>
+              <Picture center={false} src={'/logo-md.png'} width={200} height={47} alt={'logo'} periorty className={header.logomd} />
+            </Link>
             <Picture onClick={handleMenu} center={false} src={'/menu.png'} width={37} height={37} alt={'logo'} />
           </Stack>}
 
         {pageIs === 'services' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
-            <Picture center={false} src={'/logoGreen.png'} width={200} height={47} alt={'logo'} />
+            <Link href={'/'}>
+              <Picture center={false} src={'/logo-md.png'} width={200} height={47} alt={'logo'} periorty className={header.logomd} />
+            </Link>
             <Picture onClick={handleMenu} center={false} src={'/menuWhite.png'} width={37} height={37} alt={'logo'} />
           </Stack>}
 

@@ -287,7 +287,60 @@ export const charitiesIcon = <svg xmlns="http://www.w3.org/2000/svg" width="30" 
 </svg>
 
 
+export const planBtn = <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 34 32" fill="none">
+    <g clip-path="url(#clip0_640_4171)">
+        <path d="M1.35938 16H27.4827" stroke="#0F1546" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M22.2695 21.3333L27.4829 16" stroke="#0F1546" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M22.2695 10.6665L27.4829 15.9998" stroke="#0F1546" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <defs>
+        <clipPath id="clip0_640_4171">
+            <rect width="34" height="32" fill="white" />
+        </clipPath>
+    </defs>
+</svg>
 
+
+
+
+export const planBtnActive = <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 34 32" fill="none">
+    <g clip-path="url(#clip0_640_4244)">
+        <path d="M1.35938 16H27.4827" stroke="#36F9BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M22.2695 21.3333L27.4829 16" stroke="#36F9BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M22.2695 10.6665L27.4829 15.9998" stroke="#36F9BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <defs>
+        <clipPath id="clip0_640_4244">
+            <rect width="34" height="32" fill="white" />
+        </clipPath>
+    </defs>
+</svg>
+
+export const planSeemoreIcon = <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" viewBox="0 0 40 28" fill="none">
+    <g clip-path="url(#clip0_640_4220)">
+        <path d="M20 5.09082L20 19.0908" stroke="#36F9BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M13.3333 13.0703L20 19.7055" stroke="#36F9BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M26.666 13.0703L19.9993 19.7055" stroke="#36F9BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <defs>
+        <clipPath id="clip0_640_4220">
+            <rect width="28" height="40" fill="white" transform="translate(40) rotate(90)" />
+        </clipPath>
+    </defs>
+</svg>
+
+export const planSeemoreActiveIcon = <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" viewBox="0 0 40 28" fill="none">
+    <g clip-path="url(#clip0_640_4289)">
+        <path d="M20 5.09082L20 19.0908" stroke="#0F1546" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M13.3333 13.0703L20 19.7055" stroke="#0F1546" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M26.666 13.0703L19.9993 19.7055" stroke="#0F1546" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <defs>
+        <clipPath id="clip0_640_4289">
+            <rect width="28" height="40" fill="white" transform="translate(40) rotate(90)" />
+        </clipPath>
+    </defs>
+</svg>
 
 
 
