@@ -10,7 +10,7 @@ const ChoosePlan = () => {
   return (
     <div className={services.planMain}>
       <Box sx={{ maxWidth: '1720px', margin: 'auto' }}>
-        <Grid container alignItems={'center'} rowGap={10} justifyContent={'center'} spacing={{ xs: '0px', sm: '30px' }}>
+        <Grid className={services.background2} container alignItems={'center'} rowGap={10} justifyContent={'center'} spacing={{ xs: '0px', sm: '30px' }}>
           <Grid item xs={12} >
             <Box sx={{ textAlign: 'center' }}>
               <Typography color='primary' className={services.subtitle} mb={3}> Choose your plan  </Typography>

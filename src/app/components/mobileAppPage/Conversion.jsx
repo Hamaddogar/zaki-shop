@@ -2,20 +2,22 @@
 import React from 'react'
 import mobileapp from '@/app/styles/mobileapp.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Grid, Stack, Typography } from '@mui/material'
-import { arrowForward, listArrowIcon } from '../reuse/icons'
+import { Box, Grid, Stack, Typography } from '@mui/material'
+import { listArrowIcon,} from '../reuse/icons'
 // import { Zoom, Fade, Rotate, Slide } from 'react-awesome-reveal'
 // import { WritingAnimation } from '../reuse/Animation'
 
-const BookingSession = () => {
+const Conversion = () => {
 
   return (
-    <div className={mobileapp.bookingMain}>
-      <Grid container alignItems={'center'} justifyContent={'space-between'} rowGap={'40px'} spacing={'3px'}>
-        <Grid item xs={12} md={6}>
+    <div className={mobileapp.conversionMain}>
+      <Grid container direction={{ xs: 'column-reverse', md: 'row' }} alignItems={'center'} justifyContent={'center'} rowGap={'40px'} spacing={'3px'}>
+
+
+        <Grid item xs={12} md={5}>
           <Box pr={{ xs: 0, lg: 8 }} pl={{ xs: 4, lg: 8 }} >
-            <Typography className={mobileapp.titleIntegration} color="primary" > Book your session for
-              let our support help you </Typography>
+            <Typography className={mobileapp.titleIntegration} color="primary" >Turn your website into your mobile app</Typography>
+            <Typography className={mobileapp.normal} color="primary" mt={2}> Many advantages to suit your business </Typography>
             <Box mt={"70px"} mb={'19px'}>
 
               <Stack direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
@@ -39,20 +41,20 @@ const BookingSession = () => {
               </Stack>
             </Box>
 
-            <Button color='primary' className={mobileapp.primaryBtn} endIcon={arrowForward} >
-              Start Now
-            </Button>
+            <Stack direction={'row'} alignItems='center' spacing={'20px'} mt='30px'>
+              <Picture src={'/andStore.png'} width={60} height={60} alt='' />
+              <Picture src={'/playStore.png'} width={50} height={50} alt='' />
+            </Stack>
           </Box>
 
         </Grid>
-        <Grid item xs={12} md={6}>
-          <Box  >
-            <Picture src={'/booking.png'} width={1090} height={1155} alt='' />
-          </Box>
+
+        <Grid item xs={12} md={7}>
+          <Picture src={'/conversion.png'} width={884} height={710} alt='' />
         </Grid>
       </Grid>
     </div>
   )
 }
 
-export default BookingSession
+export default Conversion

@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import services from '@/app/styles/services.module.css'
+import mobileapp from '@/app/styles/mobileapp.module.css'
 import { Box, Button, ButtonBase, Grid, Stack, Typography } from '@mui/material'
 import { advPlanIcon, listArrowIcon, planBtn, planBtnActive, planSeemoreActiveIcon, planSeemoreIcon, proPlanIcon, provisionIcon, realStoryIcon, restaturantIcon, vipPlanIcon } from '../reuse/icons'
 // import { Zoom, Fade, Rotate, Slide } from 'react-awesome-reveal'
@@ -8,13 +8,13 @@ import { advPlanIcon, listArrowIcon, planBtn, planBtnActive, planSeemoreActiveIc
 const ChoosePlan = () => {
 
   return (
-    <div className={services.planMain}>
+    <div className={mobileapp.planMain}>
       <Box sx={{ maxWidth: '1720px', margin: 'auto' }}>
-        <Grid container alignItems={'center'} rowGap={10} justifyContent={'center'} spacing={{ xs: '0px', sm: '30px' }}>
+        <Grid container alignItems={'center'} rowGap={10} justifyContent={'center'} spacing={{ xs: '0px', sm: '30px' }} className={mobileapp.background2}>
           <Grid item xs={12} >
             <Box sx={{ textAlign: 'center' }}>
-              <Typography color='primary' className={services.subtitle} mb={3}> Choose your plan  </Typography>
-              <Typography className={services.normal} mb={5}> Many advantages to suit your business </Typography>
+              <Typography color='primary' className={mobileapp.subtitle} mb={3}> Choose your plan  </Typography>
+              <Typography className={mobileapp.normal} mb={5}> Many advantages to suit your business </Typography>
               <Box id='switch'>
                 <span>Monthly</span>
                 <label for="toggle">
@@ -28,28 +28,28 @@ const ChoosePlan = () => {
 
 
           <Grid item xs={12} md={6} lg={4}>
-            <Box className={services.planCard} >
+            <Box className={mobileapp.planCard} >
               <Stack direction='row' alignItems='center' justifyContent={'space-between'}>
                 <Box>
-                  <Typography color='primary' className={services.planCardTitle}>Pro Plan</Typography>
-                  <Typography color='primary' className={services.planCardSubtitle}>100 KWD/Year</Typography>
-                  <Typography disabled className={services.planCardDel}> <del>170 KWD Year</del> </Typography>
+                  <Typography color='primary' className={mobileapp.planCardTitle}>Pro Plan</Typography>
+                  <Typography color='primary' className={mobileapp.planCardSubtitle}>100 KWD/Year</Typography>
+                  <Typography disabled className={mobileapp.planCardDel}> <del>170 KWD Year</del> </Typography>
                 </Box>
                 <Box>{proPlanIcon}</Box>
               </Stack>
 
               <Box my={{ xs: 5 }} textAlign='center'>
-                <Button color='secondary' fullWidth className={services.planBtn} endIcon={planBtn} >
+                <Button color='secondary' fullWidth className={mobileapp.planBtn} endIcon={planBtn} >
                   Start Now
                 </Button>
               </Box>
 
               {[1, 1, 1, 1, 1, 1, 1, 1].map((item, indx) => <Stack mt={.5} key={indx} direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
                 <span>{listArrowIcon}</span>
-                <Typography className={services.planListText}>Many advantages to suit your business</Typography>
+                <Typography className={mobileapp.planListText}>Many advantages to suit your business</Typography>
               </Stack>)}
 
-              <ButtonBase disableRipple className={services.planSeeMore}> {planSeemoreIcon}  <span>See More</span> </ButtonBase>
+              <ButtonBase disableRipple className={mobileapp.planSeeMore}> {planSeemoreIcon}  <span>See More</span> </ButtonBase>
 
             </Box>
           </Grid>
@@ -57,29 +57,29 @@ const ChoosePlan = () => {
 
 
           <Grid item xs={12} md={6} lg={4}>
-            <Box className={services.planCardActive} >
+            <Box className={mobileapp.planCardActive} >
               <Stack mb={'63px'} direction='row' alignItems='center' justifyContent={'space-between'}>
                 <Box>
-                  <Typography color='primary' className={services.planCardTitle}>Advenced Plan</Typography>
-                  <Typography color='primary' className={services.planCardSubtitle}>100 KWD/Year</Typography>
-                  <Typography disabled className={services.planCardDelActive}> <del>170 KWD Year</del> </Typography>
+                  <Typography color='primary' className={mobileapp.planCardTitle}>Advenced Plan</Typography>
+                  <Typography color='primary' className={mobileapp.planCardSubtitle}>100 KWD/Year</Typography>
+                  <Typography disabled className={mobileapp.planCardDelActive}> <del>170 KWD Year</del> </Typography>
                 </Box>
                 <Box>{advPlanIcon}</Box>
               </Stack>
 
 
               <Box my={{ xs: 5 }} textAlign='center'>
-                <Button color='primary' variant='contained' fullWidth className={services.planBtnActive} endIcon={planBtnActive} >
+                <Button color='primary' variant='contained' fullWidth className={mobileapp.planBtnActive} endIcon={planBtnActive} >
                   Start Now
                 </Button>
               </Box>
 
               {[1, 1, 1, 1, 1, 1, 1, 1].map((item, indx) => <Stack mt={.5} key={indx} direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
                 <span>{listArrowIcon}</span>
-                <Typography className={services.planListText}>Many advantages to suit your business</Typography>
+                <Typography className={mobileapp.planListText}>Many advantages to suit your business</Typography>
               </Stack>)}
 
-              <ButtonBase disableRipple className={services.planSeeMore}> {planSeemoreActiveIcon}  <span>See More</span> </ButtonBase>
+              <ButtonBase disableRipple className={mobileapp.planSeeMore}> {planSeemoreActiveIcon}  <span>See More</span> </ButtonBase>
 
             </Box>
           </Grid>
@@ -89,28 +89,28 @@ const ChoosePlan = () => {
 
 
           <Grid item xs={12} md={6} lg={4}>
-            <Box className={services.planCard} >
+            <Box className={mobileapp.planCard} >
               <Stack mb={'80px'} direction='row' alignItems='center' justifyContent={'space-between'}>
                 <Box>
-                  <Typography color='primary' className={services.planCardTitle}>Premium Plan</Typography>
-                  <Typography color='primary' className={services.planCardSubtitle}>100 KWD/Year</Typography>
-                  <Typography disabled className={services.planCardDel}> <del>170 KWD Year</del> </Typography>
+                  <Typography color='primary' className={mobileapp.planCardTitle}>Premium Plan</Typography>
+                  <Typography color='primary' className={mobileapp.planCardSubtitle}>100 KWD/Year</Typography>
+                  <Typography disabled className={mobileapp.planCardDel}> <del>170 KWD Year</del> </Typography>
                 </Box>
                 <Box>{vipPlanIcon}</Box>
               </Stack>
 
               <Box my={{ xs: 5 }} textAlign='center'>
-                <Button color='secondary' fullWidth className={services.planBtn} endIcon={planBtn} >
+                <Button color='secondary' fullWidth className={mobileapp.planBtn} endIcon={planBtn} >
                   Start Now
                 </Button>
               </Box>
 
               {[1, 1, 1, 1, 1, 1, 1, 1].map((item, indx) => <Stack mt={.5} key={indx} direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
                 <span>{listArrowIcon}</span>
-                <Typography className={services.planListText}>Many advantages to suit your business</Typography>
+                <Typography className={mobileapp.planListText}>Many advantages to suit your business</Typography>
               </Stack>)}
 
-              <ButtonBase disableRipple className={services.planSeeMore}> {planSeemoreIcon}  <span>See More</span> </ButtonBase>
+              <ButtonBase disableRipple className={mobileapp.planSeeMore}> {planSeemoreIcon}  <span>See More</span> </ButtonBase>
 
             </Box>
           </Grid>

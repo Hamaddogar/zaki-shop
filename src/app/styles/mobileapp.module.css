@@ -2,7 +2,7 @@
   background-image: url('/maBG.png');
   background-size: 100% 100%;
   overflow: hidden;
-  min-height: 1134px;
+  /* min-height: 1134px; */
 }
 
 .title {
@@ -48,11 +48,12 @@
 }
 
 .card {
+  border: 1px solid #1BFCB6;
   max-width: 478px;
-  min-height: 323px;
+  min-height: 349px;
   flex-shrink: 0;
   border-radius: 22px;
-  background: #DDFBF2;
+  background: transparent;
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -71,9 +72,9 @@
 }
 
 .cardTitle {
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   line-height: normal;
   margin-bottom: 18px;
   line-height: 27px;
@@ -92,33 +93,40 @@
   padding: 85px 118px;
   max-width: 1710px;
   margin: auto;
-  min-height: 1045px;
+  /* min-height: 1045px; */
 }
 
-.paymentMain {
+.conversionMain {
   padding: 85px 80px;
-  background: #F0F2FF;
-  min-height: 1045px;
+  background: #EDFFF9;
+  /* min-height: 1045px; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.brandMain {
+.noDeveloper1Main {
   padding: 85px 80px;
-  min-height: 1045px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.themeMain {
+.noDeveloper2Main {
   padding: 85px 80px;
-  background: #16204C;
-  min-height: 1045px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #151B4A;
+
+}
+
+.background {
+  background-image: url('/elli.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.background2 {
+  background-image: url('/elli2.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .bookingMain {
@@ -372,9 +380,9 @@
   }
 
   .planMain,
-  .themeMain,
-  .paymentMain,
-  .brandMain,
+  .noDeveloper2Main,
+  .conversionMain,
+  .noDeveloper1Main,
   .cardsMain,
   .bookingMain {
     min-height: 575px;
@@ -475,9 +483,9 @@
   }
 
   .planMain,
-  .themeMain,
-  .paymentMain,
-  .brandMain,
+  .noDeveloper2Main,
+  .conversionMain,
+  .noDeveloper1Main,
   .cardsMain,
   .bookingMain {
     min-height: auto;

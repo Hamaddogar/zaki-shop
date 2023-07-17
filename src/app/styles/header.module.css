@@ -32,6 +32,23 @@
     right: 0%;
     top: 65px;
 }
+.mainMobileApp {
+    border-radius: 100px;
+    background: rgba(15, 21, 70, 0.70);
+    backdrop-filter: blur(5px);
+    margin-left: auto;
+    margin-right: auto;
+    height: 122px;
+    /* border-radius: 50px; */
+    border: .5px solid #292D58;
+    border-bottom: 0px;
+    padding: 15px 30px;
+    position: absolute;
+    margin: auto;
+    left: 0%;
+    right: 0%;
+    top: 65px;
+}
 
 .main-mobile {
     background-color: transparent;

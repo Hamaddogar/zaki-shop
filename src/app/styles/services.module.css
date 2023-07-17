@@ -19,6 +19,13 @@
   font-size: 40px;
 }
 
+.background2 {
+  background-image: url('/elli2.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .subtitle {
   text-align: center;
   font-size: 50px;
@@ -314,7 +321,8 @@
     min-height: 575px;
     padding: 85px 40px;
   }
-  .planCard{
+
+  .planCard {
     padding: 30px;
   }
 }

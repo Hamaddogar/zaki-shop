@@ -5,23 +5,23 @@ import Footer from '../components/Footer'
 import Introduction from '../components/mobileAppPage/Introduction'
 import header from '@/app/styles/header.module.css'
 import AppsCards from '../components/mobileAppPage/AppsCards'
-import PaymentIntegration from '../components/mobileAppPage/PaymentIntegration'
-import BrandIntegration from '../components/mobileAppPage/BrandIntegration'
-import ThemeCustomization from '../components/mobileAppPage/ThemeCustomization'
 import BookingSession from '../components/mobileAppPage/BookingSession'
 import ChoosePlan from '../components/mobileAppPage/ChoosePlan'
+import Conversion from '../components/mobileAppPage/Conversion'
+import NoDeveloper1 from '../components/mobileAppPage/NoDeveloper1'
+import NoDeveloper2 from '../components/mobileAppPage/NoDeveloper2'
 
 const MobileApp = () => {
   return (
     <div>
-      <Header mainStyle={header.mainService} page={'services'} />
+      <Header mainStyle={header.mainMobileApp} page={'home'} />
       <Introduction />
-      {/* <AppsCards />
-      <PaymentIntegration />
-      <BrandIntegration />
-      <ThemeCustomization />
+      <AppsCards />
+      <Conversion />
+      <NoDeveloper1 />
+      <NoDeveloper2 />
       <BookingSession />
-      <ChoosePlan /> */}
+      <ChoosePlan />
       <Footer />
     </div>
   )
