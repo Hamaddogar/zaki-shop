@@ -63,6 +63,9 @@
   background: #22EDAE
 }
 
+.paymentMain {
+  padding: 85px 60px;
+}
 
 .templateMain {
   padding: 85px 60px;
@@ -149,9 +152,11 @@
 
   .createManageMain,
   .templateMain,
+  .paymentMain,
   .printShareMain,
   .financeMain,
-  .templateMain {
+  .templateMain,
+  .paymentMain {
     min-height: 575px;
     padding: 85px 40px;
   }
@@ -231,9 +236,11 @@
 
   .createManageMain,
   .templateMain,
+  .paymentMain,
   .printShareMain,
   .financeMain,
-  .templateMain {
+  .templateMain,
+  .paymentMain {
     min-height: auto;
     height: 100%;
     padding: 75px 20px;
