@@ -1,10 +1,7 @@
 import React from 'react'
 import marketing from '@/app/styles/marketing.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Grid, Typography } from '@mui/material'
-import { arrowForwardSecond } from '../reuse/icons'
-// import { Zoom, Fade, Rotate, Slide } from 'react-awesome-reveal'
-// import { WritingAnimation } from '../reuse/Animation'
+import { Box, Typography } from '@mui/material'
 
 const HowWork = () => {
 
@@ -23,7 +20,6 @@ const HowWork = () => {
       <Box>
         <Picture src={'/graph.png'} width={1472} height={254} alt='' />
       </Box>
-
     </div>
   )
 }

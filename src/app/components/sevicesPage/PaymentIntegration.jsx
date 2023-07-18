@@ -1,11 +1,8 @@
-'use client'
 import React from 'react'
 import services from '@/app/styles/services.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, ButtonBase, Grid, Stack, Typography } from '@mui/material'
-import { arrowForward, charitiesIcon, contentIcon, digitalIcon, listArrowIcon, miniFace, provisionIcon, realStoryIcon, restaturantIcon } from '../reuse/icons'
-// import { Zoom, Fade, Rotate, Slide } from 'react-awesome-reveal'
-// import { WritingAnimation } from '../reuse/Animation'
+import { Box, Button, Grid, Stack, Typography } from '@mui/material'
+import { arrowForward, listArrowIcon,} from '../reuse/icons'
 
 const PaymentIntegration = () => {
 

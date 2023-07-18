@@ -9,6 +9,10 @@ const theme = createTheme({
     secondary: {
       main: '#1BFCB6', // Customize your secondary color
     },
+    neutral: {
+      main: '#D83B01',
+      contrastText: '#fff',
+    },
     // You can add more colors here, like error, warning, success, etc.
   },
   typography: {

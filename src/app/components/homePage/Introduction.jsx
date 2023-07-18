@@ -1,18 +1,16 @@
-'use client'
 import React from 'react'
 import home from '@/app/styles/home.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Grid, Stack, Typography } from '@mui/material'
 import { arrowForward } from '../reuse/icons'
 import { WritingAnimation } from '../reuse/Animation'
-// import { JackInTheBox, Zoom } from 'react-awesome-reveal'
 
 const Introduction = () => {
   const [playing] = React.useState(false)
 
   return (
     <div className={home.main}>
-      <Box pt={{ xs: '150px', sm: '290px', md:'265' }} pb={10}
+      <Box pt={{ xs: '150px', sm: '290px', md: '265' }} pb={10}
         width={{ xs: '90%', md: '80%' }}
         margin={'auto'}
       >
@@ -35,17 +33,13 @@ const Introduction = () => {
           </Grid>
           <Grid item xs={12} lg={6}>
             <Box p={4}>
-              {/* <JackInTheBox cascade triggerOnce > */}
-                <Picture src={'/face.png'} width={600} height={460} alt='' periorty />
-              {/* </JackInTheBox> */}
+              <Picture src={'/face.png'} width={600} height={460} alt='' periorty />
             </Box>
             <Stack direction={'row'} justifyContent={'center'} alignItems={'center'} spacing={2}>
-              {/* <Zoom triggerOnce cascade> */}
-                {!playing && <Picture center={false} src={'/playIcon.png'} alt='' width={58} height={58} />}
-                {!playing && <Picture center={false} src={'/muteIcon.png'} alt='' width={58} height={58} />}
-                {playing && <Picture center={false} src={'/stopIcon.png'} alt='' width={58} height={58} />}
-                {playing && <Picture center={false} src={'/unmuteIcon.png'} alt='' width={58} height={58} />}
-              {/* </Zoom> */}
+              {!playing && <Picture center={false} src={'/playIcon.png'} alt='' width={58} height={58} />}
+              {!playing && <Picture center={false} src={'/muteIcon.png'} alt='' width={58} height={58} />}
+              {playing && <Picture center={false} src={'/stopIcon.png'} alt='' width={58} height={58} />}
+              {playing && <Picture center={false} src={'/unmuteIcon.png'} alt='' width={58} height={58} />}
             </Stack>
           </Grid>
         </Grid>

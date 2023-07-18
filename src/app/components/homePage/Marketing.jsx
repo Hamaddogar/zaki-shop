@@ -1,10 +1,8 @@
-'use client'
 import React from 'react'
 import home from '@/app/styles/home.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForwardSecond } from '../reuse/icons'
-// import { Slide } from 'react-awesome-reveal'
 import { WritingAnimation } from '../reuse/Animation'
 import Link from 'next/link'
 
@@ -15,9 +13,7 @@ const Marketing = () => {
       <Grid className={home.ac} direction={{ xs: 'column-reverse', lg: 'row' }} container alignItems={'center'} justifyContent={'space-between'} p={{ xs: '50px 0px 50px 0px', lg: '110px 0px 110px 0px' }}>
         <Grid item xs={12} lg={6}>
           <Box pt={{ xs: 8, lg: 0 }}>
-            {/* <Slide triggerOnce cascade direction='left'> */}
             <Picture src={'/marketinng.png'} width={550} height={437} alt='marketing' />
-            {/* </Slide> */}
           </Box>
         </Grid>
         <Grid item xs={12} lg={6}>

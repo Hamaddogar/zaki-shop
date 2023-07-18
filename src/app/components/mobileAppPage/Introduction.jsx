@@ -1,10 +1,8 @@
-'use client'
 import React from 'react'
 import mobileapp from '@/app/styles/mobileapp.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Grid, Stack, Typography } from '@mui/material'
-import { arrowForward, arrowForwardSecond } from '../reuse/icons'
-import { WritingAnimation } from '../reuse/Animation'
+import { Box, Button, Grid, Typography } from '@mui/material'
+import { arrowForward } from '../reuse/icons'
 
 const Introduction = () => {
 
@@ -24,7 +22,6 @@ const Introduction = () => {
                 Without Code
               </Typography>
             </Box>
-
 
           </Grid>
           <Grid item xs={12} >

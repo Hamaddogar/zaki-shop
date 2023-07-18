@@ -4,7 +4,6 @@ import services from '@/app/styles/services.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, ButtonBase, Grid, Stack, Typography } from '@mui/material'
 import { charitiesIcon, contentIcon, digitalIcon, miniFace, provisionIcon, realStoryIcon, restaturantIcon } from '../reuse/icons'
-// import { Zoom, Fade, Rotate, Slide } from 'react-awesome-reveal'
 import { WritingAnimation } from '../reuse/Animation'
 
 const data = [

@@ -1,11 +1,10 @@
-'use client'
 import React from 'react'
 import home from '@/app/styles/home.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForward } from '../reuse/icons'
 import { WritingAnimation } from '../reuse/Animation'
-// import { Slide } from 'react-awesome-reveal'
+import Link from 'next/link'
 
 const Invoices = () => {
 
@@ -18,9 +17,11 @@ const Invoices = () => {
             <Typography mb={{ xs: 5 }} className={home['text-primary']}>
               Our IA can generate and create a beautiful website whatever your field of activity
             </Typography>
-            <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
-              Start Now
-            </Button>
+            <Link href={'/invoices'}>
+              <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
+                Start Now
+              </Button>
+            </Link>
           </Box>
         </Grid>
 

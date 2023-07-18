@@ -212,6 +212,19 @@ export const listArrowIcon = <svg xmlns="http://www.w3.org/2000/svg" width="21" 
 </svg>
 
 
+export const listArrowWhiteIcon = <svg xmlns="http://www.w3.org/2000/svg" width="21" height="27" viewBox="0 0 21 27" fill="none">
+    <g clip-path="url(#clip0_730_6556)">
+        <path d="M17 14L6 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M17.207 14L9.3737 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M17.207 14L9.3737 22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <defs>
+        <clipPath id="clip0_730_6556">
+            <rect width="21" height="27" fill="white" transform="translate(21 27) rotate(-180)" />
+        </clipPath>
+    </defs>
+</svg>
+
 export const realStoryIcon = <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
     <g clip-path="url(#clip0_378_3522)">
         <path d="M3.75 26.25H26.25" stroke="#0F1546" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

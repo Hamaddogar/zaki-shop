@@ -1,10 +1,8 @@
-'use client'
 import React from 'react'
 import home from '@/app/styles/home.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForward } from '../reuse/icons'
-// import { Slide } from 'react-awesome-reveal'
 import { WritingAnimation } from '../reuse/Animation'
 import Link from 'next/link'
 
@@ -29,9 +27,7 @@ const MobileApp = () => {
 
         <Grid item xs={12} lg={6} >
           <Box >
-            {/* <Slide triggerOnce cascade direction='right'> */}
             <Picture src={'/mobileapp.png'} width={274} height={396} alt='MobileApp' />
-            {/* </Slide> */}
           </Box>
         </Grid>
       </Grid>

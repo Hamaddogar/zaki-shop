@@ -1,10 +1,8 @@
-'use client'
 import React from 'react'
 import services from '@/app/styles/services.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Grid, Stack, Typography } from '@mui/material'
+import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForwardSecond } from '../reuse/icons'
-import { WritingAnimation } from '../reuse/Animation'
 
 const Introduction = () => {
 

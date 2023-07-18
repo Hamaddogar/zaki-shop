@@ -12,12 +12,9 @@ const Introduction = () => {
         width={{ xs: '90%', }}
         margin={'auto'}
       >
-
-
         <Box width={{ xs: '80%', md: '740px' }} margin='auto' mb={2}>
           <Typography color='primary' mb={1.3} className={marketing.subtitle}>
             Think of it as an ad
-
           </Typography>
           <Typography color='primary' className={marketing.subtitle}>
             agency in one place.
@@ -28,7 +25,6 @@ const Introduction = () => {
             Start Now
           </Button>
         </Box>
-
       </Box>
       <Box position='relative' bottom={{ xs: 0, lg: '-70px' }} >
         <Picture src={'/marketingmain.png'} width={3440} height={1275} alt='' periorty />

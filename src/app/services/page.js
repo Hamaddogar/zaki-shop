@@ -10,7 +10,7 @@ import ThemeCustomization from '../components/sevicesPage/ThemeCustomization'
 import BookingSession from '../components/sevicesPage/BookingSession'
 import ChoosePlan from '../components/sevicesPage/ChoosePlan'
 
-const Home = () => {
+const Service = () => {
   return (
     <div>
       <Header mainStyle={header.mainService} menu={'light'} />
@@ -26,4 +26,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Service

@@ -51,7 +51,8 @@
     top: 65px;
 }
 
-.mainMarketing {
+.mainMarketing,
+.mainInvoices {
     border-radius: 100px;
     background: rgba(15, 21, 70, 0.70);
     backdrop-filter: blur(5px);
@@ -165,7 +166,8 @@
 
     .mainService,
     .mainMobileApp,
-    .mainMarketing {
+    .mainMarketing,
+    .mainInvoices {
         height: 74px;
     }
 
@@ -195,7 +197,8 @@
     .main,
     .mainService,
     .mainMobileApp,
-    .mainMarketing {
+    .mainMarketing,
+    .mainInvoices {
         display: none;
     }
 

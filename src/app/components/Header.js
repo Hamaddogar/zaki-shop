@@ -9,7 +9,6 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import { languageIcon, downIcon } from './reuse/icons';
 import MobileNav from './MobileNav';
 import Link from 'next/link'
-// import { Slide } from 'react-awesome-reveal'
 
 const Header = ({ mainStyle, menu }) => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -58,13 +57,10 @@ const Header = ({ mainStyle, menu }) => {
         <MobileNav open={openNav} setOpen={setOpenNav} menu={menuIs} />
       </Box>
       <Stack width={{ xs: '95%', md: '85%' }} sx={{ margin: 'auto' }} direction='row' alignItems='center' justifyContent={'space-between'} className={mainStyle}>
-        {/* <Slide triggerOnce direction='right'> */}
         <Link href={'/'}>
           <Picture center={false} src={'/logo-md.png'} width={300} height={47} alt={'logo'} periorty className={header.logomd} />
         </Link>
-        {/* </Slide> */}
 
-        {/* <Slide triggerOnce direction='left'> */}
         <Stack direction={'row'} alignItems={'center'} spacing={3}>
           <ButtonBase color='primary' className={header.login} >Login</ButtonBase>
           <Button className={header.language}
@@ -77,7 +73,6 @@ const Header = ({ mainStyle, menu }) => {
           </Button>
           <Picture center={false} src={'/menu.png'} width={48} height={48} alt={'logo'} periorty />
         </Stack>
-        {/* </Slide> */}
       </Stack>
       <Menu
         anchorEl={anchorEl}

@@ -1,11 +1,8 @@
-'use client'
 import React from 'react'
 import mobileapp from '@/app/styles/mobileapp.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Grid, Stack, Typography } from '@mui/material'
 import { arrowForward, listArrowIcon } from '../reuse/icons'
-// import { Zoom, Fade, Rotate, Slide } from 'react-awesome-reveal'
-// import { WritingAnimation } from '../reuse/Animation'
 
 const BookingSession = () => {
 

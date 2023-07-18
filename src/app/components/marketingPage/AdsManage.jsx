@@ -3,15 +3,12 @@ import marketing from '@/app/styles/marketing.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Grid, Stack, Typography } from '@mui/material'
 import { listArrowIcon, } from '../reuse/icons'
-// import { Zoom, Fade, Rotate, Slide } from 'react-awesome-reveal'
-// import { WritingAnimation } from '../reuse/Animation'
 
 const AdsManage = () => {
 
   return (
     <div className={marketing.adsManageMain}>
       <Grid container alignItems={'center'} justifyContent={'center'} rowGap={'40px'} spacing={'3px'}>
-
         <Grid item xs={12} md={6} lg={5}>
           <Box pl={2} >
             <Typography className={marketing.titleIntegration} color="primary" >Turn and manage 🤑 <br />
@@ -50,7 +47,6 @@ const AdsManage = () => {
               <Picture src={'/soc7.png'} width={30} height={30} alt='' />
             </Stack>
           </Box>
-
         </Grid>
 
         <Grid item xs={12} md={6} lg={7}>

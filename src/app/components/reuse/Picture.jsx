@@ -6,11 +6,9 @@ const Picture = ({ src, alt, center = true, ...rest }) => {
     return (center ?
         <div className={common['img-center-container']}  >
             <Image layout="intrinsic" src={src} alt={alt} {...rest} />
-            {/* <img src={src} alt={alt} height={height} style={{ width: '100%', maxWidth: width }} /> */}
         </div>
         :
         <Image layout="intrinsic" src={src} alt={alt} {...rest} />
-        // <img src={src} alt={alt} height={height} style={{ width: '100%', maxWidth: width }} />
     )
 }
 

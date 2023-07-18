@@ -3,19 +3,13 @@ import marketing from '@/app/styles/marketing.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForwardSecond } from '../reuse/icons'
-// import { Zoom, Fade, Rotate, Slide } from 'react-awesome-reveal'
-// import { WritingAnimation } from '../reuse/Animation'
 
 const GrnerateLeads = () => {
 
   return (
     <div className={marketing.grnerateLeadsMain}>
-
-
-
       <Grid container alignItems='center' justifyContent='center' rowGap={5} position='relative'>
         <Grid item xs={12} md={4}>
-
           <Box
             position={{ xs: 'relative', md: 'absolute' }}
             top={{ xs: '0px', md: '29%' }}
@@ -42,24 +36,13 @@ const GrnerateLeads = () => {
               </Button>
             </Box>
           </Box>
-
         </Grid>
         <Grid item xs={12} md={7}>
           <Picture src={'/leads.png'} width={1472} height={254} alt='' />
         </Grid>
       </Grid>
-
-
-
-
-
-
-
-
       <Box>
-
       </Box>
-
     </div>
   )
 }

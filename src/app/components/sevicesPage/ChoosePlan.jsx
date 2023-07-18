@@ -1,9 +1,7 @@
-'use client'
 import React from 'react'
 import services from '@/app/styles/services.module.css'
 import { Box, Button, ButtonBase, Grid, Stack, Typography } from '@mui/material'
 import { advPlanIcon, listArrowIcon, planBtn, planBtnActive, planSeemoreActiveIcon, planSeemoreIcon, proPlanIcon, provisionIcon, realStoryIcon, restaturantIcon, vipPlanIcon } from '../reuse/icons'
-// import { Zoom, Fade, Rotate, Slide } from 'react-awesome-reveal'
 
 const ChoosePlan = () => {
 
