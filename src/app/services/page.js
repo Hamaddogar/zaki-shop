@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -14,7 +13,7 @@ import ChoosePlan from '../components/sevicesPage/ChoosePlan'
 const Home = () => {
   return (
     <div>
-      <Header mainStyle={header.mainService} page={'services'} />
+      <Header mainStyle={header.mainService} menu={'light'} />
       <Introduction />
       <ServiceCards />
       <PaymentIntegration />

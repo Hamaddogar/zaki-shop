@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import services from '@/app/styles/services.module.css'
 import Picture from '../reuse/Picture'

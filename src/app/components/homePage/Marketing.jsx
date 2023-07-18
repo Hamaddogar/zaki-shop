@@ -6,6 +6,7 @@ import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForwardSecond } from '../reuse/icons'
 // import { Slide } from 'react-awesome-reveal'
 import { WritingAnimation } from '../reuse/Animation'
+import Link from 'next/link'
 
 const Marketing = () => {
 
@@ -25,9 +26,11 @@ const Marketing = () => {
             <Typography mb={{ xs: 5 }} className={home['text-moon']}>
               Our IA can generate and create a beautiful website whatever your field of activity
             </Typography>
-            <Button color='secondary' className={home.secondaryBtn} endIcon={arrowForwardSecond} >
-              Start Now
-            </Button>
+            <Link href={'/marketing'}>
+              <Button color='secondary' className={home.secondaryBtn} endIcon={arrowForwardSecond} >
+                Start Now
+              </Button>
+            </Link>
           </Box>
 
         </Grid>

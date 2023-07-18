@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import Introduction from './components/homePage/Introduction';
 import Header from './components/Header';
@@ -13,7 +12,7 @@ import home from '@/app/styles/header.module.css'
 const Home = () => {
   return (
     <div>
-      <Header mainStyle={home.main} />
+      <Header mainStyle={home.main} menu='dark' />
       <Introduction />
       <Websites />
       <MobileApp />

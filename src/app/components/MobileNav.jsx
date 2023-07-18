@@ -1,10 +1,10 @@
-'use client'
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import { Box, ButtonBase, Stack, Typography } from '@mui/material';
-import { closeIcon, downIcon, drawerLogo, facebookIcon, languageIcon, linkedinIcon, twitterIcon } from './reuse/icons';
+import { downIcon, drawerLogo, facebookIcon, languageIcon, linkedinIcon, twitterIcon } from './reuse/icons';
 import header from '@/app/styles/header.module.css';
+import Picture from './reuse/Picture';
 // import { Slide } from 'react-awesome-reveal';
 
 export default function MobileNav({ open, setOpen }) {
@@ -25,7 +25,7 @@ export default function MobileNav({ open, setOpen }) {
             >
                 <Stack direction='row' alignItems='center' justifyContent={'space-between'}>
                     <Box>{drawerLogo}</Box>
-                    <Box onClick={handleClose}>{closeIcon}</Box>
+                        <Picture onClick={handleClose} center={false} src={'/close.png'} width={48} height={48} alt={'logo'} periorty />
                 </Stack>
 
                 <Stack mt={'100px'} sx={{ position: 'relative', height: 'calc(100% - 150px)' }} justifyContent={'space-between'}>
@@ -54,23 +54,23 @@ export default function MobileNav({ open, setOpen }) {
                         <Typography className={header['inner-nav-footer']} >Follow us in social media</Typography>
                         <Stack direction='row' alignItems={'center'} spacing={2} >
                             {/* <Slide triggerOnce cascade direction='up'> */}
-                                <a
-                                    href="https://vercel.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >{facebookIcon}</a>
+                            <a
+                                href="https://vercel.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >{facebookIcon}</a>
 
-                                <a
-                                    href="https://vercel.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >{linkedinIcon}</a>
+                            <a
+                                href="https://vercel.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >{linkedinIcon}</a>
 
-                                <a
-                                    href="https://vercel.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >{twitterIcon}</a>
+                            <a
+                                href="https://vercel.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >{twitterIcon}</a>
                             {/* </Slide> */}
                         </Stack>
                     </Box>

@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -14,7 +13,7 @@ import NoDeveloper2 from '../components/mobileAppPage/NoDeveloper2'
 const MobileApp = () => {
   return (
     <div>
-      <Header mainStyle={header.mainMobileApp} page={'home'} />
+      <Header mainStyle={header.mainMobileApp} menu={'dark'} />
       <Introduction />
       <AppsCards />
       <Conversion />

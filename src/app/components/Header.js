@@ -11,7 +11,7 @@ import MobileNav from './MobileNav';
 import Link from 'next/link'
 // import { Slide } from 'react-awesome-reveal'
 
-const Header = ({ mainStyle, page }) => {
+const Header = ({ mainStyle, menu }) => {
   const [openNav, setOpenNav] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -23,11 +23,11 @@ const Header = ({ mainStyle, page }) => {
   };
 
   const handleMenu = () => setOpenNav(true);
-  const [pageIs, setPageIs] = React.useState('home')
+  const [menuIs, setMenuIs] = React.useState('home')
 
   React.useEffect(() => {
-    if (page) setPageIs(page)
-  }, [page])
+    if (menu) setMenuIs(menu)
+  }, [menu])
 
 
 
@@ -36,26 +36,26 @@ const Header = ({ mainStyle, page }) => {
   return (
     <Box>
       <Box className={header['main-mobile']}>
-        {pageIs === 'home' &&
+        {menuIs === 'light' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture center={false} src={'/logo-md.png'} width={200} height={47} alt={'logo'} periorty className={header.logomd} />
+              <Picture center={false} src={'/logo-md.png'} width={169} height={37} alt={'logo'} periorty className={header.logomd} />
             </Link>
-            <Picture onClick={handleMenu} center={false} src={'/menu.png'} width={37} height={37} alt={'logo'} />
+            <Picture onClick={handleMenu} center={false} src={'/menu.png'} width={48} height={48} alt={'logo'} periorty />
           </Stack>}
 
-        {pageIs === 'services' &&
+        {menuIs === 'dark' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture center={false} src={'/logo-md.png'} width={200} height={47} alt={'logo'} periorty className={header.logomd} />
+              <Picture center={false} src={'/logo-dark.png'} width={169} height={37} alt={'logo'} periorty className={header.logomd} />
             </Link>
-            <Picture onClick={handleMenu} center={false} src={'/menuWhite.png'} width={37} height={37} alt={'logo'} />
+            <Picture onClick={handleMenu} center={false} src={'/menu.png'} width={48} height={48} alt={'logo'} periorty />
           </Stack>}
 
 
 
 
-        <MobileNav open={openNav} setOpen={setOpenNav} page={page} />
+        <MobileNav open={openNav} setOpen={setOpenNav} menu={menuIs} />
       </Box>
       <Stack width={{ xs: '95%', md: '85%' }} sx={{ margin: 'auto' }} direction='row' alignItems='center' justifyContent={'space-between'} className={mainStyle}>
         {/* <Slide triggerOnce direction='right'> */}
@@ -75,6 +75,7 @@ const Header = ({ mainStyle, page }) => {
           >
             <span>English</span>
           </Button>
+          <Picture center={false} src={'/menu.png'} width={48} height={48} alt={'logo'} periorty />
         </Stack>
         {/* </Slide> */}
       </Stack>
