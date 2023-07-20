@@ -2,6 +2,7 @@ import React from 'react'
 import services from '@/app/styles/services.module.css'
 import { Box, Button, ButtonBase, Grid, Stack, Typography } from '@mui/material'
 import { advPlanIcon, listArrowIcon, planBtn, planBtnActive, planSeemoreActiveIcon, planSeemoreIcon, proPlanIcon, provisionIcon, realStoryIcon, restaturantIcon, vipPlanIcon } from '../reuse/icons'
+import Picture from '../reuse/Picture'
 
 const ChoosePlan = () => {
 
@@ -62,7 +63,7 @@ const ChoosePlan = () => {
                   <Typography color='primary' className={services.planCardSubtitle}>100 KWD/Year</Typography>
                   <Typography disabled className={services.planCardDelActive}> <del>170 KWD Year</del> </Typography>
                 </Box>
-                <Box>{advPlanIcon}</Box>
+                <Box> <Picture src={'/diamond.svg'} width={107} height={113} alt='pro' /></Box>
               </Stack>
 
 

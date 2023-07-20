@@ -19,8 +19,19 @@ const ServiceCards = () => {
 
   return (
     <div className={services.cardsMain}>
-      <Box className={services.titleContainer}>
-        <Typography color='primary' className={services.subtitlemain}>At Over Zaki, we understand the diverse needs  of businesses across different industries.</Typography>
+      <Box mb={{ xs: '43px', md: '29px', lg: '72px' }}>
+        <Typography
+          color='primary'
+          fontWeight={{ xs: 800 }}
+          fontSize={{ xs: '23px', md: '30px', lg: '40px' }}
+          lineHeight={{ xs: '31px', md: '39px', lg: '45px' }}
+          maxWidth={{ xs: '300px', md: '800px', lg: '1040px' }}
+          margin='auto'
+          textAlign='center'
+        >
+          At Over Zaki, we understand the diverse needs  of businesses across different industries.
+        </Typography>
+
       </Box>
       <Grid container alignItems={'center'} justifyContent={'space-between'} spacing={'30px'}>
         {data.map((item, indx) => (<Grid item xs={12} sm={6} md={4} key={indx} >

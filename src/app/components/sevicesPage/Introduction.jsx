@@ -1,41 +1,45 @@
 import React from 'react'
+import common from '@/app/styles/common.module.css'
 import services from '@/app/styles/services.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Grid, Typography } from '@mui/material'
+import { Box, Button, Hidden, Typography } from '@mui/material'
 import { arrowForwardSecond } from '../reuse/icons'
 
-const Introduction = () => {
+const Introduction = ({ children, hgap }) => {
 
   return (
-    <div className={services.main}>
-      <Box pt={{ xs: '150px', sm: '290px', md: '305px' }} pb={10}
-        width={{ xs: '90%', }}
-        margin={'auto'}
-      >
-        <Grid container alignItems={'center'} justifyContent={'space-between'}>
-          <Grid item xs={12}>
-            <Box width={{ xs: '80%', md: '740px' }} margin='auto' mb={.5}>
-              <Typography sx={{ color: 'white' }} className={services.subtitle}>
-                Create and customize
-              </Typography> <Typography sx={{ color: 'white' }} className={services.subtitle}>
-                your website in one minute
-              </Typography>
-            </Box>
+    <div className={common.BGM}>
+      <div className={services.main}>
+        <Box pt={{ xs: '20px', md: '65px' }} >{children}</Box>
+        <Box pt={hgap} pb={{ xs: '80px', md: '100px', lg: '100px' }}>
+          <Box sx={{ color: '#FFFFFF' }} textAlign={'center'} width={{ xs: '80%', md: '100%' }} margin='auto'>
 
-
-          </Grid>
-          <Grid item xs={12} >
-            <Box my={{ xs: 5 }} textAlign='center'>
-              <Button color='secondary' className={services.secondaryBtn} endIcon={arrowForwardSecond} >
-                Start Now
-              </Button>
+            <Typography
+              fontWeight={{ xs: 800 }}
+              fontSize={{ xs: '23px', md: '50px', lg: '50px' }}
+              lineHeight={{ xs: '29px', md: '49px', lg: '49px' }}
+            >
+              Create and customize <br />
+              your website in one minute
+            </Typography>
+          </Box>
+          <Box my="40px" textAlign='center'>
+            <Button color='secondary' className={services.secondaryBtn} endIcon={arrowForwardSecond} >
+              Start Now
+            </Button>
+          </Box>
+          <Box>
+            <Box width={{ xs: '90%', md: '80%', lg: '70%' }} margin='auto'>
+              <Hidden lgDown>
+                <Picture src={'/weblg.svg'} width={1095} height={487} alt='' periorty />
+              </Hidden>
+              <Hidden lgUp>
+                <Picture src={'/webmd.svg'} width={820} height={619} alt='' periorty />
+              </Hidden>
             </Box>
-            <Box width={{xs:'90%',md:'80%', lg:'70%'}} margin='auto'>
-              <Picture src={'/webmain.png'} width={1900} height={1300} alt='' periorty />
-            </Box>
-          </Grid>
-        </Grid>
-      </Box>
+          </Box>
+        </Box>
+      </div>
     </div>
   )
 }

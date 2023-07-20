@@ -19,6 +19,13 @@
   font-size: 40px;
 }
 
+.titleIntegration2 {
+  font-style: normal;
+  font-weight: 900;
+  line-height: 29px;
+  font-size: 35px;
+}
+
 .background2 {
   background-image: url('/elli2.png');
   background-position: center center;
@@ -96,10 +103,10 @@
 
 /* Integration Payments */
 .cardsMain {
-  padding: 85px 118px;
+  padding: 85px 114px;
   max-width: 1710px;
   margin: auto;
-  min-height: 1045px;
+  /* min-height: 1045px; */
 }
 
 .paymentMain {
@@ -335,6 +342,11 @@
     line-height: 40px;
   }
 
+  .titleIntegration2 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
   .cardsMain {
     padding: 85px 80px;
   }
@@ -352,6 +364,11 @@
   .subtitlemain,
   .titleIntegration {
     font-size: 27px;
+    line-height: 35px;
+  }
+
+  .titleIntegration2 {
+    font-size: 23px;
     line-height: 35px;
   }
 
@@ -378,6 +395,11 @@
     line-height: 32px;
   }
 
+  .titleIntegration2 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
   .planMain,
   .themeMain,
   .paymentMain,
@@ -390,6 +412,10 @@
 
   .normal2 {
     font-size: 15px;
+  }
+
+  .card {
+    padding: 25px;
   }
 }
 
@@ -414,6 +440,24 @@
   .normal2 {
     font-size: 15px;
   }
+
+  .titleIntegration {
+    font-size: 25px;
+    line-height: 32px;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .titleIntegration2 {
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  .paymentMain,
+  .brandMain,
+  .themeMain {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -424,7 +468,6 @@
   .cardTitle {
     font-size: 25px;
   }
-
 }
 
 @media only screen and (max-width: 700px) {
@@ -476,10 +519,6 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .titleIntegration {
-    font-size: 23px;
-    line-height: 32px;
-  }
 
   .planMain,
   .themeMain,

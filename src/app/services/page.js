@@ -13,8 +13,9 @@ import ChoosePlan from '../components/sevicesPage/ChoosePlan'
 const Service = () => {
   return (
     <div>
-      <Header mainStyle={header.mainService} menu={'light'} />
-      <Introduction />
+      <Introduction hgap={{ xs: '48px', sm: '70px', md: '100px', lg: '108px' }}>
+        <Header mainStyle={header.mainService} menu={'light'} />
+      </Introduction>
       <ServiceCards />
       <PaymentIntegration />
       <BrandIntegration />

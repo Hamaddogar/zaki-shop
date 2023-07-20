@@ -12,9 +12,7 @@ const Introduction = ({ children, hgap }) => {
   return (
     <div className={common.BGM}>
       <div className={home.main}>
-        <Box
-          pt={{ xs: '20px', md: '65px' }}
-        >{children}</Box>
+        <Box pt={{ xs: '20px', md: '65px' }} >{children}</Box>
         <Box pt={hgap} pb={{ xs: '100px', md: '85px', lg: 'auto' }}>
           <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '30px' }}>
             <Box>

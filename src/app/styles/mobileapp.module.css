@@ -1,6 +1,6 @@
 .main {
-  background-image: url('/maBG.png');
-  background-size: 100% 100%;
+  background-color: rgba(54, 249, 189, 0.10);
+  backdrop-filter: blur(17px);
   overflow: hidden;
   /* min-height: 1134px; */
 }
