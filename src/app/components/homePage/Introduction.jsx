@@ -15,7 +15,7 @@ const Introduction = ({ children, hgap }) => {
         <Box
           pt={{ xs: '20px', md: '65px' }}
         >{children}</Box>
-        <Box pt={hgap} pb={{ xs: '100px', md: '85px', lg: 'auto' }} >
+        <Box pt={hgap} pb={{ xs: '100px', md: '85px', lg: 'auto' }}>
           <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '30px' }}>
             <Box>
               <Box textAlign={{ xs: 'center', lg: 'left' }} width={{ xs: '80%', md: '100%' }} margin='auto'>
