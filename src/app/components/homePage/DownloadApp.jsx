@@ -46,7 +46,7 @@ const DownloadApp = () => {
         </Box>
         <Stack direction={{ xs: 'column' }} alignItems='center' justifyContent={{ xs: 'center', lg: 'flex-start' }} spacing={1.5} mb={'20px'}>
           <Box textAlign={{ xs: 'center', lg: 'left' }}>
-            <Box>{downloadZIcon}</Box>
+            {/* <Box>{downloadZIcon}</Box> */}
             <Typography
               fontWeight={{ xs: 900 }}
               fontSize={{ xs: '22px', md: '42px', lg: '42px' }}
