@@ -5,14 +5,8 @@
     margin-left: auto;
     margin-right: auto;
     height: 122px;
-    /* border-radius: 50px; */
-    /* border: 1px solid white; */
-    padding: 15px 30px;
-    position: absolute;
     margin: auto;
-    left: 0%;
-    right: 0%;
-    top: 65px;
+    padding: 15px 30px;
 }
 
 .mainService {
@@ -22,15 +16,10 @@
     margin-left: auto;
     margin-right: auto;
     height: 122px;
-    /* border-radius: 50px; */
     border: .5px solid #292D58;
     border-bottom: 0px;
     padding: 15px 30px;
-    position: absolute;
     margin: auto;
-    left: 0%;
-    right: 0%;
-    top: 65px;
 }
 
 .mainMobileApp {
@@ -40,15 +29,10 @@
     margin-left: auto;
     margin-right: auto;
     height: 122px;
-    /* border-radius: 50px; */
     border: .5px solid #292D58;
     border-bottom: 0px;
     padding: 15px 30px;
-    position: absolute;
     margin: auto;
-    left: 0%;
-    right: 0%;
-    top: 65px;
 }
 
 .mainMarketing,
@@ -59,28 +43,19 @@
     margin-left: auto;
     margin-right: auto;
     height: 122px;
-    /* border-radius: 50px; */
     border: .5px solid #292D58;
     border-bottom: 0px;
     padding: 15px 30px;
-    position: absolute;
     margin: auto;
-    left: 0%;
-    right: 0%;
-    top: 65px;
 }
 
 .main-mobile {
     background-color: transparent;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 20px;
+    padding: 0px 20px;
     display: none;
-    position: absolute;
     margin: auto;
-    left: 0%;
-    right: 0%;
-    top: 54px;
 }
 
 .login {

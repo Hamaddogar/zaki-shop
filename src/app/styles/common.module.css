@@ -41,6 +41,20 @@
     animation: loading 1.2s infinite;
 }
 
+.emailBtn {
+    background: #75F7BB;
+    border-radius: 100px;
+    padding: 10px 20px;
+}
+
+/* BACKGROUND RELATED */
+
+.BGM {
+    background: url('/dc.svg'), lightgray 50% / cover no-repeat;
+    background-size: cover;
+}
+
+
 @keyframes loading {
     0% {
         transform: rotate(0);

@@ -1,35 +1,45 @@
 import React from 'react'
 import home from '@/app/styles/home.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Grid, Typography } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
 import { arrowForwardSecond } from '../reuse/icons'
-import { WritingAnimation } from '../reuse/Animation'
 import Link from 'next/link'
 
 const Websites = () => {
 
   return (
-    <div className={home.websites}>
-      <Grid className={home.ac} container direction={{ xs: 'column-reverse', lg: 'row' }} alignItems={'center'} justifyContent={'space-between'} pt={{ xs: '50px', lg: '0px' }}>
-        <Grid item xs={12} lg={6}>
-          <Box >
-            <Picture src={'/websites.png'} width={402} height={349} alt='websites' />
-          </Box>
-        </Grid>
-        <Grid item xs={12} lg={6}>
-          <Box textAlign={{ xs: 'center', lg: 'left' }}>
-            <Typography color='info' className={home['title-moon']} mb={4}><WritingAnimation text='Websites' /></Typography>
-            <Typography mb={{ xs: 5 }} color='info' className={home['text-moon']}>Our IA can generate and create a beautiful website whatever your field of activity </Typography>
-            <Link href={'/services'}>
-              <Button color='secondary' className={home.secondaryBtn} endIcon={arrowForwardSecond} >
-                Start Now
-              </Button>
-            </Link>
-          </Box>
+    <Box className={home.websites}>
+      <Box sx={{ display: 'flex', flexDirection: { xs: 'column-reverse', lg: 'row' }, flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '30px', placeItems: 'center' }}>
+        <Box width={{ xs: '80%', lg: 'auto' }} margin='auto' pr={{ xs: 0, lg: 3 }}>
+          <Picture src={'/websites.svg'} width={402} height={349} alt='websites' />
+        </Box>
+        <Box textAlign={{ xs: 'center', lg: 'left' }}>
+          <Typography
+            sx={{ color: '#FFFFFF' }}
+            fontWeight={{ xs: 900 }}
+            fontSize={{ xs: '40px', md: '45px', lg: '106px' }}
+            lineHeight={{ xs: '85px', md: '85px', lg: '135px' }}
+          >
+            Websites
+          </Typography>
 
-        </Grid>
-      </Grid>
-    </div>
+          <Typography mb={{ xs: '31px' }}
+            marginX={{ xs: 'auto', lg: '0px' }}
+            maxWidth={{ xs: '327px', md: '432px', lg: '599px' }}
+            sx={{ color: '#FFFFFF' }}
+            fontWeight={{ xs: 400 }}
+            fontSize={{ xs: '16px', md: '20px', lg: '33px' }}
+            lineHeight={{ xs: 'normal', md: 'normal', lg: 'normal' }}
+          >Our IA can generate and create a beautiful website whatever your field of activity </Typography>
+
+          <Link href={'/services'}>
+            <Button color='secondary' className={home.secondaryBtn} endIcon={arrowForwardSecond} >
+              Start Now
+            </Button>
+          </Link>
+        </Box>
+      </Box>
+    </Box>
   )
 }
 

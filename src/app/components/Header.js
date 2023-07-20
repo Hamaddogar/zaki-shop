@@ -38,17 +38,17 @@ const Header = ({ mainStyle, menu }) => {
         {menuIs === 'light' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture center={false} src={'/logo-md.png'} width={169} height={37} alt={'logo'} periorty className={header.logomd} />
+              <Picture center={false} src={'/logo-md.svg'} width={169} height={37} alt={'logo'} periorty className={header.logomd} />
             </Link>
-            <Picture onClick={handleMenu} center={false} src={'/menu.png'} width={48} height={48} alt={'logo'} periorty />
+            <Picture onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} periorty />
           </Stack>}
 
         {menuIs === 'dark' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture center={false} src={'/logo-dark.png'} width={169} height={37} alt={'logo'} periorty className={header.logomd} />
+              <Picture center={false} src={'/logo-dark.svg'} width={169} height={37} alt={'logo'} periorty className={header.logomd} />
             </Link>
-            <Picture onClick={handleMenu} center={false} src={'/menu.png'} width={48} height={48} alt={'logo'} periorty />
+            <Picture onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} periorty />
           </Stack>}
 
 
@@ -58,7 +58,7 @@ const Header = ({ mainStyle, menu }) => {
       </Box>
       <Stack width={{ xs: '95%', md: '85%' }} sx={{ margin: 'auto' }} direction='row' alignItems='center' justifyContent={'space-between'} className={mainStyle}>
         <Link href={'/'}>
-          <Picture center={false} src={'/logo-md.png'} width={300} height={47} alt={'logo'} periorty className={header.logomd} />
+          <Picture center={false} src={'/logo-md.svg'} width={300} height={47} alt={'logo'} periorty className={header.logomd} />
         </Link>
 
         <Stack direction={'row'} alignItems={'center'} spacing={3}>
@@ -71,7 +71,7 @@ const Header = ({ mainStyle, menu }) => {
           >
             <span>English</span>
           </Button>
-          <Picture center={false} src={'/menu.png'} width={48} height={48} alt={'logo'} periorty />
+          <Picture center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} periorty />
         </Stack>
       </Stack>
       <Menu

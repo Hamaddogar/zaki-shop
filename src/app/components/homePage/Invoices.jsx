@@ -10,27 +10,33 @@ const Invoices = () => {
 
   return (
     <div className={home.Invoices}>
-      <Grid className={home.ac} container alignItems={'center'} rowGap={6} justifyContent={'space-between'} p={{ xs: '50px 0px 50px 0px', lg: '110px 0px 110px 0px' }}>
-        <Grid item xs={12} lg={6}>
-          <Box textAlign={{ xs: 'center', lg: 'left' }}>
-            <Typography className={home['title-primary']} mb={4}><WritingAnimation text='Invoices' /></Typography>
-            <Typography mb={{ xs: 5 }} className={home['text-primary']}>
-              Our IA can generate and create a beautiful website whatever your field of activity
-            </Typography>
-            <Link href={'/invoices'}>
-              <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
-                Start Now
-              </Button>
-            </Link>
-          </Box>
-        </Grid>
+      <Box sx={{ color: '#0F1546', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '30px', placeItems: 'center' }}>
+        <Box textAlign={{ xs: 'center', lg: 'left' }}>
+          <Typography
+            fontWeight={{ xs: 900 }}
+            fontSize={{ xs: '40px', md: '45px', lg: '103px' }}
+            lineHeight={{ xs: '85px', md: '85px', lg: '135px' }}
+          >
+            Invoices
+          </Typography>
 
-        <Grid item xs={12} lg={6}>
-          <Box >
-            <Picture src={'/invoices.png'} width={314} height={405} alt='invoices' />
-          </Box>
-        </Grid>
-      </Grid>
+          <Typography mb={{ xs: '31px' }}
+            marginX={{ xs: 'auto', lg: '0px' }}
+            maxWidth={{ xs: '327px', md: '432px', lg: '599px' }}
+            fontWeight={{ xs: 400 }}
+            fontSize={{ xs: '16px', md: '20px', lg: '33px' }}
+            lineHeight={{ xs: 'normal', md: 'normal', lg: 'normal' }}
+          >Our IA can generate and create a beautiful website whatever your field of activity </Typography>
+          <Link href={'/invoices'}>
+            <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
+              Start Now
+            </Button>
+          </Link>
+        </Box>
+        <Box width={{ xs: '80%', lg: 'auto' }} margin='auto' pl={{ xs: 0, lg: 3 }}>
+          <Picture src={'/invoices.svg'} width={314} height={405} alt='invoices' />
+        </Box>
+      </Box>
     </div>
   )
 }

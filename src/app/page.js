@@ -12,8 +12,9 @@ import home from '@/app/styles/header.module.css'
 const Home = () => {
   return (
     <div>
-      <Header mainStyle={home.main} menu='dark' />
-      <Introduction />
+      <Introduction hgap={{ xs: '20px', sm: '150px', md: '167px', lg: '200px' }}>
+        <Header mainStyle={home.main} menu='dark' />
+      </Introduction>
       <Websites />
       <MobileApp />
       <Marketing />

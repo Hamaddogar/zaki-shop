@@ -2,7 +2,7 @@ import React from 'react'
 import Picture from './reuse/Picture'
 import { Box, ButtonBase, Grid, Hidden, InputAdornment, Stack, TextField, Typography } from '@mui/material'
 import { arrowForwardEmail, footerfacebook, footerinstagram, footerlinkedin, footertiktok } from './reuse/icons'
-import home from '@/app/styles/home.module.css'
+import common from '@/app/styles/common.module.css'
 import { MUIDesign } from './reuse/Design'
 import Link from 'next/link'
 
@@ -15,7 +15,7 @@ const Footer = () => {
                     <Grid item xs={12} md='auto'>
                         <Box textAlign={'center'}>
                             <Link href='/'>
-                                <Picture center={false} src={'/footer-logo.png'} width={180} height={80} alt='' />
+                                <Picture center={false} src={'/footer-logo.svg'} width={180} height={80} alt='' />
                             </Link>
                         </Box>
                     </Grid>
@@ -44,7 +44,7 @@ const Footer = () => {
                                     name='email'
                                     InputProps={{
                                         endAdornment: <InputAdornment position="end">
-                                            <ButtonBase className={home.emailBtn} >{arrowForwardEmail}</ButtonBase>
+                                            <ButtonBase className={common.emailBtn} >{arrowForwardEmail}</ButtonBase>
                                         </InputAdornment>,
                                     }}
                                 />
@@ -61,7 +61,7 @@ const Footer = () => {
                     <Grid item xs={12} md='auto'>
                         <Box textAlign={'center'}>
                             <Link href='/'>
-                                <Picture center={false} src={'/footer-logo.png'} width={180} height={80} alt='' />
+                                <Picture center={false} src={'/footer-logo.svg'} width={180} height={80} alt='' />
                             </Link>
                         </Box>
                     </Grid>
@@ -76,7 +76,7 @@ const Footer = () => {
                                     name='email'
                                     InputProps={{
                                         endAdornment: <InputAdornment position="end">
-                                            <ButtonBase className={home.emailBtn} >{arrowForwardEmail}</ButtonBase>
+                                            <ButtonBase className={common.emailBtn} >{arrowForwardEmail}</ButtonBase>
                                         </InputAdornment>,
                                     }}
                                 />

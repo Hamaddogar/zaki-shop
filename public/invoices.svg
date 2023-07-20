@@ -1,0 +1,36 @@
+<svg width="302" height="389" viewBox="0 0 302 389" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.16797 25.8333C5.16797 20.308 7.36291 15.009 11.2699 11.1019C15.1769 7.19494 20.476 5 26.0013 5H276.001C281.527 5 286.826 7.19494 290.733 11.1019C294.64 15.009 296.835 20.308 296.835 25.8333V362.269C296.835 367.794 294.64 373.093 290.733 377C286.826 380.907 281.527 383.102 276.001 383.102H26.0013C20.476 383.102 15.1769 380.907 11.2699 377C7.36291 373.093 5.16797 367.794 5.16797 362.269V25.8333Z" stroke="#0F1546" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="48.5" cy="47.5" r="16.5" fill="#0F1546" fill-opacity="0.4"/>
+<path d="M75 48H152" stroke="#0F1546" stroke-opacity="0.42" stroke-width="7" stroke-linecap="round"/>
+<rect x="133" y="90" width="61" height="22" rx="4" fill="#269E8D"/>
+<rect x="205" y="90" width="61" height="22" rx="4" fill="#269E8D"/>
+<rect x="133" y="118" width="61" height="22" rx="4" fill="#269E8D"/>
+<rect x="205" y="118" width="61" height="22" rx="4" fill="#269E8D"/>
+<rect x="205" y="279" width="61" height="22" rx="4" fill="#269E8D"/>
+<path d="M38.5 165H266" stroke="#0F1546" stroke-opacity="0.42" stroke-width="3" stroke-linecap="round"/>
+<path d="M38.5 182H266" stroke="#0F1546" stroke-opacity="0.42" stroke-width="3" stroke-linecap="round"/>
+<path d="M49 174H76" stroke="#0F1546" stroke-opacity="0.42" stroke-width="3" stroke-linecap="round"/>
+<path d="M49 194H112" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M49 200H100" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M131 194H144" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M157 194H170" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M238 194H251" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M131 214H144" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M131 234H144" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M131 254H144" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M157 214H170" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M157 234H170" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M157 254H170" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M238 214H251" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M238 234H251" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M238 254H251" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M49 214H112" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M49 220H100" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M49 234H112" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M49 240H100" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M49 254H112" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M49 260H100" stroke="#0F1546" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M155 174H173" stroke="#0F1546" stroke-opacity="0.42" stroke-width="3" stroke-linecap="round"/>
+<path d="M128 174H146" stroke="#0F1546" stroke-opacity="0.42" stroke-width="3" stroke-linecap="round"/>
+<path d="M231 174H258" stroke="#0F1546" stroke-opacity="0.42" stroke-width="3" stroke-linecap="round"/>
+</svg>
