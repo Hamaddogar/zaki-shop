@@ -54,6 +54,12 @@
     background-size: cover;
 }
 
+.background {
+    background-image: url('/elli7.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 @keyframes loading {
     0% {

@@ -1,7 +1,8 @@
 import React from 'react'
+import common from '@/app/styles/common.module.css'
 import mobileapp from '@/app/styles/mobileapp.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Grid, Typography } from '@mui/material'
+import { Box, Stack, Typography } from '@mui/material'
 
 const NoDeveloper2 = () => {
 
@@ -10,14 +11,16 @@ const NoDeveloper2 = () => {
       <Box className={mobileapp.titleContainer}>
         <Typography color='secondary' className={mobileapp.subtitlemain}>Build your app, <br /> without a developer 😉</Typography>
       </Box>
-      <Grid container alignItems={'center'} justifyContent={'space-between'} rowGap={'40px'} spacing={'10px'} className={mobileapp.background}>
-        <Grid item xs={12} md={6}>
-          <Picture src={'/nodev21.png'} width={876} height={567} alt='' />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Picture src={'/nodev22.png'} width={420} height={567} alt='' />
-        </Grid>
-      </Grid>
+      <Box className={common.background} sx={{ backgroundPosition: { xs: 'center center', md: 'center center' } }} >
+        <Stack alignItems='center' px={{ xs: 0, lg: 12 }} justifyContent={'center'} direction={{ xs: 'column', lg: 'row' }} rowGap={'40px'} columnGap={{ xs: 0, lg: 10 }} >
+          <Box maxWidth={{ xs: '589px', lg: '876px' }}>
+            <Picture center={false} src={'/nodev21.svg'} width={876} height={567} alt='' />
+          </Box>
+          <Box>
+            <Picture center={false} src={'/nodev22.svg'} width={589} height={567} alt='' />
+          </Box>
+        </Stack>
+      </Box>
     </div>
   )
 }

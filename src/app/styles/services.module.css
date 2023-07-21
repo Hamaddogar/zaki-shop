@@ -1,8 +1,7 @@
 .main {
-  background-image: url('/serviceBG.png');
-  background-size: 100% 100%;
   overflow: hidden;
-  /* min-height: 1117px; */
+  background-color: rgb(14, 20, 66, .80);
+
 }
 
 .title {
