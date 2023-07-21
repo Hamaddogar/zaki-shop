@@ -2,7 +2,7 @@ import React from 'react'
 import common from '@/app/styles/common.module.css'
 import mobileapp from '@/app/styles/mobileapp.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Grid, Typography } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
 import { arrowForward } from '../reuse/icons'
 const Introduction = ({ children, hgap }) => {
 
