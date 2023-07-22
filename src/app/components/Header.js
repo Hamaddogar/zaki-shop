@@ -1,14 +1,16 @@
 'use client'
-import { Box, Stack, Button, ButtonBase } from '@mui/material'
+import { Box, Stack, Button, ButtonBase, Divider } from '@mui/material'
 import React from 'react'
 import header from '@/app/styles/header.module.css'
 import Picture from './reuse/Picture'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import { languageIcon, downIcon } from './reuse/icons';
+import { languageIcon, downIcon, facebookIcon, linkedinIcon, twitterIcon, marker, minifacebook, minilinkedin, miniinsta, minitiktok } from './reuse/icons';
 import MobileNav from './MobileNav';
 import Link from 'next/link'
+import Image from 'next/image'
+import MiniNav from './MiniNav'
 
 const Header = ({ mainStyle, menu }) => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -28,12 +30,51 @@ const Header = ({ mainStyle, menu }) => {
     if (menu) setMenuIs(menu)
   }, [menu])
 
+  const [miniMenu, setminiMenu] = React.useState("none");
+  const [languageMenu, setlanguageMenu] = React.useState("none");
 
-
-
+  const handleMiniNav = (pv, setter) => e => {
+    if (pv === "none") setter('open')
+    else if (pv === "open") setter('close')
+    else if (pv === "close") setter('open')
+  }
 
   return (
     <Box>
+      <MiniNav alignItems='center' openST={languageMenu} closeST={handleMiniNav(languageMenu, setlanguageMenu)} >
+        language selet
+      </MiniNav>
+
+      <MiniNav alignItems='flex-end' openST={miniMenu} closeST={handleMiniNav(miniMenu, setminiMenu)} >
+        <Stack justifyContent={'flex-start'} mt='35px' rowGap={'10px'} >
+          <Stack direction='row' rowGap='15px' alignItems='center' justifyContent='flex-start' >
+            <span>{marker}</span>
+            <Link href='/' className={header['inner-nav-routes']} >Home</Link>
+          </Stack>
+          <Stack direction='row' rowGap='25px' alignItems='center' justifyContent='flex-start' >
+            <span>{marker}</span>
+            <Link href='/services' className={header['inner-nav-routes']} >Website</Link>
+          </Stack>
+          <Stack direction='row' rowGap='15px' alignItems='center' justifyContent='flex-start' >
+            <span>{marker}</span>
+            <Link href='/mobileapp' className={header['inner-nav-routes']} >Mobile Apps</Link>
+          </Stack>
+          <Stack direction='row' rowGap='15px' alignItems='center' justifyContent='flex-start' >
+            <span>{marker}</span>
+            <Link href='/marketing' className={header['inner-nav-routes']} >Marketing</Link>
+          </Stack>
+          <Stack direction='row' rowGap='15px' alignItems='center' justifyContent='flex-start' >
+            <span>{marker}</span>
+            <Link href='/invoices' className={header['inner-nav-routes']} >Invoices</Link>
+          </Stack>
+        </Stack>
+        <Stack my='30px' direction='row' alignItems={'center'} spacing={2} >
+          <Image src='/facebook.svg' width={16} height={16} alt='' />
+          <Image src='/insta.svg' width={16} height={16} alt='' />
+          <Image src='/tiktok.svg' width={16} height={16} alt='' />
+          <Image src='/linkedin.svg' width={16} height={16} alt='' />
+        </Stack>
+      </MiniNav>
       <Box className={header['main-mobile']}>
         {menuIs === 'light' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
@@ -67,11 +108,11 @@ const Header = ({ mainStyle, menu }) => {
             startIcon={languageIcon}
             endIcon={downIcon}
             color='info'
-            onClick={handleClick}
+            onClick={handleMiniNav(languageMenu, setlanguageMenu)}
           >
             <span>English</span>
           </Button>
-          <Picture center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} periorty />
+          <Picture style={{ cursor: 'pointer' }} center={false} onClick={handleMiniNav(miniMenu, setminiMenu)} src={'/menu.svg'} width={48} height={48} alt={'logo'} periorty />
         </Stack>
       </Stack>
       <Menu

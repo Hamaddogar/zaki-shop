@@ -441,30 +441,11 @@ export const downloadZIcon = <svg xmlns="http://www.w3.org/2000/svg" width="339"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export const marker = <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1.5 5.28711H8.79492" stroke="#37F9BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M5.58008 8.57639L8.79535 5.28711" stroke="#37F9BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M5.58008 1.99707L8.79535 5.28635" stroke="#37F9BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
 
 
 

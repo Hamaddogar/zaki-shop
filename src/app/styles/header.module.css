@@ -131,6 +131,63 @@
     margin-bottom: 20px;
 }
 
+.inner-nav-routes {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 8px;
+}
+
+.fastLinks {
+    width: 256px;
+    min-height: 383px;
+    border-radius: 30px;
+    background: rgba(20, 24, 58, 0.54);
+    backdrop-filter: blur(27px);
+    color: #FFFFFF;
+    /* padding: 55px; */
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    /* animation: backwards; */
+}
+
+.open {
+    position: absolute;
+    z-index: 1;
+    animation: slideIn 0.3s forwards;
+    top: 9px;
+}
+
+.close {
+    position: absolute;
+    z-index: 1;
+    animation: slideOut 0.3s forwards;
+    top: 9px;
+}
+
+@keyframes slideIn {
+    0% {
+        right: -300px;
+    }
+
+    100% {
+        right: 7.5%;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        right: 7.5%;
+    }
+
+    100% {
+        right: -300px;
+    }
+}
+
 /* tablet */
 @media only screen and (max-width: 1024px) {
     .main {
