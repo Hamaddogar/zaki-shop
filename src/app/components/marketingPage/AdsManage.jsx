@@ -22,7 +22,7 @@ const AdsManage = () => {
             <Typography className={marketing.titleIntegration} color="primary" >Turn and manage 🤑 <br />
               your ads easily with me </Typography>
             <Typography className={marketing.normal} color="primary" mt={2}> Many advantages to suit your business </Typography>
-            <Box mt={"70px"} mb={'19px'} display={{ xs: 'inline-block', md: 'block' }} >
+            <Box mt={"50px"} mb={'19px'} display={{ xs: 'inline-block', md: 'block' }} >
 
               <Stack direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
                 <span>{listArrowIcon}</span>

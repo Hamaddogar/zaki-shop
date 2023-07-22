@@ -12,8 +12,9 @@ import Template from '../components/invoicesPage/Template'
 const Invoices = () => {
   return (
     <div>
-      <Header mainStyle={header.mainInvoices} menu={'dark'} />
-      <Introduction />
+      <Introduction hgap={{ xs: '48px', sm: '70px', md: '100px', lg: '138px' }}>
+        <Header mainStyle={header.mainInvoices} menu={'dark'} />
+      </Introduction>
       <Finance />
       <CreateManage />
       <PaymentIntegration />

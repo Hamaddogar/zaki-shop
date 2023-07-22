@@ -13,7 +13,7 @@ const BookingSession = () => {
           <Box pr={{ xs: 0, lg: 8 }} pl={{ xs: 4, lg: 8 }} >
             <Typography className={mobileapp.titleIntegration} color="primary" > Book your session for
               let our support help you </Typography>
-            <Box mt={"70px"} mb={'19px'}>
+            <Box mt={"50px"} mb={'19px'}>
 
               <Stack direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
                 <span>{listArrowIcon}</span>

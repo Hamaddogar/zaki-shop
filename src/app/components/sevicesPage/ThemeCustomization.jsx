@@ -18,7 +18,7 @@ const ThemeCustomization = () => {
 
             <Typography className={services.titleIntegration} color="secondary" > Unlimited themes  and customisations Design</Typography>
             <Typography className={services.normal} sx={{ color: '#FFF' }} mt={2}> Many advantages to suit your business </Typography>
-            <Box mt={"70px"} mb={'19px'} display={{ xs: 'inline-block', md: 'block' }}>
+            <Box mt={"50px"} mb={'19px'} display={{ xs: 'inline-block', md: 'block' }}>
 
               <Stack direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
                 <span>{listArrowIcon}</span>

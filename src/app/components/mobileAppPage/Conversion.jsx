@@ -25,7 +25,7 @@ const Conversion = () => {
                 into your mobile app
               </Typography>
               <Typography className={mobileapp.normal} color="primary" mt={2}> Many advantages to suit your business </Typography>
-              <Box mt={"70px"} mb={'19px'} display={{ xs: 'inline-block', md: 'block' }}>
+              <Box mt={"50px"} mb={'19px'} display={{ xs: 'inline-block', md: 'block' }}>
 
                 <Stack direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
                   <span>{listArrowIcon}</span>

@@ -15,7 +15,7 @@ const BookingSession = () => {
               let our support help you </Typography>
 
 
-            <Box mt={"70px"} mb={'19px'} display={{ xs: 'inline-block', md: 'block' }}>
+            <Box mt={"50px"} mb={'19px'} display={{ xs: 'inline-block', md: 'block' }}>
               <Stack direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
                 <span>{listArrowIcon}</span>
                 <Typography className={services.normal2}>Many advantages to suit your business</Typography>

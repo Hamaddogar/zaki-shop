@@ -8,12 +8,10 @@ const CreateManage = () => {
 
   return (
     <div className={invoices.createManageMain}>
-
       <Grid container direction={{ xs: 'column-reverse', md: 'row' }} alignItems={'center'} justifyContent={'center'} rowGap={'40px'} spacing={'3px'}>
-        <Grid item xs={12} md={6} lg={7}>
-          <Picture src={'/createmanage.png'} width={1948} height={2224} alt='' />
+        <Grid item xs={12} md={5} lg={6}>
+          <Picture src={'/createmanage.svg'} width={742} height={748} alt='' />
         </Grid>
-
         <Grid item xs={12} md={6} lg={5}>
           <Box pr={1} pl={2} >
             <Typography className={invoices.titleIntegration} color="primary" >
@@ -21,7 +19,7 @@ const CreateManage = () => {
               your invoices in one place
             </Typography>
             <Typography className={invoices.normal} color="primary" mt={2}> Many advantages to suit your business </Typography>
-            <Box mt={"70px"} mb={'19px'}>
+            <Box mt={"50px"} mb={'19px'}>
 
               <Stack direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
                 <span>{listArrowWhiteIcon}</span>

@@ -13,7 +13,7 @@ const Conversion = () => {
           <Box pr={{ xs: 0, lg: 8 }} pl={{ xs: 4, lg: 8 }} >
             <Typography className={mobileapp.titleIntegration} color="primary" >Turn your website into your mobile app</Typography>
             <Typography className={mobileapp.normal} color="primary" mt={2}> Many advantages to suit your business </Typography>
-            <Box mt={"70px"} mb={'19px'}>
+            <Box mt={"50px"} mb={'19px'}>
 
               <Stack direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
                 <span>{listArrowIcon}</span>

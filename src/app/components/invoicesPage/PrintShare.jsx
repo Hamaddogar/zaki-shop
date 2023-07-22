@@ -11,8 +11,11 @@ const PrintShare = () => {
         Print & Share <br />
         Invoices with Ease🤯
       </Typography>
-      <Box mt={'50px'} width={{ xs: '90%', md: '80%' }} marginLeft='auto' marginRight='auto'>
-        <Picture src={'/print.png'} width={3407} height={1419} alt='' />
+      <Box display={{ xs: 'none', md: 'block' }} mt={'50px'} width={{ xs: '90%', md: '80%' }} marginLeft='auto' marginRight='auto'>
+        <Picture src={'/printlg.svg'} width={1201} height={615} alt='' />
+      </Box>
+      <Box display={{ xs: 'block', md: 'none' }} mt={'50px'} width={{ xs: '90%', md: '80%' }} marginLeft='auto' marginRight='auto'>
+        <Picture src={'/printxs.svg'} width={375} height={779} alt='' />
       </Box>
     </div>
   )
