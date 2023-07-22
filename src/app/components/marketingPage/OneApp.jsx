@@ -1,8 +1,7 @@
 import React from 'react'
 import marketing from '@/app/styles/marketing.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Grid, Typography } from '@mui/material'
-import { arrowForwardSecond } from '../reuse/icons'
+import { Box, Grid, Typography } from '@mui/material'
 
 const OneApp = () => {
 
@@ -20,11 +19,11 @@ const OneApp = () => {
       <Grid container alignItems={'center'} justifyContent={'space-between'} rowGap={'40px'} spacing={'10px'} className={marketing.background}>
         <Grid item xs={12} md={7}>
           <Box>
-            <Picture src={'/oneapp1.png'} width={857} height={640} alt='' />
+            <Picture src={'/oneapp1.svg'} width={857} height={640} alt='' />
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Picture src={'/oneapp2.png'} width={574} height={660} alt='' />
+          <Picture src={'/oneapp2.svg'} width={574} height={660} alt='' />
         </Grid>
       </Grid>
     </div>

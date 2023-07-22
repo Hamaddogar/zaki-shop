@@ -1,10 +1,10 @@
 .main {
   background-color: #1BFCB6;
-  background-image: url('/marketingBG.png');
+  background-image: url('/marketingBG.svg');
   /* background-size: 100% 100%; */
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 80%;
+  /* background-size: contain; */
 }
 
 .title {
@@ -115,7 +115,7 @@
 .grnerateLeadsMain {
   padding: 85px 80px;
   background-color: #151B4A;
-  background-image: url('/donutBG.png');
+  background-image: url('/donut.svg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50%;

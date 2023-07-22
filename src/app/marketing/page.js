@@ -12,8 +12,9 @@ import GrnerateLeads from '../components/marketingPage/GrnerateLeads'
 const Marketing = () => {
   return (
     <div>
-      <Header mainStyle={header.mainMarketing} menu={'dark'} />
-      <Introduction />
+      <Introduction hgap={{ xs: '48px', sm: '70px', md: '100px', lg: '108px' }}>
+        <Header mainStyle={header.mainMarketing} menu={'dark'} />
+      </Introduction>
       <OneApp />
       <LunchCamp />
       <AdsManage />
