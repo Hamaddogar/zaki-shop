@@ -61,7 +61,7 @@
 }
 
 .card {
-  max-width: 478px;
+  max-width: 460px;
   min-height: 323px;
   flex-shrink: 0;
   border-radius: 22px;
@@ -69,7 +69,11 @@
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
+  white-space: normal;
+  box-sizing: border-box;
 }
+
+
 
 .cardIcon {
   width: 83px;
@@ -145,14 +149,11 @@
 .planMain {
   padding: 85px 80px;
   background: #EFF2FE;
-  min-height: 1260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .planCard {
   width: 100%;
+  min-width: 430px;
   max-width: 430px;
   min-height: 724px;
   border-radius: 43px;
@@ -163,6 +164,7 @@
 
 .planCardActive {
   width: 100%;
+  min-width: 430px;
   max-width: 430px;
   min-height: 724px;
   border-radius: 43px;
@@ -171,6 +173,17 @@
   margin: auto;
 }
 
+.card,
+.planCardActive,
+.planCard:hover {
+  cursor: grabbing;
+}
+
+.card,
+.planCardActive,
+.planCard:active {
+  cursor: grabbing;
+}
 
 .active {
   background-image: url('/activePlan.png');

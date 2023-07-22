@@ -58,7 +58,45 @@
     background-image: url('/elli7.svg');
     background-size: contain;
     background-repeat: no-repeat;
+    min-width: 1300px
 }
+
+/* Replace the below styles with your own customizations */
+.cardScrollbarContainer {
+    display: flex;
+    align-items: flex-start;
+    padding: 32px 0px;
+    gap: 30px;
+    /* min-width: 1000px; */
+    /* overflow: visible; */
+}
+
+.cardScrollbar {
+    overflow-x: scroll;
+    display: flex;
+    align-items: flex-start;
+    padding: 32px 0px;
+    gap: 30px;
+}
+
+.cardScrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+}
+
+.cardScrollbar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+    visibility: hidden;
+}
+
+.cardScrollbar:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+    transition: .3s !important;
+}
+
+/* Add any other scrollbar customization here if needed */
 
 
 @keyframes loading {
@@ -81,4 +119,28 @@
     .img-center-container {
         text-align: center;
     }
+}
+
+
+
+
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    cursor: grab;
+    user-select: none;
+}
+
+.slider {
+    display: flex;
+    width: fit-content;
+    gap: 30px;
+}
+.sliderPlan{
+    display: inline-flex;
+    width: fit-content;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
 }

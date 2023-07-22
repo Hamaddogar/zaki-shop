@@ -10,6 +10,10 @@ import Footer from './components/Footer';
 import home from '@/app/styles/header.module.css'
 
 const Home = () => {
+
+  // await new Promise(resolve => setTimeout(resolve, 100000000));
+
+
   return (
     <div>
       <Introduction hgap={{ xs: '20px', sm: '150px', md: '167px', lg: '200px' }}>
