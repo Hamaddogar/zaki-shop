@@ -24,22 +24,31 @@ const Introduction = ({ children, hgap }) => {
                 >
                   What i do !
                 </Typography>
-                <Typography color='primary'
-                  fontWeight={{ xs: 600 }}
-                  fontSize={{ xs: '23px', md: '53px', lg: '57px' }}
-                  lineHeight={{ xs: '29px', md: '59px', lg: '64px' }}
-                >
-                  <Hidden smDown>
+
+                <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+                  <Typography color='primary'
+                    fontWeight={{ xs: 600 }}
+                    fontSize={{ xs: '23px', sm: '30px', md: '53px', lg: '57px' }}
+                    lineHeight={{ xs: '29px', sm: '45px', md: '59px', lg: '64px' }}
+                  >
                     i can do websites,<br />
                     Mobile App, Marketing <br />
                     & Invoices
-                  </Hidden>
-                  <Hidden smUp>
+                  </Typography>
+                </Box>
+                <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+                  <Typography color='primary'
+                    fontWeight={{ xs: 600 }}
+                    fontSize={{ xs: '23px', sm: '30px', md: '53px', lg: '57px' }}
+                    lineHeight={{ xs: '29px', sm: '45px', md: '59px', lg: '64px' }}
+                    maxWidth={{ xs: '330px', sm: '430px' }}
+                    mx='auto'
+                  >
                     i can do websites,
                     Mobile App, Marketing
                     & Invoices
-                  </Hidden>
-                </Typography>
+                  </Typography>
+                </Box>
               </Box>
               <Box mt={{ xs: 5 }} textAlign={{ xs: 'center', lg: 'left' }}>
                 <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
@@ -49,7 +58,7 @@ const Introduction = ({ children, hgap }) => {
             </Box>
             <Box >
               <Box width={{ xs: '86%', }} margin='auto'>
-                <Picture src={'/face.svg'} width={570} height={430} alt='' periorty />
+                <Picture src={'/face.svg'} width={570} height={430} alt='' />
               </Box>
               <Stack mt={4} direction={'row'} justifyContent={'center'} alignItems={'center'} spacing={2}>
                 {!playing && <Picture center={false} src={'/playIcon.png'} alt='' width={58} height={58} />}

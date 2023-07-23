@@ -33,15 +33,15 @@ const Introduction = ({ children, hgap }) => {
           <Box>
 
             <Box sx={{ display: { xs: 'none', sm: 'none', md: 'none', lg: 'block' }, position: 'relative', top: { xs: 0, lg: '75px' } }} margin='auto'>
-              <Picture src={'/marketingmainlg.svg'} width={1728} height={706} alt='' periorty />
+              <Picture src={'/marketingmainlg.svg'} width={1728} height={706} alt=''  />
             </Box>
 
             <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block', lg: 'none' }, position: 'relative' }} margin='auto'>
-              <Picture src={'/marketingmainmd.svg'} width={980} height={581} alt='' periorty />
+              <Picture src={'/marketingmainmd.svg'} width={980} height={581} alt=''  />
             </Box>
 
             <Box sx={{ display: { xs: 'block', sm: 'block', md: 'none', lg: 'none' }, position: 'relative' }} margin='auto'>
-              <Picture src={'/marketingmainmdxs.svg'} width={351} height={504} alt='' periorty />
+              <Picture src={'/marketingmainmdxs.svg'} width={351} height={504} alt=''  />
             </Box>
 
           </Box>

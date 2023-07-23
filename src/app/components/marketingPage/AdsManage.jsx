@@ -60,7 +60,7 @@ const AdsManage = () => {
 
         <Grid item xs={12} md={6} lg={6}>
           <Box width={{xs:'85%', md:'auto'}} marginX='auto' >
-          <Picture src={'/addmanage.svg'} width={2123} height={2161} alt='' periorty />
+          <Picture src={'/addmanage.svg'} width={2123} height={2161} alt=''  />
           </Box>
         </Grid>
       </Grid>

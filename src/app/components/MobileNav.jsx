@@ -26,7 +26,7 @@ export default function MobileNav({ open, setOpen }) {
             >
                 <Stack direction='row' alignItems='center' justifyContent={'space-between'}>
                     <Box>{drawerLogo}</Box>
-                    <Picture onClick={handleClose} center={false} src={'/close.svg'} width={48} height={48} alt={'logo'} periorty />
+                    <Picture onClick={handleClose} center={false} src={'/close.svg'} width={48} height={48} alt={'logo'}  />
                 </Stack>
 
                 <Stack mt={'83px'} sx={{ position: 'relative', }} justifyContent={'space-between'}>

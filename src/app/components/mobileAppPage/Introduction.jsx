@@ -30,7 +30,7 @@ const Introduction = ({ children, hgap }) => {
           </Box>
           <Box>
             <Box width={{ xs: '90%', md: '80%', lg: '70%' }} margin='auto'>
-              <Picture src={'/mobileappmain.svg'} width={3159} height={1746} alt='' periorty />
+              <Picture src={'/mobileappmain.svg'} width={3159} height={1746} alt=''  />
             </Box>
           </Box>
         </Box>
@@ -67,7 +67,7 @@ const Introduction = ({ children, hgap }) => {
                 </Button>
               </Box>
               <Box width={{ xs: '90%', md: '80%', lg: '70%' }} margin='auto'>
-                <Picture src={'/mobileappmain.png'} width={3159} height={1746} alt='' periorty />
+                <Picture src={'/mobileappmain.png'} width={3159} height={1746} alt=''  />
               </Box>
             </Grid>
           </Grid>

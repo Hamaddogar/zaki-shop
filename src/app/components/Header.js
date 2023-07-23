@@ -6,23 +6,19 @@ import Picture from './reuse/Picture'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import { languageIcon, downIcon, facebookIcon, linkedinIcon, twitterIcon, marker, minifacebook, minilinkedin, miniinsta, minitiktok } from './reuse/icons';
+import { languageIcon, downIcon, marker } from './reuse/icons';
 import MobileNav from './MobileNav';
 import Link from 'next/link'
 import Image from 'next/image'
 import MiniNav from './MiniNav'
 
-const Header = ({ mainStyle, menu }) => {
+const Header = ({ mainStyle, menu = 'dark' }) => {
   const [openNav, setOpenNav] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [miniMenu, setminiMenu] = React.useState("none");
   const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
+  const handleClick = (event) => setAnchorEl(event.currentTarget);
+  const handleClose = () => setAnchorEl(null);
   const handleMenu = () => setOpenNav(true);
   const [menuIs, setMenuIs] = React.useState('home')
 
@@ -30,8 +26,7 @@ const Header = ({ mainStyle, menu }) => {
     if (menu) setMenuIs(menu)
   }, [menu])
 
-  const [miniMenu, setminiMenu] = React.useState("none");
-  const [languageMenu, setlanguageMenu] = React.useState("none");
+  // const [languageMenu, setlanguageMenu] = React.useState("none");
 
   const handleMiniNav = (pv, setter) => e => {
     if (pv === "none") setter('open')
@@ -75,47 +70,49 @@ const Header = ({ mainStyle, menu }) => {
           <Image src='/linkedin.svg' width={16} height={16} alt='' />
         </Stack>
       </MiniNav>
-      <Box className={header['main-mobile']}>
+      <Box className={header['main-mobile']} sx={{ display: { xs: 'block', sm: 'none' } }}>
         {menuIs === 'light' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture center={false} src={'/logo-md.svg'} width={169} height={37} alt={'logo'} periorty className={header.logomd} />
+              <Picture periorty center={false} src={'/logo-md.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
             </Link>
-            <Picture onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} periorty />
+            <Picture periorty onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
           </Stack>}
 
         {menuIs === 'dark' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture center={false} src={'/logo-dark.svg'} width={169} height={37} alt={'logo'} periorty className={header.logomd} />
+              <Picture periorty center={false} src={'/logo-dark.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
             </Link>
-            <Picture onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} periorty />
+            <Picture periorty onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
           </Stack>}
-
-
-
-
         <MobileNav open={openNav} setOpen={setOpenNav} menu={menuIs} />
       </Box>
-      <Stack width={{ xs: '95%', md: '85%' }} sx={{ margin: 'auto' }} direction='row' alignItems='center' justifyContent={'space-between'} className={mainStyle}>
-        <Link href={'/'}>
-          <Picture center={false} src={'/logo-md.svg'} width={300} height={47} alt={'logo'} periorty className={header.logomd} />
-        </Link>
 
-        <Stack direction={'row'} alignItems={'center'} spacing={3}>
-          <ButtonBase color='primary' className={header.login} >Login</ButtonBase>
-          <Button className={header.language}
-            startIcon={languageIcon}
-            endIcon={downIcon}
-            color='info'
-            // onClick={handleMiniNav(languageMenu, setlanguageMenu)}
-            onClick={handleClick}
-          >
-            <span>English</span>
-          </Button>
-          <Picture style={{ cursor: 'pointer' }} center={false} onClick={handleMiniNav(miniMenu, setminiMenu)} src={'/menu.svg'} width={48} height={48} alt={'logo'} periorty />
+
+
+
+      <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+        <Stack width={{ xs: '95%', md: '85%' }} sx={{ margin: 'auto' }} direction='row' alignItems='center' justifyContent={'space-between'} className={mainStyle}>
+          <Link href={'/'}>
+            <Picture center={false} src={'/logo-md.svg'} width={300} height={47} alt={'logo'} className={header.logomd} />
+          </Link>
+
+          <Stack direction={'row'} alignItems={'center'} spacing={3}>
+            <ButtonBase color='primary' className={header.login} >Login</ButtonBase>
+            <Button className={header.language}
+              startIcon={languageIcon}
+              endIcon={downIcon}
+              color='info'
+              // onClick={handleMiniNav(languageMenu, setlanguageMenu)}
+              onClick={handleClick}
+            >
+              <span>English</span>
+            </Button>
+            <Picture style={{ cursor: 'pointer' }} center={false} onClick={handleMiniNav(miniMenu, setminiMenu)} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+          </Stack>
         </Stack>
-      </Stack>
+      </Box>
       <Menu
         anchorEl={anchorEl}
         id="account-menu"

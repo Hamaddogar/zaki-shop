@@ -29,10 +29,10 @@ const Introduction = ({ children, hgap }) => {
           </Box>
           <Box>
             <Box sx={{ display: { xs: 'none', sm: 'none', md: 'none', lg: 'block' }, position: 'relative' }} margin='auto'>
-              <Picture src={'/invoicelg.svg'} width={980} height={581} alt='' periorty />
+              <Picture src={'/invoicelg.svg'} width={980} height={581} alt=''  />
             </Box>
             <Box sx={{ display: { xs: 'block', sm: 'block', md: 'block', lg: 'none' }, position: 'relative' }} margin='auto'>
-              <Picture src={'/invoicexs.svg'} width={360} height={376} alt='' periorty />
+              <Picture src={'/invoicexs.svg'} width={360} height={376} alt=''  />
             </Box>
           </Box>
         </Box>

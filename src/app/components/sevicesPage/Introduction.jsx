@@ -31,10 +31,10 @@ const Introduction = ({ children, hgap }) => {
           <Box>
             <Box width={{ xs: '90%', md: '80%', lg: '70%' }} margin='auto'>
               <Hidden lgDown>
-                <Picture src={'/weblg.svg'} width={1095} height={487} alt='' periorty />
+                <Picture src={'/weblg.svg'} width={1095} height={487} alt=''  />
               </Hidden>
               <Hidden lgUp>
-                <Picture src={'/webmd.svg'} width={820} height={619} alt='' periorty />
+                <Picture src={'/webmd.svg'} width={820} height={619} alt=''  />
               </Hidden>
             </Box>
           </Box>
