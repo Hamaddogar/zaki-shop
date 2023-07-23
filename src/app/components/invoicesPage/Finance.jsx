@@ -54,8 +54,8 @@ const Finance = () => {
           </Grid>
 
           <Grid item xs={12} md={6} lg={6}>
-            <Box sx={{position:'relative', left:{xs:'0px', md:'-50px'}}} >
-            <Picture src={'/finance.svg'} width={872} height={653} alt='' />
+            <Box sx={{ position: 'relative', left: { xs: '0px', md: '-50px' } }} >
+              <Picture src={'/finance.svg'} width={872} height={653} alt='' />
             </Box>
           </Grid>
         </Grid>
