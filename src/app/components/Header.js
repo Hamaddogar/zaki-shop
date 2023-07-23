@@ -41,9 +41,9 @@ const Header = ({ mainStyle, menu }) => {
 
   return (
     <Box>
-      <MiniNav alignItems='center' openST={languageMenu} closeST={handleMiniNav(languageMenu, setlanguageMenu)} >
+      {/* <MiniNav alignItems='center' openST={languageMenu} closeST={handleMiniNav(languageMenu, setlanguageMenu)} >
         language selet
-      </MiniNav>
+      </MiniNav> */}
 
       <MiniNav alignItems='flex-end' openST={miniMenu} closeST={handleMiniNav(miniMenu, setminiMenu)} >
         <Stack justifyContent={'flex-start'} mt='35px' rowGap={'10px'} >
@@ -108,7 +108,8 @@ const Header = ({ mainStyle, menu }) => {
             startIcon={languageIcon}
             endIcon={downIcon}
             color='info'
-            onClick={handleMiniNav(languageMenu, setlanguageMenu)}
+            // onClick={handleMiniNav(languageMenu, setlanguageMenu)}
+            onClick={handleClick}
           >
             <span>English</span>
           </Button>
@@ -126,6 +127,9 @@ const Header = ({ mainStyle, menu }) => {
           sx: {
             overflow: 'visible',
             filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
+            background: 'rgba(20, 24, 58, 0.54)',
+            backdropFilter: 'blur(27px)',
+            color: '#FFFFFF',
             mt: 1.5,
             '& .MuiAvatar-root': {
               width: 32,
@@ -141,7 +145,8 @@ const Header = ({ mainStyle, menu }) => {
               right: 14,
               width: 10,
               height: 10,
-              bgcolor: 'background.paper',
+              background: 'rgba(20, 24, 58, 0.54)',
+              backdropFilter: 'blur(27px)',
               transform: 'translateY(-50%) rotate(45deg)',
               zIndex: 0,
             },
