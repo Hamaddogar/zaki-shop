@@ -74,17 +74,17 @@ const Header = ({ mainStyle, menu = 'dark' }) => {
         {menuIs === 'light' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture periorty center={false} src={'/logo-md.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
+              <Picture center={false} src={'/logo-md.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
             </Link>
-            <Picture periorty onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+            <Picture onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
           </Stack>}
 
         {menuIs === 'dark' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture periorty center={false} src={'/logo-dark.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
+              <Picture center={false} src={'/logo-dark.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
             </Link>
-            <Picture periorty onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+            <Picture onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
           </Stack>}
         <MobileNav open={openNav} setOpen={setOpenNav} menu={menuIs} />
       </Box>
