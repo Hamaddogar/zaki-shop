@@ -5,6 +5,7 @@ import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForward } from '../reuse/icons'
 import { WritingAnimation } from '../reuse/Animation'
 import Link from 'next/link'
+import { PrimaryBtn } from '../reuse/Buttons'
 
 const Invoices = () => {
 
@@ -28,9 +29,7 @@ const Invoices = () => {
             lineHeight={{ xs: 'normal', md: 'normal', lg: 'normal' }}
           >Our IA can generate and create a beautiful website whatever your field of activity </Typography>
           <Link href={'/invoices'}>
-            <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
-              Start Now
-            </Button>
+          <PrimaryBtn />
           </Link>
         </Box>
         <Box width={{ xs: '80%', lg: 'auto' }} margin='auto' pl={{ xs: 0, lg: 3 }}>

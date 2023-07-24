@@ -3,6 +3,7 @@ import services from '@/app/styles/services.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Grid, Stack, Typography } from '@mui/material'
 import { arrowForward, listArrowIcon, } from '../reuse/icons'
+import { PrimaryBtn } from '../reuse/Buttons'
 
 const BrandIntegration = () => {
 
@@ -37,9 +38,7 @@ const BrandIntegration = () => {
             </Box>
 
             <Box>
-              <Button color='primary' className={services.primaryBtn} endIcon={arrowForward} >
-                Start Now
-              </Button>
+            <PrimaryBtn />
             </Box>
           </Box>
 

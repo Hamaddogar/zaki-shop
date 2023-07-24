@@ -179,12 +179,6 @@
 }
 
 
-.active {
-  background-image: url('/activePlan.png');
-  /* background-size: 100% 100%; */
-  background-position: center center;
-}
-
 .planCardTitle {
   color: #000;
   font-family: Avenir;
@@ -273,11 +267,6 @@
   font-weight: 500;
   line-height: normal;
 }
-
-
-
-
-
 
 .primaryBtn {
   border-radius: 100px;

@@ -5,6 +5,7 @@ import home from '@/app/styles/home.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Hidden, Stack, Typography } from '@mui/material'
 import { arrowForward } from '../reuse/icons'
+import { PrimaryBtn } from '../reuse/Buttons'
 
 const Introduction = ({ children, hgap }) => {
   const [playing] = React.useState(false)
@@ -51,9 +52,7 @@ const Introduction = ({ children, hgap }) => {
                 </Box>
               </Box>
               <Box mt={{ xs: 5 }} textAlign={{ xs: 'center', lg: 'left' }}>
-                <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
-                  Start Now
-                </Button>
+                <PrimaryBtn />
               </Box>
             </Box>
             <Box >

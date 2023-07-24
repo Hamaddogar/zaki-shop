@@ -3,6 +3,7 @@ import services from '@/app/styles/services.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Grid, Stack, Typography } from '@mui/material'
 import { arrowForwardSecond, listArrowIcon, } from '../reuse/icons'
+import { SecondaryBtn } from '../reuse/Buttons'
 
 const ThemeCustomization = () => {
 
@@ -42,9 +43,7 @@ const ThemeCustomization = () => {
             </Box>
 
             <Box>
-              <Button color='secondary' className={services.secondaryBtn} endIcon={arrowForwardSecond} >
-                Start Now
-              </Button>
+              <SecondaryBtn />
             </Box>
           </Box>
         </Grid>

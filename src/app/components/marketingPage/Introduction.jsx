@@ -4,6 +4,7 @@ import marketing from '@/app/styles/marketing.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Typography } from '@mui/material'
 import { arrowForward } from '../reuse/icons'
+import { PrimaryBtn } from '../reuse/Buttons'
 
 const Introduction = ({ children, hgap }) => {
 
@@ -26,9 +27,7 @@ const Introduction = ({ children, hgap }) => {
             </Typography>
           </Box>
           <Box my="40px" textAlign='center'>
-            <Button color='primary' className={marketing.primaryBtn} endIcon={arrowForward} >
-              Start Now
-            </Button>
+          <PrimaryBtn />
           </Box>
           <Box>
 

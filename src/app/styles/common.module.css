@@ -54,6 +54,11 @@
     background-size: cover;
 }
 
+.BGI {
+    background: url('/invoiceBG.svg'), 50% / cover no-repeat;
+    background-size: cover;
+  }
+
 .background {
     background-image: url('/elli7.svg');
     background-size: contain;

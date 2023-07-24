@@ -4,6 +4,7 @@ import Picture from '../reuse/Picture'
 import { Box, Button, Typography } from '@mui/material'
 import { arrowForward } from '../reuse/icons'
 import Link from 'next/link'
+import { PrimaryBtn } from '../reuse/Buttons'
 
 const MobileApp = () => {
 
@@ -29,9 +30,7 @@ const MobileApp = () => {
             lineHeight={{ xs: 'normal', md: 'normal', lg: 'normal' }}
           >Our IA can generate and create a beautiful website whatever your field of activity </Typography>
           <Link href={'/mobileapp'}>
-            <Button color='primary' className={home.primaryBtn} endIcon={arrowForward} >
-              Start Now
-            </Button>
+          <PrimaryBtn />
           </Link>
         </Box>
         <Box pt={{ xs: 0, lg: 15 }} width={{ xs: '80%', lg: 'auto' }} margin='auto' pl={{ xs: 0, lg: 3 }}>

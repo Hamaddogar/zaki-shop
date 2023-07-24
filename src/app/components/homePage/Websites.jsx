@@ -4,6 +4,7 @@ import Picture from '../reuse/Picture'
 import { Box, Button, Typography } from '@mui/material'
 import { arrowForwardSecond } from '../reuse/icons'
 import Link from 'next/link'
+import { SecondaryBtn } from '../reuse/Buttons'
 
 const Websites = () => {
 
@@ -33,9 +34,7 @@ const Websites = () => {
           >Our IA can generate and create a beautiful website whatever your field of activity </Typography>
 
           <Link href={'/services'}>
-            <Button color='secondary' className={home.secondaryBtn} endIcon={arrowForwardSecond} >
-              Start Now
-            </Button>
+            <SecondaryBtn />
           </Link>
         </Box>
       </Box>

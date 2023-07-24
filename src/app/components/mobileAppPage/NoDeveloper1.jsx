@@ -3,6 +3,7 @@ import mobileapp from '@/app/styles/mobileapp.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForward, } from '../reuse/icons'
+import { PrimaryBtn } from '../reuse/Buttons'
 
 const NoDeveloper1 = () => {
 
@@ -48,9 +49,7 @@ const NoDeveloper1 = () => {
               watch some magic 😎
             </Typography>
             <Box mt={5}>
-              <Button color='primary' className={mobileapp.primaryBtn} endIcon={arrowForward} >
-                Start Now
-              </Button>
+            <PrimaryBtn />
             </Box>
           </Box>
 

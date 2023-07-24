@@ -4,6 +4,7 @@ import common from '@/app/styles/common.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForwardSecond } from '../reuse/icons'
+import { SecondaryBtn } from '../reuse/Buttons'
 
 const GrnerateLeads = () => {
 
@@ -35,9 +36,7 @@ const GrnerateLeads = () => {
               </Typography>
             </Box>
             <Box mt={5} textAlign={{ xs: 'center', md: 'left' }}>
-              <Button color='secondary' className={marketing.secondaryBtn} endIcon={arrowForwardSecond} >
-                Start Now
-              </Button>
+            <SecondaryBtn />
             </Box>
           </Box>
         </Grid>

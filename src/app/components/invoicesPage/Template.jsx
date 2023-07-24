@@ -4,6 +4,7 @@ import common from '@/app/styles/common.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Grid, Stack, Typography } from '@mui/material'
 import { arrowForward, listArrowIcon, } from '../reuse/icons'
+import { PrimaryBtn } from '../reuse/Buttons'
 
 const Template = () => {
 
@@ -41,9 +42,7 @@ const Template = () => {
                 </Stack>
               </Box>
 
-              <Button color='primary' className={invoices.primaryBtn} endIcon={arrowForward} >
-                Start Now
-              </Button>
+              <PrimaryBtn />
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>

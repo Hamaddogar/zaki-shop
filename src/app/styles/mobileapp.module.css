@@ -115,20 +115,6 @@
 
 }
 
-.background {
-  background-image: url('/elli.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.background2 {
-  background-image: url('/elli2.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .bookingMain {
   padding: 85px 60px;
   min-height: 1045px;
@@ -389,6 +375,10 @@
     padding: 85px 40px;
   }
 
+  .card {
+    padding: 25px;
+  }
+
   .normal2 {
     font-size: 15px;
   }
@@ -433,8 +423,18 @@
     font-size: 30px;
   }
 
+  .card {
+    max-width: 350px;
+    width: 100%;
+    min-height: 350px;
+  }
+
   .cardTitle {
     font-size: 23px;
+  }
+
+  .cardMsg {
+    font-size: 22px;
   }
 }
 
@@ -462,6 +462,18 @@
     font-size: 18px;
   }
 
+
+  .card {
+    min-height: 270px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cardIcon {
+    width: 63px;
+    height: 63px;
+  }
+
   .cardTitle {
     font-size: 20px;
   }
@@ -475,6 +487,7 @@
     font-size: 14px;
   }
 }
+
 
 @media only screen and (max-width: 450px) {
   .titleIntegration {

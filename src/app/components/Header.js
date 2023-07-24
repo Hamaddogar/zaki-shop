@@ -1,16 +1,17 @@
 'use client'
-import { Box, Stack, Button, ButtonBase, Divider } from '@mui/material'
+import { Box, Stack } from '@mui/material'
 import React from 'react'
 import header from '@/app/styles/header.module.css'
 import Picture from './reuse/Picture'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import { languageIcon, downIcon, marker } from './reuse/icons';
+import { languageIcon, marker } from './reuse/icons';
 import MobileNav from './MobileNav';
 import Link from 'next/link'
 import Image from 'next/image'
 import MiniNav from './MiniNav'
+import { LanguageBtn, LoginBtn } from './reuse/Buttons'
 
 const Header = ({ mainStyle, menu = 'dark' }) => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -99,16 +100,8 @@ const Header = ({ mainStyle, menu = 'dark' }) => {
           </Link>
 
           <Stack direction={'row'} alignItems={'center'} spacing={3}>
-            <ButtonBase color='primary' className={header.login} >Login</ButtonBase>
-            <Button className={header.language}
-              startIcon={languageIcon}
-              endIcon={downIcon}
-              color='info'
-              // onClick={handleMiniNav(languageMenu, setlanguageMenu)}
-              onClick={handleClick}
-            >
-              <span>English</span>
-            </Button>
+            <LoginBtn />
+            <LanguageBtn onClick={handleClick} />
             <Picture style={{ cursor: 'pointer' }} center={false} onClick={handleMiniNav(miniMenu, setminiMenu)} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
           </Stack>
         </Stack>

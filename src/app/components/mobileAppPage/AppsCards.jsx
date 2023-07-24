@@ -1,8 +1,10 @@
 'use client'
 import React from 'react'
+import common from '@/app/styles/common.module.css'
 import mobileapp from '@/app/styles/mobileapp.module.css'
 import { Box, Grid, Typography } from '@mui/material'
 import { fasrEasyIcon, quickConnectionIcon, seamlessAppIcon } from '../reuse/icons'
+import SliderComponent from '../sevicesPage/Slider'
 
 const data = [
   { title: "Fast & Easy Development", msg: "Many advantages to suit  your business", icon: fasrEasyIcon },
@@ -27,17 +29,35 @@ const AppsCards = () => {
           Unlock your business’s potential
           with powerful mobile app’s.
         </Typography>
-        </Box>
-      <Grid container alignItems={'center'} justifyContent={'space-between'} spacing={'30px'}>
-        {data.map((item, indx) => (<Grid item xs={12} sm={6} md={4} key={indx} >
-          <Box className={mobileapp.card}>
-            <Box className={mobileapp.cardIcon}>{item.icon}</Box>
-            <Typography color='primary' className={mobileapp.cardTitle}>{item.title}</Typography>
-            <Typography color='primary' className={mobileapp.cardMsg}>{item.msg} </Typography>
+      </Box>
+      <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+        <Grid container alignItems={'center'} justifyContent={'space-between'} spacing={'30px'}>
+          {data.map((item, indx) => (<Grid item xs={12} sm={6} md={4} key={indx} >
+            <Box className={mobileapp.card}>
+              <Box className={mobileapp.cardIcon}>{item.icon}</Box>
+              <Typography color='primary' className={mobileapp.cardTitle}>{item.title}</Typography>
+              <Typography color='primary' className={mobileapp.cardMsg}>{item.msg} </Typography>
+            </Box>
+          </Grid>)
+          )}
+        </Grid>
+      </Box>
+      <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+        <SliderComponent>
+          <Box className={common.slider}>
+            {data.map((item, indx) => (
+              <Box key={indx} className={mobileapp.card}>
+                <Box className={mobileapp.cardIcon}>{item.icon}</Box>
+                <Typography color='primary' className={mobileapp.cardTitle}>{item.title}</Typography>
+                <Typography color='primary' className={mobileapp.cardMsg}>{item.msg} </Typography>
+              </Box>
+            ))}
           </Box>
-        </Grid>)
-        )}
-      </Grid>
+        </SliderComponent>
+      </Box>
+
+
+
     </Box>
   )
 }

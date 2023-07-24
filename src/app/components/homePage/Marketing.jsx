@@ -5,6 +5,7 @@ import { Box, Button, Grid, Typography } from '@mui/material'
 import { arrowForwardSecond } from '../reuse/icons'
 import { WritingAnimation } from '../reuse/Animation'
 import Link from 'next/link'
+import { SecondaryBtn } from '../reuse/Buttons'
 
 const Marketing = () => {
 
@@ -33,9 +34,7 @@ const Marketing = () => {
             lineHeight={{ xs: 'normal', md: 'normal', lg: 'normal' }}
           >Our IA can generate and create a beautiful website whatever your field of activity </Typography>
           <Link href={'/marketing'}>
-            <Button color='secondary' className={home.secondaryBtn} endIcon={arrowForwardSecond} >
-              Start Now
-            </Button>
+            <SecondaryBtn />
           </Link>
         </Box>
 

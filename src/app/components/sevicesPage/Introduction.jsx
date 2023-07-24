@@ -4,6 +4,7 @@ import services from '@/app/styles/services.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Button, Hidden, Typography } from '@mui/material'
 import { arrowForwardSecond } from '../reuse/icons'
+import { SecondaryBtn } from '../reuse/Buttons'
 
 const Introduction = ({ children, hgap }) => {
 
@@ -24,9 +25,7 @@ const Introduction = ({ children, hgap }) => {
             </Typography>
           </Box>
           <Box my="40px" textAlign='center'>
-            <Button color='secondary' className={services.secondaryBtn} endIcon={arrowForwardSecond} >
-              Start Now
-            </Button>
+          <SecondaryBtn />
           </Box>
           <Box>
             <Box width={{ xs: '90%', md: '80%', lg: '70%' }} margin='auto'>
