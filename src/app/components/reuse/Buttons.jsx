@@ -3,7 +3,7 @@ import { Button, ButtonBase } from "@mui/material";
 import { arrowForward, arrowForwardSecond, downIcon, languageIcon } from "./icons";
 
 
-const handleNothing = () => { alert() }
+const handleNothing = () => { }
 
 export const PrimaryBtn = ({ minWidth = "200px", minHeight = "62px", border = "4px solid #0F1546", onClick = handleNothing }) => {
 
