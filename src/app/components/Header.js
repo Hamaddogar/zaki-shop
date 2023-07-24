@@ -75,17 +75,17 @@ const Header = ({ mainStyle, menu = 'dark' }) => {
         {menuIs === 'light' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture center={false} src={'/logo-md.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
+              <Picture priority center={false} src={'/logo-md.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
             </Link>
-            <Picture onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+            <Picture priority onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
           </Stack>}
 
         {menuIs === 'dark' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture center={false} src={'/logo-dark.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
+              <Picture priority center={false} src={'/logo-dark.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
             </Link>
-            <Picture onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+            <Picture priority onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
           </Stack>}
         <MobileNav open={openNav} setOpen={setOpenNav} menu={menuIs} />
       </Box>
@@ -96,13 +96,13 @@ const Header = ({ mainStyle, menu = 'dark' }) => {
       <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
         <Stack width={{ xs: '95%', md: '85%' }} sx={{ margin: 'auto' }} direction='row' alignItems='center' justifyContent={'space-between'} className={mainStyle}>
           <Link href={'/'}>
-            <Picture center={false} src={'/logo-md.svg'} width={300} height={47} alt={'logo'} className={header.logomd} />
+            <Picture priority center={false} src={'/logo-md.svg'} width={300} height={47} alt={'logo'} className={header.logomd} />
           </Link>
 
           <Stack direction={'row'} alignItems={'center'} spacing={3}>
             <LoginBtn />
             <LanguageBtn onClick={handleClick} />
-            <Picture style={{ cursor: 'pointer' }} center={false} onClick={handleMiniNav(miniMenu, setminiMenu)} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+            <Picture priority style={{ cursor: 'pointer' }} center={false} onClick={handleMiniNav(miniMenu, setminiMenu)} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
           </Stack>
         </Stack>
       </Box>
