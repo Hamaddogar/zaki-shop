@@ -253,24 +253,7 @@
 
 
 
-.primaryBtn {
-  border-radius: 100px;
-  border: 4px solid #0F1546;
-  min-width: 200px;
-  min-height: 62px;
-  justify-content: space-around;
-  text-transform: capitalize;
-}
 
-/* common  */
-.secondaryBtn {
-  border-radius: 100px;
-  border: 4px solid #36F9BD;
-  min-width: 200px;
-  min-height: 62px;
-  justify-content: space-around;
-  text-transform: capitalize;
-}
 
 .normal {
   font-size: 25px;

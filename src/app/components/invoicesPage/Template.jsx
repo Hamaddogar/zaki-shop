@@ -2,8 +2,8 @@ import React from 'react'
 import invoices from '@/app/styles/invoices.module.css'
 import common from '@/app/styles/common.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Grid, Stack, Typography } from '@mui/material'
-import { arrowForward, listArrowIcon, } from '../reuse/icons'
+import { Box, Grid, Stack, Typography } from '@mui/material'
+import { listArrowIcon, } from '../reuse/icons'
 import { PrimaryBtn } from '../reuse/Buttons'
 
 const Template = () => {

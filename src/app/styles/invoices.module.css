@@ -1,17 +1,7 @@
 .main {
-  /* background-color: #1BFCB6; */
-  /* background-image: url('/invoiceBG.png'); */
-  /* background-size: 100% 100%; */
   background: rgba(255, 255, 255, 0.14);
   backdrop-filter: blur(18px);
   overflow: hidden;
-}
-
-.title {
-  font-size: 53px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 59px;
 }
 
 .titleIntegration {
@@ -19,14 +9,6 @@
   font-weight: 900;
   line-height: 59px;
   font-size: 40px;
-}
-
-.subtitle {
-  text-align: center;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 49px;
 }
 
 .subtitlemain {
@@ -72,26 +54,6 @@
 .templateMain {
   padding: 85px 60px;
   background-color: #EDFFF9;
-}
-
-
-.primaryBtn {
-  border-radius: 100px;
-  border: 4px solid #0F1546;
-  min-width: 200px;
-  min-height: 62px;
-  justify-content: space-around;
-  text-transform: capitalize;
-}
-
-/* common  */
-.secondaryBtn {
-  border-radius: 100px;
-  border: 4px solid #36F9BD;
-  min-width: 200px;
-  min-height: 62px;
-  justify-content: space-around;
-  text-transform: capitalize;
 }
 
 .normal {

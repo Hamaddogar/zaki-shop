@@ -50,12 +50,12 @@
 /* BACKGROUND RELATED */
 
 .BGM {
-    background: url('/dc.svg'), lightgray 50% / cover no-repeat;
+    background: url('/dc.png'), lightgray 50% / cover no-repeat;
     background-size: cover;
 }
 
 .BGI {
-    background: url('/invoiceBG.svg'), 50% / cover no-repeat;
+    background: url('/invoiceBG.png'), 50% / cover no-repeat;
     background-size: cover;
   }
 

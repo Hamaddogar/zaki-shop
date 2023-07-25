@@ -2,7 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import { Box, ButtonBase, ListItemIcon, Menu, MenuItem, Stack, Typography } from '@mui/material';
-import { downIcon, drawerLogo, facebookIcon, languageIcon, linkedinIcon, marker, twitterIcon } from './reuse/icons';
+import { downIcon, drawerLogo, facebookIcon, languageIcon, linkedinIcon, twitterIcon } from './reuse/icons';
 import header from '@/app/styles/header.module.css';
 import Picture from './reuse/Picture';
 import LinksLister from './reuse/LinksLister';
@@ -14,7 +14,6 @@ export default function MobileNav({ open, setOpen }) {
     const openMenu = Boolean(anchorEl);
     const handleClick = (event) => setAnchorEl(event.currentTarget);
     const handleCloseMenu = (value) => e => {
-        console.log('value', value);
         if (value) setselectedLanguage(value)
         setAnchorEl(null);
     }
