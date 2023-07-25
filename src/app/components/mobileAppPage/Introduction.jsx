@@ -29,7 +29,7 @@ const Introduction = ({ children, hgap }) => {
           </Box>
           <Box>
             <Box width={{ xs: '90%', md: '80%', lg: '70%' }} margin='auto'>
-              <Picture src={'/mobileappmain.svg'} width={3159} height={1746} alt=''  />
+              <Picture priority={true} src={'/mobileappmain.svg'} width={3159} height={1746} alt=''  />
             </Box>
           </Box>
         </Box>

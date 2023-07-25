@@ -34,7 +34,7 @@ const MobileApp = () => {
           </Link>
         </Box>
         <Box pt={{ xs: 0, lg: 15 }} width={{ xs: '80%', lg: 'auto' }} margin='auto' pl={{ xs: 0, lg: 3 }}>
-          <Picture src={'/mobileapp.svg'} width={274} height={396} alt='MobileApp' />
+          <Picture priority={true} src={'/mobileapp.svg'} width={274} height={396} alt='MobileApp' />
         </Box>
       </Box>
     </div>

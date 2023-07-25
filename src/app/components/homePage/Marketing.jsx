@@ -14,7 +14,7 @@ const Marketing = () => {
 
       <Box sx={{ color: 'white', display: 'flex', flexDirection: { xs: 'column-reverse', lg: 'row' }, flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '30px', placeItems: 'center' }}>
         <Box width={{ xs: '80%', lg: 'auto' }} margin='auto' pr={{ xs: 0, lg: 3 }}>
-          <Picture src={'/marketinng.svg'} width={550} height={437} alt='marketing' />
+          <Picture priority={true} src={'/marketinng.svg'} width={550} height={437} alt='marketing' />
         </Box>
 
         <Box textAlign={{ xs: 'center', lg: 'left' }}>

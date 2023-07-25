@@ -8,7 +8,7 @@ const Picture = ({ src, alt, center = true, ...rest }) => {
             <Image quality={100} layout="intrinsic" src={src} alt={alt} {...rest} />
         </div>
         :
-        <Image quality={100}  layout="intrinsic" src={src} alt={alt} {...rest} />
+        <Image layout="intrinsic" src={src} alt={alt} {...rest} />
     )
 }
 

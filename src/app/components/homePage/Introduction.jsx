@@ -1,20 +1,25 @@
 "use client"
 import React from 'react'
+import header from '@/app/styles/header.module.css'
 import common from '@/app/styles/common.module.css'
 import home from '@/app/styles/home.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Hidden, Stack, Typography } from '@mui/material'
-import { arrowForward } from '../reuse/icons'
+import { Box, Stack, Typography } from '@mui/material'
 import { PrimaryBtn } from '../reuse/Buttons'
+import HeaderMobile from '../HeaderMobile'
+import Header from '../Header'
 
-const Introduction = ({ children, hgap }) => {
+const Introduction = () => {
   const [playing] = React.useState(false)
 
   return (
     <div className={common.BGM}>
       <div className={home.main}>
-        <Box pt={{ xs: '20px', md: '65px' }} >{children}</Box>
-        <Box pt={hgap} pb={{ xs: '100px', md: '85px', lg: 'auto' }}>
+        <Box pt={{ xs: '20px', md: '65px' }} >
+          <Box sx={{ display: { xs: 'none', md: 'block' } }}> <Header mainStyle={header.main} /> </Box>
+          <Box sx={{ display: { xs: 'block', md: 'none' } }}> <HeaderMobile menu='dark' /> </Box>
+        </Box>
+        <Box pt={{ xs: '20px', sm: '150px', md: '167px', lg: '200px' }} pb={{ xs: '100px', md: '85px', lg: 'auto' }}>
           <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '30px' }}>
             <Box>
               <Box textAlign={{ xs: 'center', lg: 'left' }} width={{ xs: '80%', md: '100%' }} margin='auto'>
@@ -57,7 +62,7 @@ const Introduction = ({ children, hgap }) => {
             </Box>
             <Box >
               <Box width={{ xs: '86%', }} margin='auto'>
-                <Picture src={'/face.svg'} width={570} height={430} alt='' />
+                <Picture priority={true} src={'/face.svg'} width={570} height={430} alt='' />
               </Box>
               <Stack mt={4} direction={'row'} justifyContent={'center'} alignItems={'center'} spacing={2}>
                 {!playing && <Picture center={false} src={'/playIcon.png'} alt='' width={58} height={58} />}
