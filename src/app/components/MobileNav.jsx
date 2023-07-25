@@ -1,15 +1,23 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
-import { Box, ButtonBase, Stack, Typography } from '@mui/material';
+import { Box, ButtonBase, ListItemIcon, Menu, MenuItem, Stack, Typography } from '@mui/material';
 import { downIcon, drawerLogo, facebookIcon, languageIcon, linkedinIcon, marker, twitterIcon } from './reuse/icons';
 import header from '@/app/styles/header.module.css';
 import Picture from './reuse/Picture';
-import Link from 'next/link';
+import LinksLister from './reuse/LinksLister';
 
 export default function MobileNav({ open, setOpen }) {
     const handleClose = () => setOpen(false);
-
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [selectedLanguage, setselectedLanguage] = React.useState("English");
+    const openMenu = Boolean(anchorEl);
+    const handleClick = (event) => setAnchorEl(event.currentTarget);
+    const handleCloseMenu = (value) => e => {
+        console.log('value', value);
+        if (value) setselectedLanguage(value)
+        setAnchorEl(null);
+    }
     return (
         <div>
             <Dialog
@@ -26,7 +34,7 @@ export default function MobileNav({ open, setOpen }) {
             >
                 <Stack direction='row' alignItems='center' justifyContent={'space-between'}>
                     <Box>{drawerLogo}</Box>
-                    <Picture onClick={handleClose} center={false} src={'/close.svg'} width={48} height={48} alt={'logo'}  />
+                    <Picture onClick={handleClose} center={false} src={'/close.svg'} width={48} height={48} alt={'logo'} />
                 </Stack>
 
                 <Stack mt={'83px'} sx={{ position: 'relative', }} justifyContent={'space-between'}>
@@ -34,29 +42,7 @@ export default function MobileNav({ open, setOpen }) {
                     <Typography className={header['inner-nav-title']}>
                         Welcome to <br />  Over Zaki
                     </Typography>
-
-                    <Stack justifyContent={'flex-start'} mt='53px' rowGap={'10px'} >
-                        <Stack direction='row' rowGap='15px' alignItems='center' justifyContent='flex-start' >
-                            <span>{marker}</span>
-                            <Link href='/' className={header['inner-nav-routes']} >Home</Link>
-                        </Stack>
-                        <Stack direction='row' rowGap='25px' alignItems='center' justifyContent='flex-start' >
-                            <span>{marker}</span>
-                            <Link href='/services' className={header['inner-nav-routes']} >Website</Link>
-                        </Stack>
-                        <Stack direction='row' rowGap='15px' alignItems='center' justifyContent='flex-start' >
-                            <span>{marker}</span>
-                            <Link href='/mobileapp' className={header['inner-nav-routes']} >Mobile Apps</Link>
-                        </Stack>
-                        <Stack direction='row' rowGap='15px' alignItems='center' justifyContent='flex-start' >
-                            <span>{marker}</span>
-                            <Link href='/marketing' className={header['inner-nav-routes']} >Marketing</Link>
-                        </Stack>
-                        <Stack direction='row' rowGap='15px' alignItems='center' justifyContent='flex-start' >
-                            <span>{marker}</span>
-                            <Link href='/invoices' className={header['inner-nav-routes']} >Invoices</Link>
-                        </Stack>
-                    </Stack>
+                    <LinksLister mt='53px' />
 
                     <Stack spacing={'17px'} mt={'40px'}>
                         <ButtonBase color='secondary' className={header['inner-nav-login']} >Login</ButtonBase>
@@ -65,12 +51,12 @@ export default function MobileNav({ open, setOpen }) {
                             className={header['inner-nav-language']}
                             startIcon={languageIcon}
                             endIcon={downIcon}
-                            color='info'
+                            id="account-menu"
                             disableTouchRipple
                             disableRipple
-                        // onClick={handleClick}
+                            onClick={handleClick}
                         >
-                            <span>English</span>
+                            <span style={{ color: '#FFFFFF' }}>{selectedLanguage}</span>
                         </Button>
                     </Stack>
                     {/* </Box> */}
@@ -98,6 +84,49 @@ export default function MobileNav({ open, setOpen }) {
                         </Stack>
                     </Box>
                 </Stack>
+                <Menu
+                    anchorEl={anchorEl}
+                    id="account-menu"
+                    open={openMenu}
+                    onClose={handleCloseMenu}
+                    // onClick={handleClose}
+                    PaperProps={{
+                        elevation: 0,
+                        sx: {
+                            overflow: 'visible',
+                            filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
+                            background: 'rgba(20, 24, 58, 0.54)',
+                            backdropFilter: 'blur(27px)',
+                            color: '#FFFFFF',
+                            mt: 1.5,
+                            '& .MuiAvatar-root': {
+                                width: 32,
+                                height: 32,
+                                ml: -0.5,
+                                mr: 1,
+                            },
+                            '&:before': {
+                                content: '""',
+                                display: 'block',
+                                position: 'absolute',
+                                top: 0,
+                                right: 14,
+                                width: 10,
+                                height: 10,
+                                background: 'rgba(20, 24, 58, 0.54)',
+                                backdropFilter: 'blur(27px)',
+                                transform: 'translateY(-50%) rotate(45deg)',
+                                zIndex: 0,
+                            },
+                        },
+                    }}
+                    transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+                    anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+                >
+                    <MenuItem sx={{ color: '#FFFFFF' }} onClick={handleCloseMenu(selectedLanguage === "Arabic" ? "English" : "Arabic")}>
+                        <ListItemIcon> {languageIcon}   </ListItemIcon>  <span>{selectedLanguage === "Arabic" ? "English" : "Arabic"}</span>
+                    </MenuItem>
+                </Menu>
             </Dialog>
         </div>
     );

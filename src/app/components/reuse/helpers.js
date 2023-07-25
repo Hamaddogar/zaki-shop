@@ -9,7 +9,11 @@ export function pxToRem(pxValue, baseFontSize = 16) {
     return remValue.toFixed(4) + 'rem';
 }
 
-
-// export const fonter = (s1, s2, s3, s4) => {
-//     return { xs: pxToRem(s1), md: pxToRem(s2),, lg: '' }
-// }
+export const pageLinks = [
+    { href: '/', text: "Home" },
+    { href: '/services', text: "Website" },
+    { href: '/mobileapp', text: "Mobile Apps" },
+    { href: '/marketing', text: "Marketing" },
+    { href: '/invoices', text: "Invoices" },
+]
+export const activeLink = { color: '#1BFCB6' }

@@ -3,18 +3,15 @@ import { Box, Stack } from '@mui/material'
 import React from 'react'
 import header from '@/app/styles/header.module.css'
 import Picture from './reuse/Picture'
-import dynamic from 'next/dynamic'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import { languageIcon, marker } from './reuse/icons';
+import { languageIcon } from './reuse/icons';
 import Link from 'next/link'
 import Image from 'next/image'
-import MobileNav from './MobileNav';
 import MiniNav from './MiniNav'
-// const MobileNav = dynamic(() => import('./MobileNav'), { ssr: true, });
-// const MiniNav = dynamic(() => import('./MiniNav'), { ssr: true, });
 import { LanguageBtn, LoginBtn } from './reuse/Buttons'
+import LinksLister from './reuse/LinksLister'
 
 const Header = ({ mainStyle }) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -23,7 +20,7 @@ const Header = ({ mainStyle }) => {
   const open = Boolean(anchorEl);
   const handleClick = (event) => setAnchorEl(event.currentTarget);
   const handleClose = (value) => e => {
-    console.log('value',value);
+    console.log('value', value);
     if (value) setselectedLanguage(value)
     setAnchorEl(null);
   }
@@ -33,33 +30,19 @@ const Header = ({ mainStyle }) => {
     else if (pv === "open") setter('close')
     else if (pv === "close") setter('open')
   }
+  const iconStyle = {
+    width: '48px',
+    height: '48px',
+    cursor: 'pointer',
+    opacity: miniMenu ? '1' : '0', // Set the opacity based on the miniMenu state
+    transition: 'opacity 0.5s ease-in-out', // Define the transition property and timing
+  };
 
   return (
     <Box>
       <Box>
-        <MiniNav alignItems='flex-end' openST={miniMenu} closeST={handleMiniNav(miniMenu, setminiMenu)} >
-          <Stack justifyContent={'flex-start'} mt='35px' rowGap={'10px'} >
-            <Stack direction='row' rowGap='15px' alignItems='center' justifyContent='flex-start' >
-              <span>{marker}</span>
-              <Link href='/' className={header['inner-nav-routes']} >Home</Link>
-            </Stack>
-            <Stack direction='row' rowGap='25px' alignItems='center' justifyContent='flex-start' >
-              <span>{marker}</span>
-              <Link href='/services' className={header['inner-nav-routes']} >Website</Link>
-            </Stack>
-            <Stack direction='row' rowGap='15px' alignItems='center' justifyContent='flex-start' >
-              <span>{marker}</span>
-              <Link href='/mobileapp' className={header['inner-nav-routes']} >Mobile Apps</Link>
-            </Stack>
-            <Stack direction='row' rowGap='15px' alignItems='center' justifyContent='flex-start' >
-              <span>{marker}</span>
-              <Link href='/marketing' className={header['inner-nav-routes']} >Marketing</Link>
-            </Stack>
-            <Stack direction='row' rowGap='15px' alignItems='center' justifyContent='flex-start' >
-              <span>{marker}</span>
-              <Link href='/invoices' className={header['inner-nav-routes']} >Invoices</Link>
-            </Stack>
-          </Stack>
+        <MiniNav alignItems='flex-end' openST={miniMenu} >
+          <LinksLister mt='35px' />
           <Stack my='30px' direction='row' alignItems={'center'} spacing={2} >
             <Image src='/facebook.svg' width={16} height={16} alt='' />
             <Image src='/insta.svg' width={16} height={16} alt='' />
@@ -77,7 +60,12 @@ const Header = ({ mainStyle }) => {
           <Stack direction={'row'} alignItems={'center'} spacing={3}>
             <LoginBtn />
             <LanguageBtn onClick={handleClick} text={selectedLanguage} />
-            <Picture priority={true} style={{ cursor: 'pointer' }} center={false} onClick={handleMiniNav(miniMenu, setminiMenu)} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+            {
+              miniMenu === "open" ?
+                <Picture onClick={handleMiniNav(miniMenu, setminiMenu)} center={false} src={'/close.svg'} width={48} height={48} alt={'logo'} style={{ cursor: 'pointer', ...iconStyle }} />
+                :
+                <Picture priority={true} style={{ cursor: 'pointer', ...iconStyle }} center={false} onClick={handleMiniNav(miniMenu, setminiMenu)} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+            }
           </Stack>
         </Stack>
 
