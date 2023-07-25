@@ -1,5 +1,1 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="24" cy="24" r="24" fill="#1BFCB6"/>
-<path d="M18 19L29.3137 30.3137" stroke="#0F1546" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M29.3145 19L18.0007 30.3137" stroke="#0F1546" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" xmlns:v="https://vecta.io/nano"><circle cx="24" cy="24" r="24" fill="#1bfcb6"/><g stroke="#0f1546" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 19l11.314 11.314"/><path d="M29.315 19L18.001 30.314"/></g></svg>

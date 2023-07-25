@@ -19,9 +19,14 @@ import { LanguageBtn, LoginBtn } from './reuse/Buttons'
 const Header = ({ mainStyle }) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [miniMenu, setminiMenu] = React.useState("none");
+  const [selectedLanguage, setselectedLanguage] = React.useState("English");
   const open = Boolean(anchorEl);
   const handleClick = (event) => setAnchorEl(event.currentTarget);
-  const handleClose = () => setAnchorEl(null);
+  const handleClose = (value) => e => {
+    console.log('value',value);
+    if (value) setselectedLanguage(value)
+    setAnchorEl(null);
+  }
 
   const handleMiniNav = (pv, setter) => e => {
     if (pv === "none") setter('open')
@@ -67,12 +72,12 @@ const Header = ({ mainStyle }) => {
 
         <Stack width={{ xs: '95%', md: '85%' }} sx={{ margin: 'auto' }} direction='row' alignItems='center' justifyContent={'space-between'} className={mainStyle}>
           <Link href={'/'}>
-            <Picture priority center={false} src={'/logo-md.svg'} width={300} height={47} alt={'logo'} className={header.logomd} />
+            <Picture priority={true} center={false} src={'/logo-md.svg'} width={300} height={47} alt={'logo'} className={header.logomd} />
           </Link>
           <Stack direction={'row'} alignItems={'center'} spacing={3}>
             <LoginBtn />
-            <LanguageBtn onClick={handleClick} />
-            <Picture priority style={{ cursor: 'pointer' }} center={false} onClick={handleMiniNav(miniMenu, setminiMenu)} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+            <LanguageBtn onClick={handleClick} text={selectedLanguage} />
+            <Picture priority={true} style={{ cursor: 'pointer' }} center={false} onClick={handleMiniNav(miniMenu, setminiMenu)} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
           </Stack>
         </Stack>
 
@@ -81,7 +86,7 @@ const Header = ({ mainStyle }) => {
           id="account-menu"
           open={open}
           onClose={handleClose}
-          onClick={handleClose}
+          // onClick={handleClose}
           PaperProps={{
             elevation: 0,
             sx: {
@@ -115,11 +120,8 @@ const Header = ({ mainStyle }) => {
           transformOrigin={{ horizontal: 'right', vertical: 'top' }}
           anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
         >
-          <MenuItem onClick={handleClose}>
-            <ListItemIcon>
-              {languageIcon}
-            </ListItemIcon>
-            Arabic
+          <MenuItem onClick={handleClose(selectedLanguage === "Arabic" ? "English" : "Arabic")}>
+            <ListItemIcon> {languageIcon}   </ListItemIcon>  <span>{selectedLanguage === "Arabic" ? "English" : "Arabic"}</span>
           </MenuItem>
         </Menu>
       </Box>

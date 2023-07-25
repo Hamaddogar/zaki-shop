@@ -1,18 +1,23 @@
 import React from 'react'
 import common from '@/app/styles/common.module.css'
 import services from '@/app/styles/services.module.css'
+import header from '@/app/styles/header.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Hidden, Typography } from '@mui/material'
-import { arrowForwardSecond } from '../reuse/icons'
+import { Box, Hidden, Typography } from '@mui/material'
 import { SecondaryBtn } from '../reuse/Buttons'
+import Header from '../Header'
+import HeaderMobile from '../HeaderMobile'
 
-const Introduction = ({ children, hgap }) => {
+const Introduction = () => {
 
   return (
     <div className={common.BGM}>
       <div className={services.main}>
-        <Box pt={{ xs: '20px', md: '65px' }} >{children}</Box>
-        <Box pt={hgap} pb={{ xs: '80px', md: '100px', lg: '100px' }}>
+        <Box pt={{ xs: '20px', md: '65px' }} >
+          <Box sx={{ display: { xs: 'none', md: 'block' } }}> <Header mainStyle={header.mainService} /> </Box>
+          <Box sx={{ display: { xs: 'block', md: 'none' } }}> <HeaderMobile menu={'light'} /> </Box>
+        </Box>
+        <Box pt={{ xs: '48px', sm: '70px', md: '100px', lg: '108px' }} pb={{ xs: '80px', md: '100px', lg: '100px' }}>
           <Box sx={{ color: '#FFFFFF' }} textAlign={'center'} width={{ xs: '80%', md: '100%' }} margin='auto'>
 
             <Typography
@@ -25,15 +30,15 @@ const Introduction = ({ children, hgap }) => {
             </Typography>
           </Box>
           <Box my="40px" textAlign='center'>
-          <SecondaryBtn />
+            <SecondaryBtn />
           </Box>
           <Box>
             <Box width={{ xs: '90%', md: '80%', lg: '70%' }} margin='auto'>
               <Hidden lgDown>
-                <Picture src={'/weblg.svg'} width={1095} height={487} alt=''  />
+                <Picture src={'/weblg.svg'} width={1095} height={487} alt='' />
               </Hidden>
               <Hidden lgUp>
-                <Picture src={'/webmd.svg'} width={820} height={619} alt=''  />
+                <Picture src={'/webmd.svg'} width={820} height={619} alt='' />
               </Hidden>
             </Box>
           </Box>

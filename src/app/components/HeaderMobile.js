@@ -14,21 +14,21 @@ const HeaderMobile = ({ menu = 'dark' }) => {
 
   return (
     <Box>
-      <Box className={header['main-mobile']} sx={{ display: { xs: 'block', sm: 'none' } }}>
+      <Box className={header['main-mobile']}>
         {menu === 'light' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture priority center={false} src={'/logo-md.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
+              <Picture priority={true} center={false} src={'/logo-md.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
             </Link>
-            <Picture priority onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+            <Picture priority={true} onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
           </Stack>}
 
         {menu === 'dark' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture priority center={false} src={'/logo-dark.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
+              <Picture priority={true} center={false} src={'/logo-dark.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
             </Link>
-            <Picture priority onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+            <Picture priority={true} onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
           </Stack>}
         <MobileNav open={openNav} setOpen={setOpenNav} menu={menu} />
       </Box>

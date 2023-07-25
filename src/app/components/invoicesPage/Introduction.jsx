@@ -1,17 +1,23 @@
 import React from 'react'
 import Picture from '../reuse/Picture'
 import common from '@/app/styles/common.module.css'
+import header from '@/app/styles/header.module.css'
 import invoices from '@/app/styles/invoices.module.css'
 import { Box, Typography } from '@mui/material'
 import { PrimaryBtn } from '../reuse/Buttons'
+import Header from '../Header'
+import HeaderMobile from '../HeaderMobile'
 
-const Introduction = ({ children, hgap }) => {
+const Introduction = () => {
 
   return (
     <div className={common.BGI}>
       <div className={invoices.main} sx={{ backgroundSize: { xs: '80%', md: '70%', lg: 'auto' } }}>
-        <Box pt={{ xs: '20px', md: '65px' }} >{children}</Box>
-        <Box pt={hgap} pb={{ xs: '80px', md: '100px', lg: '120px' }}>
+        <Box pt={{ xs: '20px', md: '65px' }} >
+          <Box sx={{ display: { xs: 'none', md: 'block' } }}> <Header mainStyle={header.mainInvoices} /> </Box>
+          <Box sx={{ display: { xs: 'block', md: 'none' } }}> <HeaderMobile menu='dark' /> </Box>
+        </Box>
+        <Box pt={{ xs: '48px', sm: '70px', md: '100px', lg: '138px' }} pb={{ xs: '80px', md: '100px', lg: '120px' }}>
           <Box sx={{ color: '#FFFFFF' }} textAlign={'center'} width={{ xs: '80%', md: '100%' }} margin='auto'>
             <Typography
               fontWeight={{ xs: 800 }}

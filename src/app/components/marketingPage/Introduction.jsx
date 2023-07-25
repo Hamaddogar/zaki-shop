@@ -1,18 +1,23 @@
 import React from 'react'
+import header from '@/app/styles/header.module.css'
 import common from '@/app/styles/common.module.css'
 import marketing from '@/app/styles/marketing.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Typography } from '@mui/material'
-import { arrowForward } from '../reuse/icons'
+import { Box, Typography } from '@mui/material'
 import { PrimaryBtn } from '../reuse/Buttons'
+import Header from '../Header'
+import HeaderMobile from '../HeaderMobile'
 
-const Introduction = ({ children, hgap }) => {
+const Introduction = () => {
 
   return (
     <div className={common.BGM1}>
       <div className={marketing.main} sx={{ backgroundSize: { xs: '80%', md: '70%', lg: 'auto' } }}>
-        <Box pt={{ xs: '20px', md: '65px' }} >{children}</Box>
-        <Box pt={hgap} pb={{ xs: '80px', md: '100px', lg: '0px' }}>
+        <Box pt={{ xs: '20px', md: '65px' }} >
+          <Box sx={{ display: { xs: 'none', md: 'block' } }}> <Header mainStyle={header.mainMarketing} /> </Box>
+          <Box sx={{ display: { xs: 'block', md: 'none' } }}> <HeaderMobile menu='dark' /> </Box>
+        </Box>
+        <Box pt={{ xs: '48px', sm: '70px', md: '100px', lg: '108px' }} pb={{ xs: '80px', md: '100px', lg: '0px' }}>
 
           <Box textAlign={'center'} width={{ xs: '80%', md: '100%' }} margin='auto'>
 
@@ -27,20 +32,20 @@ const Introduction = ({ children, hgap }) => {
             </Typography>
           </Box>
           <Box my="40px" textAlign='center'>
-          <PrimaryBtn />
+            <PrimaryBtn />
           </Box>
           <Box>
 
             <Box sx={{ display: { xs: 'none', sm: 'none', md: 'none', lg: 'block' }, position: 'relative', top: { xs: 0, lg: '75px' } }} margin='auto'>
-              <Picture src={'/marketingmainlg.svg'} width={1728} height={706} alt=''  />
+              <Picture src={'/marketingmainlg.svg'} width={1728} height={706} alt='' />
             </Box>
 
             <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block', lg: 'none' }, position: 'relative' }} margin='auto'>
-              <Picture src={'/marketingmainmd.svg'} width={980} height={581} alt=''  />
+              <Picture src={'/marketingmainmd.svg'} width={980} height={581} alt='' />
             </Box>
 
             <Box sx={{ display: { xs: 'block', sm: 'block', md: 'none', lg: 'none' }, position: 'relative' }} margin='auto'>
-              <Picture src={'/marketingmainmdxs.svg'} width={351} height={504} alt=''  />
+              <Picture src={'/marketingmainmdxs.svg'} width={351} height={504} alt='' />
             </Box>
 
           </Box>

@@ -1,6 +1,5 @@
 import React from 'react'
 import Introduction from './components/homePage/Introduction';
-import Header from './components/Header';
 import Websites from './components/homePage/Websites';
 import MobileApp from './components/homePage/MobileApp';
 import Marketing from './components/homePage/Marketing';

@@ -57,7 +57,7 @@ export const LoginBtn = () => {
     </ButtonBase>
 };
 
-export const LanguageBtn = ({ onClick = handleNothing }) => {
+export const LanguageBtn = ({ onClick = handleNothing, text }) => {
 
     return <Button
         startIcon={languageIcon}
@@ -78,7 +78,7 @@ export const LanguageBtn = ({ onClick = handleNothing }) => {
             }
         }}
     >
-        <span>English</span>
+        <span>{text}</span>
     </Button>
 };
 

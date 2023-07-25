@@ -33,7 +33,7 @@ const Invoices = () => {
           </Link>
         </Box>
         <Box width={{ xs: '80%', lg: 'auto' }} margin='auto' pl={{ xs: 0, lg: 3 }}>
-          <Picture priority={true} src={'/invoices.svg'} width={314} height={405} alt='invoices' />
+          <Picture src={'/invoices.svg'} width={314} height={405} alt='invoices' />
         </Box>
       </Box>
     </div>

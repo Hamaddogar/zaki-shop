@@ -37,7 +37,7 @@ const SliderComponent = ({ children, autoPlay = false, slideInterval = 1000, dir
         if (!isDragging) return;
         e.preventDefault();
         const x = e.pageX - containerRef.current.offsetLeft;
-        const walk = (x - startX) * 3;
+        const walk = (x - startX) * 6;
         containerRef.current.scrollLeft = scrollLeft - walk;
     };
 
@@ -66,7 +66,7 @@ const SliderComponent = ({ children, autoPlay = false, slideInterval = 1000, dir
         if (!isDragging) return;
         e.preventDefault();
         const x = e.touches[0].clientX - containerRef.current.offsetLeft;
-        const walk = (x - startX) * 3;
+        const walk = (x - startX) * 6;
         containerRef.current.scrollLeft = scrollLeft - walk;
     };
 
