@@ -26,6 +26,7 @@ export default function App({ Component, pageProps }) {
       router.events.off('routeChangeError', handleComplete);
     };
   }, [router]);
+  
 
   return <ThemeProvider theme={theme}>
     <CssBaseline />
