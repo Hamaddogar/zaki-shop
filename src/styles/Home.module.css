@@ -1,0 +1,113 @@
+.main {
+  background-color: rgba(27, 252, 182, 0.83);
+  overflow: hidden;
+}
+
+.BG {
+  background-image: url('/BG.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+
+.iosandBtns {
+  width: 180px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #0F1546;
+  color: #FFFFFF;
+}
+
+/* websites section */
+.websites {
+  min-height: 791px;
+  overflow-x: hidden;
+  background: #0F1546;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MobileApp {
+  min-height: 791px;
+  overflow-x: hidden;
+  background: #36F9BD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marketing {
+  min-height: 791px;
+  overflow-x: hidden;
+  background: #0F1546;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Invoices {
+  min-height: 791px;
+  overflow-x: hidden;
+  background: #36F9BD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DownloadApp {
+  /* min-height: 626px; */
+  background: #EBFAFF;
+  padding: 50px 0px 0px 0px;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+  .websites,
+  .MobileApp,
+  .marketing,
+  .DownloadApp,
+  .Invoices {
+    min-height: auto;
+    padding: 40px 45px;
+  }
+
+  .DownloadApp {
+    min-height: auto;
+    padding: 40px 45px 0px 45px;
+  }
+
+  .iosandBtns {
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    background: #0F1546;
+  }
+
+  .BG {
+    background-position: bottom center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .websites,
+  .MobileApp,
+  .marketing,
+  .Invoices {
+    padding: 40px 5px;
+  }
+
+  .DownloadApp {
+    min-height: auto;
+    padding: 40px 5px 0px 5px;
+  }
+
+  .iosandBtns {
+    width: 145px;
+    height: 48px;
+  }
+}

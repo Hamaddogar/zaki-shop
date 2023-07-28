@@ -1,0 +1,213 @@
+.main {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+.titleIntegration {
+  font-style: normal;
+  font-weight: 900;
+  line-height: 59px;
+  font-size: 40px;
+}
+
+.subtitlemain {
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 45px;
+}
+
+
+/* Cars Section */
+
+
+.titleContainer {
+  width: 80%;
+  max-width: 898px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+}
+
+
+.printShareMain {
+  padding: 85px 80px 0px 80px;
+  background: #151B4A;
+}
+
+.financeMain {
+  padding: 85px 80px;
+  background: #FFFFFF;
+}
+
+.createManageMain {
+  padding: 85px 80px;
+  background: #22EDAE
+}
+
+.paymentMain {
+  padding: 85px 60px;
+}
+
+.templateMain {
+  padding: 85px 60px;
+  background-color: #EDFFF9;
+}
+
+.normal {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.normal2 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+
+/* Desktop */
+@media only screen and (max-width:1500px) {}
+
+@media only screen and (max-width:1350px) {
+
+  .subtitlemain,
+  .titleIntegration {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+}
+
+@media only screen and (max-width:1200px) {}
+
+@media only screen and (max-width:1124px) {
+
+  .subtitlemain,
+  .titleIntegration {
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  .normal2 {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+/* Tablet */
+@media only screen and (max-width: 1024px) {
+
+  .subtitlemain,
+  .titleIntegration {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+
+  .createManageMain,
+  .templateMain,
+  .paymentMain,
+  .financeMain,
+  .templateMain,
+  .paymentMain {
+    min-height: 575px;
+    padding: 85px 40px;
+  }
+
+  .normal2 {
+    font-size: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .subtitle {
+    font-size: 40px;
+  }
+
+  .titleContainer {
+    width: 90%;
+  }
+
+  .normal {
+    font-size: 20px;
+  }
+
+  .normal2 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .subtitle {
+    font-size: 35px;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .subtitle {
+    font-size: 30px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    line-height: 29px;
+  }
+
+  .normal {
+    font-size: 17px;
+  }
+
+  .normal2 {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .titleIntegration {
+    font-size: 23px;
+    line-height: 32px;
+  }
+
+  .createManageMain,
+  .templateMain,
+  .paymentMain,
+  .printShareMain,
+  .financeMain,
+  .templateMain,
+  .paymentMain {
+    min-height: auto;
+    height: 100%;
+    padding: 75px 20px;
+  }
+
+}
