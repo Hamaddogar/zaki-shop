@@ -1,6 +1,6 @@
 import React from 'react'
 import Picture from '../reuse/Picture'
-import common from '@/styles/common.module.css'
+import common from '@/styles/Common.module.css'
 import header from '@/styles/Header.module.css'
 import invoices from '@/styles/Invoices.module.css'
 import { Box, Typography } from '@mui/material'

@@ -1,5 +1,5 @@
 import React from 'react'
-import common from '@/styles/common.module.css'
+import common from '@/styles/Common.module.css'
 import mobileapp from '@/styles/Mobileapp.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Stack, Typography } from '@mui/material'

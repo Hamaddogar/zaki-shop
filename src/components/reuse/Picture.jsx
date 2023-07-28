@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import common from '@/styles/common.module.css'
+import common from '@/styles/Common.module.css'
 
 const Picture = ({ src, alt, center = true, priority = false, ...rest }) => {
     return (center ?

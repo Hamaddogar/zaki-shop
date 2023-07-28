@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef, useState, useEffect } from 'react';
 import { Box } from '@mui/material'; // Assuming you are using Material-UI components
-import common from '@/styles/common.module.css';
+import common from '@/styles/Common.module.css';
 
 const SliderComponent = ({ children, autoPlay = false, slideInterval = 1000, direction = 'left' }) => {
     const containerRef = useRef(null);

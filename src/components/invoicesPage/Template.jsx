@@ -1,6 +1,6 @@
 import React from 'react'
 import invoices from '@/styles/Invoices.module.css'
-import common from '@/styles/common.module.css'
+import common from '@/styles/Common.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Grid, Stack, Typography } from '@mui/material'
 import { listArrowIcon, } from '../reuse/icons'

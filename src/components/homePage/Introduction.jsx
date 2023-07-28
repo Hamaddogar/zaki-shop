@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import header from '@/styles/Header.module.css'
-import common from '@/styles/common.module.css'
+import common from '@/styles/Common.module.css'
 import home from '@/styles/Home.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Stack, Typography } from '@mui/material'

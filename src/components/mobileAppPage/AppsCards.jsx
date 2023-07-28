@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import common from '@/styles/common.module.css'
+import common from '@/styles/Common.module.css'
 import mobileapp from '@/styles/Mobileapp.module.css'
 import { Box, Grid, Typography } from '@mui/material'
 import { fasrEasyIcon, quickConnectionIcon, seamlessAppIcon } from '../reuse/icons'

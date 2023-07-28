@@ -1,6 +1,6 @@
 import React from 'react'
 import header from '@/styles/Header.module.css'
-import common from '@/styles/common.module.css'
+import common from '@/styles/Common.module.css'
 import mobileapp from '@/styles/Mobileapp.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Typography } from '@mui/material'

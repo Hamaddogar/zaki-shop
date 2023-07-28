@@ -1,4 +1,4 @@
-import styles from '@/styles/common.module.css'
+import styles from '@/styles/Common.module.css'
 import React from 'react';
 
 const Loading = () => {

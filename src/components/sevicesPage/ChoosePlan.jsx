@@ -1,5 +1,5 @@
 import React from 'react'
-import common from '@/styles/common.module.css'
+import common from '@/styles/Common.module.css'
 import services from '@/styles/Services.module.css'
 import { Box, Button, ButtonBase, Grid, Stack, Typography } from '@mui/material'
 import { listArrowIcon, planBtn, planBtnActive, planSeemoreActiveIcon, planSeemoreIcon, proPlanIcon, vipPlanIcon } from '../reuse/icons'

@@ -2,7 +2,7 @@ import React from 'react'
 import Picture from './reuse/Picture'
 import { Box, ButtonBase, Grid, Hidden, InputAdornment, Stack, TextField, Typography } from '@mui/material'
 import { arrowForwardEmail, footerfacebook, footerinstagram, footerlinkedin, footertiktok } from './reuse/icons'
-import common from '@/styles/common.module.css'
+import common from '@/styles/Common.module.css'
 import { MUIDesign } from './reuse/Design'
 import Link from 'next/link'
 

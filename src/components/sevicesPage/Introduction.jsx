@@ -1,5 +1,5 @@
 import React from 'react'
-import common from '@/styles/common.module.css'
+import common from '@/styles/Common.module.css'
 import services from '@/styles/Services.module.css'
 import header from '@/styles/Header.module.css'
 import Picture from '../reuse/Picture'
