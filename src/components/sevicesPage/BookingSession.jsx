@@ -4,6 +4,7 @@ import Picture from '../reuse/Picture'
 import { Box, Grid, Stack, Typography } from '@mui/material'
 import { listArrowIcon, } from '../reuse/icons'
 import { PrimaryBtn } from '../reuse/Buttons'
+import booking from '@/components/images/booking.svg'
 
 const BookingSession = ({ content, BTNS }) => {
 
@@ -14,7 +15,6 @@ const BookingSession = ({ content, BTNS }) => {
           <Box>
             <Typography className={services.titleIntegration2} color="secondary" > {content.title} </Typography>
             <Box mt={"50px"} mb={'19px'} display={{ xs: 'inline-block', md: 'block' }}>
-
               {content.points.map((item, indx) => <Stack key={indx} direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
                 <span>{listArrowIcon}</span>
                 <Typography className={services.normal2}>{item}</Typography>
@@ -27,7 +27,7 @@ const BookingSession = ({ content, BTNS }) => {
         </Grid>
         <Grid item xs={12} md={7}>
           <Box>
-            <Picture src={'/booking.svg'} width={1090} height={1155} alt='' />
+            <Picture src={booking} width={1090} height={1155} alt='' />
           </Box>
         </Grid>
       </Grid>

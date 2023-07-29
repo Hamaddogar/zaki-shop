@@ -2,6 +2,8 @@ import React from 'react'
 import marketing from '@/styles/Marketing.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Grid, Stack, Typography } from '@mui/material'
+import lunchcam1 from '@/components/images/lunchcam1.svg'
+import lunchcam2 from '@/components/images/lunchcam2.svg'
 
 const LunchCamp = ({ content }) => {
   return (
@@ -22,14 +24,14 @@ const LunchCamp = ({ content }) => {
                 </Stack>
               </Grid>
               <Grid item xs={12} md={8}>
-                <Picture src={'/lunchcam1.svg'} width={556} height={599} alt='' />
+                <Picture src={lunchcam1} width={556} height={599} alt='' />
               </Grid>
             </Grid>
           </Box>
         </Grid>
 
         <Grid item xs={12} md={4}>
-          <Picture src={'/lunchcam2.svg'} width={463} height={803} alt='' />
+          <Picture src={lunchcam2} width={463} height={803} alt='' />
         </Grid>
       </Grid>
     </div>

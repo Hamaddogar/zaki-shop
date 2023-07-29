@@ -3,6 +3,7 @@ import invoices from '@/styles/Invoices.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Grid, Stack, Typography } from '@mui/material'
 import { listArrowWhiteIcon, } from '../reuse/icons'
+import createmanage from '@/components/images/createmanage.svg'
 
 const CreateManage = ({ content }) => {
 
@@ -10,7 +11,7 @@ const CreateManage = ({ content }) => {
     <div className={invoices.createManageMain}>
       <Grid container direction={{ xs: 'column-reverse', md: 'row' }} alignItems={'center'} justifyContent={'center'} rowGap={'40px'} spacing={'3px'}>
         <Grid item xs={12} md={5} lg={6}>
-          <Picture src={'/createmanage.svg'} width={742} height={748} alt='' />
+          <Picture src={createmanage} width={742} height={748} alt='' />
         </Grid>
         <Grid item xs={12} md={6} lg={5}>
           <Box pr={1} pl={2} >

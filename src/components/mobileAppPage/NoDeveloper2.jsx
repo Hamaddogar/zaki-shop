@@ -3,6 +3,8 @@ import common from '@/styles/Common.module.css'
 import mobileapp from '@/styles/Mobileapp.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Stack, Typography } from '@mui/material'
+import nodev21 from '@/components/images/nodev21.svg'
+import nodev22 from '@/components/images/nodev22.svg'
 
 const NoDeveloper2 = ({ content }) => {
 
@@ -16,10 +18,10 @@ const NoDeveloper2 = ({ content }) => {
       <Box className={common.background} sx={{ backgroundPosition: { xs: 'center center', md: 'center center' } }} >
         <Stack alignItems='center' px={{ xs: 0, lg: 12 }} justifyContent={'center'} direction={{ xs: 'column', lg: 'row' }} rowGap={'40px'} columnGap={{ xs: 0, lg: 10 }} >
           <Box maxWidth={{ xs: '589px', lg: '876px' }}>
-            <Picture center={false} src={'/nodev21.svg'} width={876} height={567} alt='' />
+            <Picture center={false} src={nodev21} width={876} height={567} alt='' />
           </Box>
           <Box>
-            <Picture center={false} src={'/nodev22.svg'} width={589} height={567} alt='' />
+            <Picture center={false} src={nodev22} width={589} height={567} alt='' />
           </Box>
         </Stack>
       </Box>

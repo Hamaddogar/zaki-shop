@@ -5,6 +5,7 @@ import Picture from '../reuse/Picture'
 import { Box, Grid, Stack, Typography } from '@mui/material'
 import { listArrowIcon, } from '../reuse/icons'
 import { PrimaryBtn } from '../reuse/Buttons'
+import integrationP from '@/components/images/integrationP.svg'
 
 const PaymentIntegration = ({ content, BTNS }) => {
 
@@ -13,7 +14,7 @@ const PaymentIntegration = ({ content, BTNS }) => {
       <Box className={common.background} sx={{ backgroundPosition: { xs: 'bottom center', md: '20% center' } }} >
         <Grid container direction={{ xs: 'column-reverse', md: 'row' }} alignItems={'center'} justifyContent={'center'} rowGap={'40px'} spacing={'3px'}>
           <Grid item xs={12} md={6} pr={{ xs: 0, md: 5 }}>
-            <Picture src={'/integrationP.svg'} width={888} height={692} alt='' />
+            <Picture src={integrationP} width={888} height={692} alt='' />
           </Grid>
 
           <Grid item xs={12} md={5} lg={4} >

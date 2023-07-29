@@ -4,6 +4,7 @@ import Picture from '../reuse/Picture'
 import { Box, Typography } from '@mui/material'
 import Link from 'next/link'
 import { SecondaryBtn } from '../reuse/Buttons'
+import marketinng from '@/components/images/marketinng.svg'
 
 const Marketing = ({ content, BTNS }) => {
 
@@ -12,7 +13,7 @@ const Marketing = ({ content, BTNS }) => {
 
       <Box sx={{ color: 'white', display: 'flex', flexDirection: { xs: 'column-reverse', lg: 'row' }, flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '30px', placeItems: 'center' }}>
         <Box width={{ xs: '80%', lg: 'auto' }} margin='auto' pr={{ xs: 0, lg: 3 }}>
-          <Picture src={'/marketinng.svg'} width={550} height={437} alt='marketing' />
+          <Picture src={marketinng} width={550} height={437} alt='marketing' />
         </Box>
 
         <Box textAlign={{ xs: 'center', lg: 'left' }}>

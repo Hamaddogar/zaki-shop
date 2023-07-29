@@ -4,6 +4,7 @@ import Picture from '../reuse/Picture'
 import { Box, Typography } from '@mui/material'
 import Link from 'next/link'
 import { SecondaryBtn } from '../reuse/Buttons'
+import websites from '@/components/images/websites.svg'
 
 const Websites = ({ content, BTNS }) => {
 
@@ -11,7 +12,7 @@ const Websites = ({ content, BTNS }) => {
     <Box className={home.websites}>
       <Box sx={{ display: 'flex', flexDirection: { xs: 'column-reverse', lg: 'row' }, flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '30px', placeItems: 'center' }}>
         <Box width={{ xs: '80%', lg: 'auto' }} margin='auto' pr={{ xs: 0, lg: 3 }}>
-          <Picture priority={true} src={'/websites.svg'} width={402} height={349} alt='websites' />
+          <Picture priority={true} src={websites} width={402} height={349} alt='websites' />
         </Box>
         <Box textAlign={{ xs: 'center', lg: 'left' }}>
           <Typography

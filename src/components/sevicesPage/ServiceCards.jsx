@@ -4,8 +4,7 @@ import common from '@/styles/Common.module.css'
 import services from '@/styles/Services.module.css'
 import { Box, Grid, Typography } from '@mui/material'
 import SliderComponent from './Slider';
-
-const ServiceCards = ({ content, BTNS }) => {
+const ServiceCards = ({ content }) => {
 
   return (
     <div className={services.cardsMain}>

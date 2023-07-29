@@ -7,6 +7,8 @@ import { Box, Typography } from '@mui/material'
 import { PrimaryBtn } from '../reuse/Buttons'
 import Header from '../Header'
 import HeaderMobile from '../HeaderMobile'
+import mobileappmain from '@/components/images/mobileappmain.svg'
+
 const Introduction = ({ content, BTNS }) => {
 
   return (
@@ -32,7 +34,7 @@ const Introduction = ({ content, BTNS }) => {
           </Box>
           <Box>
             <Box width={{ xs: '90%', md: '80%', lg: '70%' }} margin='auto'>
-              <Picture priority={true} src={'/mobileappmain.svg'} width={3159} height={1746} alt='' />
+              <Picture priority={true} src={mobileappmain} width={3159} height={1746} alt='' />
             </Box>
           </Box>
         </Box>

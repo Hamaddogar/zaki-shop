@@ -7,6 +7,8 @@ import { Box, Typography } from '@mui/material'
 import { PrimaryBtn } from '../reuse/Buttons'
 import Header from '../Header'
 import HeaderMobile from '../HeaderMobile'
+import invoicelg from '@/components/images/invoicelg.svg'
+import invoicexs from '@/components/images/invoicexs.svg'
 
 const Introduction = ({ content, BTNS }) => {
 
@@ -33,10 +35,10 @@ const Introduction = ({ content, BTNS }) => {
           </Box>
           <Box>
             <Box sx={{ display: { xs: 'none', sm: 'none', md: 'none', lg: 'block' }, position: 'relative' }} margin='auto'>
-              <Picture src={'/invoicelg.svg'} width={980} height={581} alt='' />
+              <Picture src={invoicelg} width={980} height={581} alt='' />
             </Box>
             <Box sx={{ display: { xs: 'block', sm: 'block', md: 'block', lg: 'none' }, position: 'relative' }} margin='auto'>
-              <Picture src={'/invoicexs.svg'} width={360} height={376} alt='' />
+              <Picture src={invoicexs} width={360} height={376} alt='' />
             </Box>
           </Box>
         </Box>

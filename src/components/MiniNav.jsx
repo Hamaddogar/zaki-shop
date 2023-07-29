@@ -2,9 +2,8 @@
 import { Box, Divider } from '@mui/material'
 import React from 'react'
 import header from '@/styles/Header.module.css'
-import Picture from './reuse/Picture';
 
-const MiniNav = ({ openST, closeST, alignItems, children }) => {
+const MiniNav = ({ openST, alignItems, children }) => {
 
     return (
         <div>

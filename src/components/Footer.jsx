@@ -5,6 +5,7 @@ import { arrowForwardEmail, footerfacebook, footerinstagram, footerlinkedin, foo
 import common from '@/styles/Common.module.css'
 import { MUIDesign } from './reuse/Design'
 import Link from 'next/link'
+import footerlogo from '@/components/images/footer-logo.svg'
 
 const Footer = ({ content }) => {
     return (
@@ -15,7 +16,7 @@ const Footer = ({ content }) => {
                     <Grid item xs={12} md='auto'>
                         <Box textAlign={'center'}>
                             <Link href='/'>
-                                <Picture center={false} src={'/footer-logo.svg'} width={180} height={80} alt='' />
+                                <Picture center={false} src={footerlogo} width={180} height={80} alt='' />
                             </Link>
                         </Box>
                     </Grid>
@@ -61,7 +62,7 @@ const Footer = ({ content }) => {
                     <Grid item xs={12} md='auto'>
                         <Box textAlign={'center'}>
                             <Link href='/'>
-                                <Picture center={false} src={'/footer-logo.svg'} width={180} height={80} alt='' />
+                                <Picture center={false} src={footerlogo} width={180} height={80} alt='' />
                             </Link>
                         </Box>
                     </Grid>

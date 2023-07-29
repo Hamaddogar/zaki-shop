@@ -1,9 +1,10 @@
 import React from 'react'
 import services from '@/styles/Services.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Grid, Stack, Typography } from '@mui/material'
-import { arrowForward, listArrowIcon, } from '../reuse/icons'
+import { Box, Grid, Stack, Typography } from '@mui/material'
+import { listArrowIcon, } from '../reuse/icons'
 import { PrimaryBtn } from '../reuse/Buttons'
+import integrationP from '@/components/images/integrationP.svg'
 
 const PaymentIntegration = ({ content, BTNS }) => {
 
@@ -11,7 +12,7 @@ const PaymentIntegration = ({ content, BTNS }) => {
     <div className={services.paymentMain}>
       <Grid container direction={{ xs: 'column-reverse', md: 'row' }} alignItems={'center'} justifyContent={'center'} rowGap={'40px'} spacing={'3px'}>
         <Grid item xs={12} md={7} pr={{ xs: 0, md: 5 }}>
-          <Picture src={'/integrationP.svg'} width={888} height={692} alt='' />
+          <Picture src={integrationP} width={888} height={692} alt='' />
         </Grid>
 
         <Grid item xs={12} md={5}>
@@ -28,8 +29,8 @@ const PaymentIntegration = ({ content, BTNS }) => {
             <Box>
               <PrimaryBtn text={BTNS.start} />
             </Box>
-          </Box> 
-        </Grid> 
+          </Box>
+        </Grid>
       </Grid>
     </div>
   )

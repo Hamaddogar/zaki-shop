@@ -3,6 +3,8 @@ import common from '@/styles/Common.module.css'
 import marketing from '@/styles/Marketing.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Grid, Typography } from '@mui/material'
+import oneapp1 from '@/components/images/oneapp1.svg'
+import oneapp2 from '@/components/images/oneapp2.svg'
 
 const OneApp = ({ content }) => {
 
@@ -19,11 +21,11 @@ const OneApp = ({ content }) => {
       <Grid container alignItems={'center'} justifyContent={'space-between'} rowGap={'40px'} spacing={'10px'} className={common.background}>
         <Grid item xs={12} md={7}>
           <Box>
-            <Picture src={'/oneapp1.svg'} width={857} height={640} alt='' />
+            <Picture src={oneapp1} width={857} height={640} alt='' />
           </Box>
         </Grid>
         <Grid item xs={12} md={5}>
-          <Picture src={'/oneapp2.svg'} width={574} height={660} alt='' />
+          <Picture src={oneapp2} width={574} height={660} alt='' />
         </Grid>
       </Grid>
     </div>

@@ -2,6 +2,8 @@ import React from 'react'
 import marketing from '@/styles/Marketing.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Hidden, Typography } from '@mui/material'
+import graphlg from '@/components/images/graphlg.svg'
+import graphmd from '@/components/images/graphmd.svg'
 
 const HowWork = ({ content }) => {
 
@@ -17,10 +19,10 @@ const HowWork = ({ content }) => {
       </Box>
       <Box px={{ xs: 3, md: 6 }} >
         <Hidden mdDown>
-          <Picture src={'/graphlg.svg'} width={1472} height={254} alt='' />
+          <Picture src={graphlg} width={1472} height={254} alt='' />
         </Hidden>
         <Hidden mdUp>
-          <Picture src={'/graphmd.svg'} width={320} height={486} alt='' />
+          <Picture src={graphmd} width={320} height={486} alt='' />
         </Hidden>
       </Box>
     </div>

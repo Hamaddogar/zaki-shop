@@ -13,6 +13,17 @@ import MiniNav from './MiniNav'
 import { LanguageBtn, LoginBtn } from './reuse/Buttons'
 import LinksLister from './reuse/LinksLister'
 import { AppContext } from '@/AppContext'
+import close from '@/components/images/close.svg'
+import menuIcon from '@/components/images/menu.svg'
+import logomd from '@/components/images/logo-md.svg'
+
+
+
+import facebook from '@/components/images/facebook.svg';
+import insta from '@/components/images/insta.svg';
+import tiktok from '@/components/images/tiktok.svg';
+import linkedin from '@/components/images/linkedin.svg';
+
 
 const Header = ({ mainStyle }) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -40,30 +51,28 @@ const Header = ({ mainStyle }) => {
   return (
     <Box>
       <Box>
-
-
-        <Stack width={{ xs: '95%', md: '85%' }} sx={{ margin: 'auto',   }} direction='row' alignItems='center' justifyContent={'space-between'} className={mainStyle}>
+        <Stack width={{ xs: '95%', md: '85%' }} sx={{ margin: 'auto', }} direction='row' alignItems='center' justifyContent={'space-between'} className={mainStyle}>
           <Link href={'/'}>
-            <Picture priority={true} center={false} src={'/logo-md.svg'} width={300} height={47} alt={'logo'} className={header.logomd} />
+            <Picture priority={true} center={false} src={logomd} width={300} height={47} alt={'logo'} className={header.logomd} />
           </Link>
           <Stack direction={'row'} alignItems={'center'} spacing={3}>
             <LoginBtn text={content.buttons.login} />
             <LanguageBtn onClick={handleClick} text={language} />
             {
               miniMenu === "open" ?
-                <Picture onClick={handleMiniNav(miniMenu, setminiMenu)} center={false} src={'/close.svg'} width={48} height={48} alt={'logo'} style={{ cursor: 'pointer', ...iconStyle }} />
+                <Picture onClick={handleMiniNav(miniMenu, setminiMenu)} center={false} src={close} width={48} height={48} alt={'logo'} style={{ cursor: 'pointer', ...iconStyle }} />
                 :
-                <Picture priority={true} style={{ cursor: 'pointer', ...iconStyle }} center={false} onClick={handleMiniNav(miniMenu, setminiMenu)} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+                <Picture priority={true} style={{ cursor: 'pointer', ...iconStyle }} center={false} onClick={handleMiniNav(miniMenu, setminiMenu)} src={menuIcon} width={48} height={48} alt={'logo'} />
             }
           </Stack>
           <Box sx={{ position: 'absolute', right: '15px', top: '-5px', zIndex: -1 }}>
             <MiniNav alignItems='flex-end' openST={miniMenu} >
               <LinksLister mt='35px' />
               <Stack my='30px' direction='row' alignItems={'center'} spacing={2} >
-                <Image src='/facebook.svg' width={16} height={16} alt='' />
-                <Image src='/insta.svg' width={16} height={16} alt='' />
-                <Image src='/tiktok.svg' width={16} height={16} alt='' />
-                <Image src='/linkedin.svg' width={16} height={16} alt='' />
+                <Image src={facebook} width={16} height={16} alt='' />
+                <Image src={insta} width={16} height={16} alt='' />
+                <Image src={tiktok} width={16} height={16} alt='' />
+                <Image src={linkedin} width={16} height={16} alt='' />
               </Stack>
             </MiniNav>
           </Box>

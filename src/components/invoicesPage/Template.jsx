@@ -5,6 +5,7 @@ import Picture from '../reuse/Picture'
 import { Box, Grid, Stack, Typography } from '@mui/material'
 import { listArrowIcon, } from '../reuse/icons'
 import { PrimaryBtn } from '../reuse/Buttons'
+import templates from '@/components/images/templates.svg'
 
 const Template = ({ content, BTNS }) => {
 
@@ -28,7 +29,7 @@ const Template = ({ content, BTNS }) => {
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Picture src={'/templates.svg'} width={1016} height={667} alt='' />
+            <Picture src={templates} width={1016} height={667} alt='' />
           </Grid>
         </Grid>
       </Box>

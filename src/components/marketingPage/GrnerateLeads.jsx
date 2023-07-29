@@ -4,6 +4,7 @@ import common from '@/styles/Common.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Grid, Typography } from '@mui/material'
 import { SecondaryBtn } from '../reuse/Buttons'
+import leads from '@/components/images/leads.svg'
 
 const GrnerateLeads = ({ content, BTNS }) => {
 
@@ -36,7 +37,7 @@ const GrnerateLeads = ({ content, BTNS }) => {
           </Box>
         </Grid>
         <Grid item xs={12} md={7}>
-          <Picture src={'/leads.svg'} width={833} height={921} alt='' />
+          <Picture src={leads} width={833} height={921} alt='' />
         </Grid>
       </Grid>
       <Box>

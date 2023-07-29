@@ -4,6 +4,15 @@ import marketing from '@/styles/Marketing.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Grid, Stack, Typography } from '@mui/material'
 import { listArrowIcon, } from '../reuse/icons'
+import addmanage from '@/components/images/addmanage.svg'
+import soc1 from '@/components/images/soc1.png'
+import soc2 from '@/components/images/soc2.png'
+import soc3 from '@/components/images/soc3.png'
+import soc4 from '@/components/images/soc4.png'
+import soc5 from '@/components/images/soc5.png'
+import soc6 from '@/components/images/soc6.png'
+import soc7 from '@/components/images/soc7.png'
+
 
 const AdsManage = ({ content }) => {
 
@@ -34,20 +43,20 @@ const AdsManage = ({ content }) => {
             <br />
 
             <Stack direction={'row'} alignItems='center' justifyContent={{ xs: 'center', md: 'flex-start' }} spacing={'10px'} mt='30px' >
-              <Picture src={'/soc1.png'} width={30} height={30} alt='' />
-              <Picture src={'/soc2.png'} width={30} height={30} alt='' />
-              <Picture src={'/soc3.png'} width={30} height={30} alt='' />
-              <Picture src={'/soc4.png'} width={30} height={30} alt='' />
-              <Picture src={'/soc5.png'} width={30} height={30} alt='' />
-              <Picture src={'/soc6.png'} width={30} height={30} alt='' />
-              <Picture src={'/soc7.png'} width={30} height={30} alt='' />
+              <Picture src={soc1} width={30} height={30} alt='' />
+              <Picture src={soc2} width={30} height={30} alt='' />
+              <Picture src={soc3} width={30} height={30} alt='' />
+              <Picture src={soc4} width={30} height={30} alt='' />
+              <Picture src={soc5} width={30} height={30} alt='' />
+              <Picture src={soc6} width={30} height={30} alt='' />
+              <Picture src={soc7} width={30} height={30} alt='' />
             </Stack>
           </Box>
         </Grid>
 
         <Grid item xs={12} md={6} lg={6}>
           <Box width={{ xs: '85%', md: 'auto' }} marginX='auto' >
-            <Picture src={'/addmanage.svg'} width={2123} height={2161} alt='' />
+            <Picture src={addmanage} width={2123} height={2161} alt='' />
           </Box>
         </Grid>
       </Grid>

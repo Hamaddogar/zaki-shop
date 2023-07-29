@@ -5,6 +5,7 @@ import { Box, Button, ButtonBase, Grid, Stack, Typography } from '@mui/material'
 import { listArrowIcon, planBtn, planBtnActive, planSeemoreActiveIcon, planSeemoreIcon, proPlanIcon, vipPlanIcon } from '../reuse/icons'
 import Picture from '../reuse/Picture'
 import SliderComponent from './Slider'
+import diamond from '@/components/images/diamond.svg'
 
 const ChoosePlan = ({ content, BTNS }) => {
 
@@ -66,7 +67,7 @@ const ChoosePlan = ({ content, BTNS }) => {
                       <Typography color='primary' className={services.planCardSubtitle}>{content.AdvencedPlan.subtitle}</Typography>
                       <Typography disabled className={services.planCardDelActive}> <del>{content.AdvencedPlan.subtitle2}</del> </Typography>
                     </Box>
-                    <Box> <Picture src={'/diamond.svg'} width={107} height={113} alt='pro' /></Box>
+                    <Box> <Picture src={diamond} width={107} height={113} alt='pro' /></Box>
                   </Stack>
 
 
@@ -153,7 +154,7 @@ const ChoosePlan = ({ content, BTNS }) => {
                       <Typography color='primary' className={services.planCardSubtitle}>{content.AdvencedPlan.subtitle}</Typography>
                       <Typography disabled className={services.planCardDelActive}> <del>{content.AdvencedPlan.subtitle2}</del> </Typography>
                     </Box>
-                    <Box> <Picture className={services.planCardPic} src={'/diamond.svg'} width={107} height={113} alt='pro' /></Box>
+                    <Box> <Picture className={services.planCardPic} src={diamond} width={107} height={113} alt='pro' /></Box>
                   </Stack>
 
 

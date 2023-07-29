@@ -7,6 +7,7 @@ import header from '@/styles/Header.module.css';
 import Picture from './reuse/Picture';
 import LinksLister from './reuse/LinksLister';
 import { AppContext } from '@/AppContext';
+import close from '@/components/images/close.svg'
 
 export default function MobileNav({ open, setOpen }) {
     const handleClose = () => setOpen(false);
@@ -34,7 +35,7 @@ export default function MobileNav({ open, setOpen }) {
             >
                 <Stack direction='row' alignItems='center' justifyContent={'space-between'}>
                     <Box>{drawerLogo}</Box>
-                    <Picture onClick={handleClose} center={false} src={'/close.svg'} width={48} height={48} alt={'logo'} />
+                    <Picture onClick={handleClose} center={false} src={close} width={48} height={48} alt={'logo'} />
                 </Stack>
 
                 <Stack mt={'83px'} sx={{ position: 'relative', }} justifyContent={'space-between'}>

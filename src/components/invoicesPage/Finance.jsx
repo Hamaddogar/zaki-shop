@@ -4,6 +4,7 @@ import common from '@/styles/Common.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Grid, Stack, Typography } from '@mui/material'
 import { listArrowIcon, } from '../reuse/icons'
+import finance from '@/components/images/finance.svg'
 
 const Finance = ({ content, BTNS }) => {
 
@@ -43,7 +44,7 @@ const Finance = ({ content, BTNS }) => {
 
           <Grid item xs={12} md={6} lg={6}>
             <Box sx={{ position: 'relative', left: { xs: '0px', md: '-50px' } }} >
-              <Picture src={'/finance.svg'} width={872} height={653} alt='' />
+              <Picture src={finance} width={872} height={653} alt='' />
             </Box>
           </Grid>
         </Grid>

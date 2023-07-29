@@ -8,6 +8,11 @@ import { Box, Stack, Typography } from '@mui/material'
 import { PrimaryBtn } from '../reuse/Buttons'
 import HeaderMobile from '../HeaderMobile'
 import Header from '../Header'
+import face from '@/components/images/face.svg'
+import playIcon from '@/components/images/playIcon.png'
+import muteIcon from '@/components/images/muteIcon.png'
+import stopIcon from '@/components/images/stopIcon.png'
+import unmuteIcon from '@/components/images/unmuteIcon.png'
 
 const Introduction = ({ content, BTNS }) => {
   const [playing] = React.useState(false)
@@ -60,13 +65,13 @@ const Introduction = ({ content, BTNS }) => {
             </Box>
             <Box >
               <Box width={{ xs: '86%', }} margin='auto'>
-                <Picture priority={true} src={'/face.svg'} width={570} height={430} alt='' />
+                <Picture priority={true} src={face} width={570} height={430} alt='' />
               </Box>
               <Stack mt={4} direction={'row'} justifyContent={'center'} alignItems={'center'} spacing={2}>
-                {!playing && <Picture center={false} src={'/playIcon.png'} alt='' width={58} height={58} />}
-                {!playing && <Picture center={false} src={'/muteIcon.png'} alt='' width={58} height={58} />}
-                {playing && <Picture center={false} src={'/stopIcon.png'} alt='' width={58} height={58} />}
-                {playing && <Picture center={false} src={'/unmuteIcon.png'} alt='' width={58} height={58} />}
+                {!playing && <Picture center={false} src={playIcon} alt='' width={58} height={58} />}
+                {!playing && <Picture center={false} src={muteIcon} alt='' width={58} height={58} />}
+                {playing && <Picture center={false} src={stopIcon} alt='' width={58} height={58} />}
+                {playing && <Picture center={false} src={unmuteIcon} alt='' width={58} height={58} />}
               </Stack>
             </Box>
           </Box>

@@ -3,16 +3,8 @@ import React from 'react'
 import common from '@/styles/Common.module.css'
 import mobileapp from '@/styles/Mobileapp.module.css'
 import { Box, Grid, Typography } from '@mui/material'
-import { fasrEasyIcon, quickConnectionIcon, seamlessAppIcon } from '../reuse/icons'
 import SliderComponent from '../sevicesPage/Slider'
-
-const data = [
-  { title: "Fast & Easy Development", msg: "Many advantages to suit  your business", icon: fasrEasyIcon },
-  { title: "Quick connection with website", msg: "Many advantages to suit  your business", icon: quickConnectionIcon },
-  { title: "Seamless app  management", msg: "Many advantages to suit  your business", icon: seamlessAppIcon },
-]
-
-const AppsCards = ({ content, BTNS }) => {
+const AppsCards = ({ content }) => {
 
   return (
     <Box className={mobileapp.cardsMain}>
@@ -25,8 +17,8 @@ const AppsCards = ({ content, BTNS }) => {
           maxWidth={{ xs: '300px', md: '600px', lg: '800px' }}
           margin='auto'
           textAlign='center'
-        > 
-        {content.title}
+        >
+          {content.title}
         </Typography>
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'block' } }}>

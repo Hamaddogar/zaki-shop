@@ -4,6 +4,7 @@ import Picture from '../reuse/Picture'
 import { Box, Typography } from '@mui/material'
 import Link from 'next/link'
 import { PrimaryBtn } from '../reuse/Buttons'
+import invoices from '@/components/images/invoices.svg'
 
 const Invoices = ({ content, BTNS }) => {
 
@@ -31,7 +32,7 @@ const Invoices = ({ content, BTNS }) => {
           </Link>
         </Box>
         <Box width={{ xs: '80%', lg: 'auto' }} margin='auto' pl={{ xs: 0, lg: 3 }}>
-          <Picture src={'/invoices.svg'} width={314} height={405} alt='invoices' />
+          <Picture src={invoices} width={314} height={405} alt='invoices' />
         </Box>
       </Box>
     </div>

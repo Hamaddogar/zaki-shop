@@ -4,6 +4,7 @@ import Picture from '../reuse/Picture'
 import { Box, Grid, Stack, Typography } from '@mui/material'
 import { listArrowIcon, } from '../reuse/icons'
 import { SecondaryBtn } from '../reuse/Buttons'
+import themeCus from '@/components/images/themeCus.svg'
 
 const ThemeCustomization = ({ content, BTNS }) => {
 
@@ -11,7 +12,7 @@ const ThemeCustomization = ({ content, BTNS }) => {
     <div className={services.themeMain}>
       <Grid container direction={{ xs: 'column-reverse', md: 'row' }} alignItems={'center'} justifyContent={'space-between'} rowGap={'40px'} spacing={'3px'}>
         <Grid item xs={12} md={6} pr={{ xs: 0, md: 6 }}>
-          <Picture src={'/themeCus.svg'} width={840} height={563} alt='' />
+          <Picture src={themeCus} width={840} height={563} alt='' />
         </Grid>
 
         <Grid item xs={12} md={6}>

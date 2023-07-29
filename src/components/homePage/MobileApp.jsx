@@ -4,6 +4,7 @@ import Picture from '../reuse/Picture'
 import { Box,Typography } from '@mui/material'
 import Link from 'next/link'
 import { PrimaryBtn } from '../reuse/Buttons'
+import mobileapp from '@/components/images/mobileapp.svg'
 
 const MobileApp = ({ content, BTNS }) => {
 
@@ -33,7 +34,7 @@ const MobileApp = ({ content, BTNS }) => {
           </Link>
         </Box>
         <Box pt={{ xs: 0, lg: 15 }} width={{ xs: '80%', lg: 'auto' }} margin='auto' pl={{ xs: 0, lg: 3 }}>
-          <Picture src={'/mobileapp.svg'} width={274} height={396} alt='MobileApp' />
+          <Picture src={mobileapp} width={274} height={396} alt='MobileApp' />
         </Box>
       </Box>
     </div>

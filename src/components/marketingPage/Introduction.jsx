@@ -7,6 +7,9 @@ import { Box, Typography } from '@mui/material'
 import { PrimaryBtn } from '../reuse/Buttons'
 import Header from '../Header'
 import HeaderMobile from '../HeaderMobile'
+import marketingmainlg from '@/components/images/marketingmainlg.svg'
+import marketingmainmd from '@/components/images/marketingmainmd.svg'
+import marketingmainmdxs from '@/components/images/marketingmainmdxs.svg'
 
 const Introduction = ({ content, BTNS }) => {
 
@@ -38,13 +41,13 @@ const Introduction = ({ content, BTNS }) => {
         </Box>
         <Box>
           <Box sx={{ display: { xs: 'none', sm: 'none', md: 'none', lg: 'block' }, position: 'relative', top: { xs: 0, lg: '75px' } }} margin='auto'>
-            <Picture src={'/marketingmainlg.svg'} width={1728} height={706} alt='' />
+            <Picture src={marketingmainlg} width={1728} height={706} alt='' />
           </Box>
           <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block', lg: 'none' }, position: 'relative' }} margin='auto'>
-            <Picture src={'/marketingmainmd.svg'} width={980} height={581} alt='' />
+            <Picture src={marketingmainmd} width={980} height={581} alt='' />
           </Box>
           <Box sx={{ display: { xs: 'block', sm: 'block', md: 'none', lg: 'none' }, position: 'relative' }} margin='auto'>
-            <Picture src={'/marketingmainmdxs.svg'} width={351} height={504} alt='' />
+            <Picture src={marketingmainmdxs} width={351} height={504} alt='' />
           </Box>
         </Box>
       </div>

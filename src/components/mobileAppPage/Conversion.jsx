@@ -4,6 +4,9 @@ import mobileapp from '@/styles/Mobileapp.module.css'
 import Picture from '../reuse/Picture'
 import { Box, Grid, Stack, Typography } from '@mui/material'
 import { listArrowIcon, } from '../reuse/icons'
+import conversion from '@/components/images/conversion.svg'
+import andStore from '@/components/images/andStore.png'
+import playStore from '@/components/images/playStore.png'
 
 const Conversion = ({ content }) => {
 
@@ -33,14 +36,14 @@ const Conversion = ({ content }) => {
                 }
               </Box>
               <Stack direction={'row'} alignItems='center' justifyContent={{ xs: 'center', md: 'flex-start' }} spacing={'20px'} mt='30px' >
-                <Picture src={'/andStore.png'} width={60} height={60} alt='' />
-                <Picture src={'/playStore.png'} width={50} height={50} alt='' />
+                <Picture src={andStore} width={60} height={60} alt='' />
+                <Picture src={playStore} width={50} height={50} alt='' />
               </Stack>
             </Box>
           </Grid>
           <Grid item xs={12} md={7}>
             <Box>
-              <Picture src={'/conversion.svg'} width={884} height={710} alt='' />
+              <Picture src={conversion} width={884} height={710} alt='' />
             </Box>
           </Grid>
         </Grid>

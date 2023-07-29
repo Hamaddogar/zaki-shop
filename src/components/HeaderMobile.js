@@ -5,6 +5,10 @@ import header from '@/styles/Header.module.css'
 import Picture from './reuse/Picture'
 import Link from 'next/link'
 import MobileNav from './MobileNav';
+import menuIcon from '@/components/images/menu.svg'
+import logomd from '@/components/images/logo-md.svg'
+import logodark from '@/components/images/logo-dark.svg'
+
 
 const HeaderMobile = ({ menu = 'dark' }) => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -18,17 +22,17 @@ const HeaderMobile = ({ menu = 'dark' }) => {
         {menu === 'light' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture priority={true} center={false} src={'/logo-md.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
+              <Picture priority={true} center={false} src={logomd} width={169} height={37} alt={'logo'} className={header.logomd} />
             </Link>
-            <Picture priority={true} onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+            <Picture priority={true} onClick={handleMenu} center={false} src={menuIcon} width={48} height={48} alt={'logo'} />
           </Stack>}
 
         {menu === 'dark' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
             <Link href={'/'}>
-              <Picture priority={true} center={false} src={'/logo-dark.svg'} width={169} height={37} alt={'logo'} className={header.logomd} />
+              <Picture priority={true} center={false} src={logodark} width={169} height={37} alt={'logo'} className={header.logomd} />
             </Link>
-            <Picture priority={true} onClick={handleMenu} center={false} src={'/menu.svg'} width={48} height={48} alt={'logo'} />
+            <Picture priority={true} onClick={handleMenu} center={false} src={menuIcon} width={48} height={48} alt={'logo'} />
           </Stack>}
         <MobileNav open={openNav} setOpen={setOpenNav} menu={menu} />
       </Box>

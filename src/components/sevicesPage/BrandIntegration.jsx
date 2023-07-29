@@ -1,9 +1,10 @@
 import React from 'react'
 import services from '@/styles/Services.module.css'
 import Picture from '../reuse/Picture'
-import { Box, Button, Grid, Stack, Typography } from '@mui/material'
-import { arrowForward, listArrowIcon, } from '../reuse/icons'
+import { Box, Grid, Stack, Typography } from '@mui/material'
+import { listArrowIcon, } from '../reuse/icons'
 import { PrimaryBtn } from '../reuse/Buttons'
+import integrationB from '@/components/images/integrationB.svg'
 
 const BrandIntegration = ({ content, BTNS }) => {
 
@@ -29,7 +30,7 @@ const BrandIntegration = ({ content, BTNS }) => {
 
         </Grid>
         <Grid item xs={12} md={7}>
-          <Picture src={'/integrationB.svg'} width={857} height={551} alt='' />
+          <Picture src={integrationB} width={857} height={551} alt='' />
         </Grid>
       </Grid>
     </div>

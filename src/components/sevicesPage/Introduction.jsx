@@ -7,6 +7,8 @@ import { Box, Hidden, Typography } from '@mui/material'
 import { SecondaryBtn } from '../reuse/Buttons'
 import Header from '../Header'
 import HeaderMobile from '../HeaderMobile'
+import weblg from '@/components/images/weblg.svg'
+import webmd from '@/components/images/webmd.svg' 
 
 const Introduction = ({ content, BTNS }) => {
 
@@ -34,10 +36,10 @@ const Introduction = ({ content, BTNS }) => {
           <Box>
             <Box width={{ xs: '90%', md: '80%', lg: '70%' }} margin='auto'>
               <Hidden lgDown>
-                <Picture src={'/weblg.svg'} width={1095} height={487} alt='' />
+                <Picture src={weblg} width={1095} height={487} alt='' />
               </Hidden>
               <Hidden lgUp>
-                <Picture src={'/webmd.svg'} width={820} height={619} alt='' />
+                <Picture src={webmd} width={820} height={619} alt='' />
               </Hidden>
             </Box>
           </Box>

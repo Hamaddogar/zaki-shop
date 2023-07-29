@@ -3,6 +3,8 @@ import mobileapp from '@/styles/Mobileapp.module.css'
 import Picture from '../reuse/Picture'
 import { Box,Grid, Typography } from '@mui/material'
 import { PrimaryBtn } from '../reuse/Buttons'
+import nodev1 from '@/components/images/nodev1.svg'
+import IAsol from '@/components/images/IAsol.svg'
 
 const NoDeveloper1 = ({ content, BTNS }) => {
 
@@ -16,13 +18,13 @@ const NoDeveloper1 = ({ content, BTNS }) => {
       <Grid container direction={{ xs: 'column-reverse', md: 'row' }} px={{ xs: 0, md: 7, lg: 12 }} alignItems={'center'} justifyContent={'space-between'} rowGap={'40px'} spacing={'3px'}>
         <Grid item xs={12} md={6}>
           <Box pr={{ xs: 0, md: 4 }}>
-            <Picture src={'/nodev1.svg'} width={538} height={496} alt='' />
+            <Picture src={nodev1} width={538} height={496} alt='' />
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
 
           <Box textAlign={{ xs: 'center', md: 'left' }}>
-            <Picture center={false} src={'/IAsol.svg'} width={212} height={55} alt='' />
+            <Picture center={false} src={IAsol} width={212} height={55} alt='' />
           </Box>
           <Box textAlign={{ xs: 'center', md: 'left' }}>
             <Typography
