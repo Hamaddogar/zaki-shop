@@ -2,7 +2,7 @@ import styles from '@/styles/Common.module.css'
 import React from 'react';
 
 const Loading = () => {
-    const [count, setcount] = React.useState(50)
+    const [count, setcount] = React.useState(30)
     React.useEffect(() => {
         const timer = setInterval(() => {
             setcount(pv => pv += 1)
