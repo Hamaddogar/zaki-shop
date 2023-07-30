@@ -9,12 +9,12 @@
   font-style: normal;
   font-weight: 900;
   line-height: 59px;
-  font-size: 40px;
+  font-size: 40px !important;
 }
 
 .subtitlemain {
   text-align: center;
-  font-size: 40px;
+  font-size: 40px !important;
   font-style: normal;
   font-weight: 800;
   line-height: 45px;
@@ -56,7 +56,7 @@
 }
 
 .normal {
-  font-size: 25px;
+  font-size: 25px !important;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -94,7 +94,7 @@
 
   .subtitlemain,
   .titleIntegration {
-    font-size: 30px;
+    font-size: 30px !important;
     line-height: 40px;
   }
 
@@ -123,7 +123,7 @@
 
   .subtitlemain,
   .titleIntegration {
-    font-size: 25px;
+    font-size: 25px !important;
     line-height: 32px;
   }
 
@@ -163,7 +163,7 @@
 
 @media only screen and (max-width: 800px) {
   .cardTitle {
-    font-size: 25px;
+    font-size: 25px !important;
   }
 }
 
