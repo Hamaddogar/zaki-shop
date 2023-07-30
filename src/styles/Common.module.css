@@ -42,9 +42,9 @@
 }
 
 .emailBtn {
-    background: #75F7BB;
-    border-radius: 100px;
-    padding: 10px 20px;
+    background: #75F7BB !important;
+    border-radius: 100px !important;
+    padding: 10px 20px !important;
 }
 
 /* BACKGROUND RELATED */
