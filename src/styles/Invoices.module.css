@@ -64,7 +64,7 @@
 }
 
 .normal2 {
-  font-size: 18px;
+  font-size: 18px !important;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -91,12 +91,12 @@
 
   .subtitlemain,
   .titleIntegration {
-    font-size: 27px;
+    font-size: 27px !important;
     line-height: 35px;
   }
 
   .normal2 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
@@ -126,7 +126,7 @@
   }
 
   .normal2 {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 }
 
@@ -141,17 +141,17 @@
   }
 
   .normal {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 
   .normal2 {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 }
 
 @media only screen and (max-width: 800px) {
   .subtitle {
-    font-size: 35px;
+    font-size: 35px !important;
   }
 
 }
@@ -179,22 +179,22 @@
   }
 
   .subtitle {
-    font-size: 26px;
+    font-size: 26px !important;
     line-height: 29px;
   }
 
   .normal {
-    font-size: 17px;
+    font-size: 17px !important;
   }
 
   .normal2 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .titleIntegration {
-    font-size: 23px;
+    font-size: 23px !important;
     line-height: 32px;
   }
 

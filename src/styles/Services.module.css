@@ -5,7 +5,7 @@
 }
 
 .title {
-  font-size: 53px;
+  font-size: 53px !important;
   font-style: normal;
   font-weight: 900;
   line-height: 59px;
@@ -22,7 +22,7 @@
   font-style: normal;
   font-weight: 900;
   line-height: 29px;
-  font-size: 35px;
+  font-size: 35px !important;
 }
 
 .background2 {
@@ -34,7 +34,7 @@
 
 .subtitle {
   text-align: center;
-  font-size: 50px;
+  font-size: 50px !important;
   font-style: normal;
   font-weight: 800;
   line-height: 49px;
@@ -88,7 +88,7 @@
 }
 
 .cardTitle {
-  font-size: 27px;
+  font-size: 27px !important;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
@@ -97,7 +97,7 @@
 }
 
 .cardMsg {
-  font-size: 20px;
+  font-size: 20px !important;
   font-style: normal;
   font-weight: 500;
   line-height: 23px;
@@ -174,7 +174,7 @@
 .planCardTitle {
   color: #000;
   font-family: Avenir;
-  font-size: 34px;
+  font-size: 34px !important;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
@@ -183,7 +183,7 @@
 .planCardSubtitle {
   color: #000;
   font-family: Avenir;
-  font-size: 24px;
+  font-size: 24px !important;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -192,7 +192,7 @@
 .planCardDel {
   color: #BEBEBE;
   font-family: Avenir;
-  font-size: 20px;
+  font-size: 20px !important;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -201,7 +201,7 @@
 .planCardDelActive {
   color: #0F1546;
   font-family: Avenir;
-  font-size: 20px;
+  font-size: 20px !important;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -226,7 +226,7 @@
   text-transform: capitalize;
   padding-left: 40px;
   padding-right: 40px;
-  font-size: 23px;
+  font-size: 23px !important;
   font-weight: 500;
   color: #75F7BB;
 }
@@ -243,13 +243,13 @@
   padding-left: 40px;
   padding-right: 40px;
   color: #0F1546;
-  font-size: 23px;
+  font-size: 23px !important;
   font-weight: 500;
 }
 
 .planListText {
   color: #858585;
-  font-size: 18px;
+  font-size: 18px !important;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -261,7 +261,7 @@
 }
 
 .planSeeMore span {
-  font-size: 20px;
+  font-size: 20px !important;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -282,7 +282,7 @@
 }
 
 .normal2 {
-  font-size: 18px;
+  font-size: 18px !important;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -296,7 +296,7 @@
 /* Desktop */
 @media only screen and (max-width:1500px) {
   .planListText {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 
   .planMain {
@@ -330,7 +330,7 @@
 @media only screen and (max-width:1200px) {
 
   .planListText {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
@@ -338,12 +338,12 @@
 
   .subtitlemain,
   .titleIntegration {
-    font-size: 27px;
+    font-size: 27px !important;
     line-height: 35px;
   }
 
   .titleIntegration2 {
-    font-size: 23px;
+    font-size: 23px !important;
     line-height: 35px;
   }
 
@@ -352,7 +352,7 @@
   }
 
   .normal2 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
@@ -371,7 +371,7 @@
   }
 
   .titleIntegration2 {
-    font-size: 20px;
+    font-size: 20px !important;
     line-height: 35px;
   }
 
@@ -386,7 +386,7 @@
   }
 
   .normal2 {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 
   .card {
@@ -405,15 +405,15 @@
   }
 
   .cardTitle {
-    font-size: 27px;
+    font-size: 27px !important;
   }
 
   .normal {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 
   .normal2 {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 
   .titleIntegration {
@@ -424,7 +424,7 @@
   }
 
   .titleIntegration2 {
-    font-size: 27px;
+    font-size: 27px !important;
     line-height: 35px;
   }
 
@@ -443,7 +443,7 @@
 
 @media only screen and (max-width: 800px) {
   .subtitle {
-    font-size: 35px;
+    font-size: 35px !important;
   }
 
   .cardTitle {
@@ -451,7 +451,7 @@
   }
 
   .cardMsg {
-    font-size: 22px;
+    font-size: 22px !important;
   }
 
   .card,
@@ -480,11 +480,11 @@
   }
 
   .cardTitle {
-    font-size: 23px;
+    font-size: 23px !important;
   }
 
   .cardMsg {
-    font-size: 22px;
+    font-size: 22px !important;
   }
 }
 
@@ -504,12 +504,12 @@
   }
 
   .subtitle {
-    font-size: 26px;
+    font-size: 26px !important;
     line-height: 29px;
   }
 
   .normal {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 
   .card {
@@ -524,16 +524,16 @@
   }
 
   .cardTitle {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 
   .normal {
-    font-size: 17px;
+    font-size: 17px !important;
   }
 
   .normal2,
   .planListText {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
   .planCard,
@@ -550,7 +550,7 @@
   .planCardDel,
   .planCardDelActive,
   .planCardSubtitle {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 
   .planCardPic {
@@ -568,7 +568,7 @@
     border: 2px solid #0F1546;
     padding-left: 32px;
     padding-right: 32px;
-    font-size: 19px;
+    font-size: 19px !important;
   }
 
 
@@ -599,10 +599,10 @@
   }
 
   .cardTitle {
-    font-size: 22px;
+    font-size: 22px !important;
   }
 
   .cardTitle {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }

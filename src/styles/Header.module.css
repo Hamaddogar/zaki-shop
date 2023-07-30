@@ -61,7 +61,7 @@
     width: 123px;
     height: 56px;
     flex-shrink: 0;
-    font-size: 18px;
+    font-size: 18px !important;
     border-radius: 100px;
     background: #1BFCB6;
 }
@@ -73,13 +73,13 @@
     flex-shrink: 0;
     border-radius: 100px;
     border: 1px solid #FFF;
-    font-size: 18px;
+    font-size: 18px !important;
 }
 
 .language span {
     color: #FFF;
     font-family: Syne;
-    font-size: 18px;
+    font-size: 18px !important;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -123,7 +123,7 @@
 }
 
 .inner-nav-footer {
-    font-size: 20px;
+    font-size: 20px !important;
     font-style: normal;
     font-weight: 500;
     line-height: 32px;
@@ -132,7 +132,7 @@
 
 .inner-nav-routes {
     color: #FFF;
-    font-size: 18px;
+    font-size: 18px !important;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -202,7 +202,7 @@
     .login {
         width: 91px;
         height: 42px;
-        font-size: 13px;
+        font-size: 13px !important;
     }
 
     .language {
@@ -211,7 +211,7 @@
     }
 
     .language span {
-        font-size: 13px;
+        font-size: 13px !important;
     }
 
     .logomd {
