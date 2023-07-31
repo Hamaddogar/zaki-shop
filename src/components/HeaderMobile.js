@@ -13,7 +13,7 @@ import logodark from '@/components/images/logo-dark.svg'
 const HeaderMobile = ({ menu = 'dark' }) => {
   const [openNav, setOpenNav] = React.useState(false);
   const handleMenu = () => setOpenNav(true);
-  const condition = useDetectDevice();
+  // const condition = useDetectDevice();
 
   return (
     <Box>
