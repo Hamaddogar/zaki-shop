@@ -10,14 +10,6 @@
   background-size: contain;
 }
 
-.iosandBtns {
-  width: 180px;
-  height: 60px;
-  flex-shrink: 0;
-  border-radius: 30px;
-  background: #0F1546;
-  color: #FFFFFF;
-}
 
 /* websites section */
 .websites {
@@ -80,12 +72,6 @@
     padding: 40px 45px 0px 45px;
   }
 
-  .iosandBtns {
-    width: 180px;
-    height: 60px;
-    border-radius: 30px;
-    background: #0F1546;
-  }
 
   .BG {
     background-position: bottom center;
@@ -106,8 +92,4 @@
     padding: 40px 5px 0px 5px;
   }
 
-  .iosandBtns {
-    width: 145px;
-    height: 48px;
-  }
 }

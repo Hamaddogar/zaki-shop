@@ -5,6 +5,7 @@ import { Box, ButtonBase, Hidden, Stack, Typography } from '@mui/material'
 import { AndriodIcon, ISOIcon, miniFace } from '../reuse/icons'
 import mobile from '@/components/images/mobile.svg'
 import QR from '@/components/images/QR.svg'
+import { ISOANDBTN } from '../reuse/Buttons'
 
 const DownloadApp = ({ content }) => {
 
@@ -22,7 +23,6 @@ const DownloadApp = ({ content }) => {
             >
               {content.title} {miniFace}
             </Typography>
-
             <Typography mb={{ xs: '31px' }}
               marginX={{ xs: 'auto', lg: '0px' }}
               fontWeight={{ xs: 400 }}
@@ -30,12 +30,8 @@ const DownloadApp = ({ content }) => {
               lineHeight={{ xs: 'normal', md: 'normal', lg: 'normal' }}
             >{content.subtitle} </Typography>
             <Stack direction={'row'} alignItems='center' justifyContent={{ xs: 'center', lg: 'flex-start' }} spacing={1.5} mb={'20px'}>
-              <ButtonBase disableRipple className={home.iosandBtns}>
-                <span>{ISOIcon}</span> &nbsp; &nbsp;    iOS
-              </ButtonBase>
-              <ButtonBase disableRipple className={home.iosandBtns}>
-                <span>{AndriodIcon}</span>  &nbsp; &nbsp;   Andriod
-              </ButtonBase>
+              <ISOANDBTN icon={ISOIcon} text={'iOS'} />
+              <ISOANDBTN icon={AndriodIcon} text={'Andriod'} />
             </Stack>
           </Box>
 
@@ -64,7 +60,7 @@ const DownloadApp = ({ content }) => {
               lineHeight={{ xs: 'normal', md: 'normal', lg: 'normal' }}
             >
               <b>{content.scanme}</b> <br />
-                {content.rest}
+              {content.rest}
             </Typography>
           </Stack>
         </Hidden>

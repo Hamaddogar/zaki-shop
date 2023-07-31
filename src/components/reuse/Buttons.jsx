@@ -82,3 +82,82 @@ export const LanguageBtn = ({ onClick = handleNothing, text }) => {
     </Button>
 };
 
+
+
+export const ISOANDBTN = ({ icon, text }) => <ButtonBase disableRipple
+    sx={{
+        width: { xs: '145px', md: '180px' },
+        height: { xs: '48px', md: '60px' },
+        borderRadius: '30px',
+        background: '#0F1546',
+        color: '#FFFFFF',
+    }}
+>
+    <span style={{ color: '#FFFFFF' }}>{icon}</span> &nbsp; &nbsp; {text}
+</ButtonBase>
+
+// INNER NAV
+export const InnerLogin = ({ children }) => <ButtonBase disableRipple color='secondary'
+    sx={{
+        width: '158px',
+        height: '56px',
+        borderRadius: '100px',
+        background: '#1BFCB6',
+        color: '#0F1546',
+    }}
+>
+    {children}
+</ButtonBase >
+
+export const InnerSignUp = ({ children }) => <ButtonBase disableRipple color='primary'
+    sx={{
+        width: '158px',
+        height: '56px',
+        borderRadius: '100px',
+        background: '#0F1546',
+        color: '#1BFCB6',
+    }}
+>
+    {children}
+</ButtonBase >
+
+const normalStyle = {
+    borderRadius: "100px",
+    maxWidth: "340px",
+    maxHeight: "82px",
+    borderRadius: "100px",
+    border: { xs: "2px solid #0F1546", md: "4px solid #0F1546" },
+    justifyContent: "space-between",
+    textTransform: "capitalize",
+    paddingLeft: { xs: "32px", md: "40px" },
+    paddingRight: { xs: "32px", md: "40px" },
+    color: "#0F1546",
+    fontSize: { xs: "19px", md: "23px" },
+    fontWeight: "500",
+}
+
+const activeStyle = {
+    borderRadius: "100px",
+    maxWidth: "340px",
+    maxHeight: "82px",
+    borderRadius: "100px",
+    border: { xs: "2px solid #0F1546", md: "4px solid #0F1546" },
+    justifyContent: "space-between",
+    textTransform: "capitalize",
+    paddingLeft: { xs: "32px", md: "40px" },
+    paddingRight: { xs: "32px", md: "40px" },
+    fontSize: { xs: "19px", md: "23px" },
+    fontWeight: "500",
+    color: "#75F7BB",
+    background: '#0F1546',
+    // '& :hover': {
+    //     background: '#0F1546'
+    // }
+}
+
+export const PlanButton = ({ active, endIcon, color, children, ...rest }) => (
+    <Button {...rest} color={color} fullWidth sx={active ? activeStyle : normalStyle} endIcon={endIcon} >
+        {children}
+    </Button>)
+
+

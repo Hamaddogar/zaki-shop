@@ -6,6 +6,7 @@ import { listArrowIcon, planBtn, planBtnActive, planSeemoreActiveIcon, planSeemo
 import Picture from '../reuse/Picture'
 import SliderComponent from './Slider'
 import diamond from '@/components/images/diamond.svg'
+import { PlanButton } from '../reuse/Buttons'
 
 const ChoosePlan = ({ content, BTNS }) => {
 
@@ -43,9 +44,9 @@ const ChoosePlan = ({ content, BTNS }) => {
                   </Stack>
 
                   <Box my={{ xs: 5 }} textAlign='center'>
-                    <Button color='secondary' fullWidth className={services.planBtn} endIcon={planBtn} >
+                    <PlanButton color='secondary' fullWidth endIcon={planBtn} >
                       {BTNS.start}
-                    </Button>
+                    </PlanButton>
                   </Box>
 
                   {content.ProPlan.options.map((item, indx) => <Stack mt={.5} key={indx} textAlign='left' direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
@@ -72,9 +73,9 @@ const ChoosePlan = ({ content, BTNS }) => {
 
 
                   <Box my={{ xs: 5 }} textAlign='center'>
-                    <Button color='primary' variant='contained' fullWidth className={services.planBtnActive} endIcon={planBtnActive} >
+                    <PlanButton color='primary' variant='contained' fullWidth endIcon={planBtnActive} active={true} >
                       {BTNS.start}
-                    </Button>
+                    </PlanButton>
                   </Box>
 
                   {content.AdvencedPlan.options.map((item, indx) => <Stack mt={.5} key={indx} textAlign='left' direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
@@ -99,9 +100,9 @@ const ChoosePlan = ({ content, BTNS }) => {
                   </Stack>
 
                   <Box my={{ xs: 5 }} textAlign='center'>
-                    <Button color='secondary' fullWidth className={services.planBtn} endIcon={planBtn} >
+                    <PlanButton color='secondary' fullWidth endIcon={planBtn} >
                       {BTNS.start}
-                    </Button>
+                    </PlanButton>
                   </Box>
 
                   {content.PremiumPlan.options.map((item, indx) => <Stack mt={.5} key={indx} textAlign='left' direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
@@ -131,9 +132,9 @@ const ChoosePlan = ({ content, BTNS }) => {
                   </Stack>
 
                   <Box mb={{ xs: 2, sm: 4 }} textAlign='center'>
-                    <Button color='secondary' fullWidth className={services.planBtn} endIcon={planBtn} >
-                      Start Now
-                    </Button>
+                    <PlanButton color='secondary' fullWidth endIcon={planBtn} >
+                      {BTNS.start}
+                    </PlanButton>
                   </Box>
 
                   {content.ProPlan.options.map((item, indx) => <Stack mt={.5} key={indx} textAlign='left' direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
@@ -159,9 +160,9 @@ const ChoosePlan = ({ content, BTNS }) => {
 
 
                   <Box mb={{ xs: 2, sm: 4 }} textAlign='center'>
-                    <Button color='primary' variant='contained' fullWidth className={services.planBtnActive} endIcon={planBtnActive} >
+                    <PlanButton color='primary' variant='contained' fullWidth endIcon={planBtnActive} active={true} >
                       {BTNS.start}
-                    </Button>
+                    </PlanButton>
                   </Box>
 
                   {content.AdvencedPlan.options.map((item, indx) => <Stack mt={.5} key={indx} textAlign='left' direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
@@ -186,9 +187,9 @@ const ChoosePlan = ({ content, BTNS }) => {
                   </Stack>
 
                   <Box mb={{ xs: 2, sm: 4 }} textAlign='center'>
-                    <Button color='secondary' fullWidth className={services.planBtn} endIcon={planBtn} >
+                    <PlanButton color='secondary' fullWidth endIcon={planBtn} >
                       {BTNS.start}
-                    </Button>
+                    </PlanButton>
                   </Box>
                   {content.PremiumPlan.options.map((item, indx) => <Stack mt={.5} key={indx} textAlign='left' direction='row' alignItems='center' justifyContent={'flex-start'} spacing={2}>
                     <span>{listArrowIcon}</span>

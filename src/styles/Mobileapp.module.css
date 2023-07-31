@@ -115,14 +115,6 @@
 
 }
 
-.bookingMain {
-  padding: 85px 60px;
-  min-height: 1045px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .planMain {
   padding: 85px 80px;
   background: #EFF2FE;
@@ -194,38 +186,6 @@
   flex-shrink: 0;
   border-radius: 100px;
   border: 4px solid #0F1546;
-}
-
-
-.planBtnActive {
-  border-radius: 100px;
-  max-width: 340px;
-  max-height: 82px;
-  border-radius: 100px;
-  border: 4px solid #0F1546;
-  justify-content: space-between;
-  text-transform: capitalize;
-  padding-left: 40px;
-  padding-right: 40px;
-  font-size: 23px !important;
-  font-weight: 500;
-  color: #75F7BB;
-}
-
-/* common  */
-.planBtn {
-  border-radius: 100px;
-  max-width: 340px;
-  max-height: 82px;
-  border-radius: 100px;
-  border: 4px solid #0F1546;
-  justify-content: space-between;
-  text-transform: capitalize;
-  padding-left: 40px;
-  padding-right: 40px;
-  color: #0F1546;
-  font-size: 23px !important;
-  font-weight: 500;
 }
 
 .planListText {
@@ -345,8 +305,7 @@
   .noDeveloper2Main,
   .conversionMain,
   .noDeveloper1Main,
-  .cardsMain,
-  .bookingMain {
+  .cardsMain {
     min-height: 575px;
     padding: 85px 40px;
   }
@@ -475,8 +434,7 @@
   .noDeveloper2Main,
   .conversionMain,
   .noDeveloper1Main,
-  .cardsMain,
-  .bookingMain {
+  .cardsMain {
     min-height: auto;
     height: 100%;
     padding: 75px 20px;

@@ -8,6 +8,7 @@ import Picture from './reuse/Picture';
 import LinksLister from './reuse/LinksLister';
 import { AppContext } from '@/AppContext';
 import close from '@/components/images/close.svg'
+import { InnerLogin, InnerSignUp } from './reuse/Buttons';
 
 export default function MobileNav({ open, setOpen }) {
     const handleClose = () => setOpen(false);
@@ -47,8 +48,8 @@ export default function MobileNav({ open, setOpen }) {
                     <LinksLister mt='53px' />
 
                     <Stack spacing={'17px'} mt={'40px'}>
-                        <ButtonBase color='secondary' className={header['inner-nav-login']} >{content.buttons.login}</ButtonBase>
-                        <ButtonBase color='primary' className={header['inner-nav-signup']} >{content.buttons.signup}</ButtonBase>
+                        <InnerLogin >{content.buttons.login}</InnerLogin>
+                        <InnerSignUp>{content.buttons.signup}</InnerSignUp>
                         <Button
                             className={header['inner-nav-language']}
                             startIcon={languageIcon}
@@ -57,6 +58,16 @@ export default function MobileNav({ open, setOpen }) {
                             disableTouchRipple
                             disableRipple
                             onClick={handleClick}
+                            sx={{
+                                width: '158px',
+                                height: '56px',
+                                borderRadius: '100px',
+                                border: '1px solid #FFF',
+                                '& span': {
+                                    textTransform: 'capitalize',
+                                    color: '#FFFFFF'
+                                }
+                            }}
                         >
                             <span style={{ color: '#FFFFFF' }}>{language}</span>
                         </Button>

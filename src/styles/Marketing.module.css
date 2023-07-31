@@ -130,8 +130,7 @@
   .oneAppMain,
   .lunchCampMain,
   .adsManageMain,
-  .grnerateLeadsMain,
-  .bookingMain {
+  .grnerateLeadsMain {
     min-height: 575px;
     padding: 85px 40px;
   }
@@ -213,8 +212,7 @@
   .howWorkMain,
   .lunchCampMain,
   .adsManageMain,
-  .grnerateLeadsMain,
-  .bookingMain {
+  .grnerateLeadsMain {
     min-height: auto;
     height: 100%;
     padding: 75px 20px;
