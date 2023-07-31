@@ -3,7 +3,6 @@ import React from 'react'
 import common from '@/styles/Common.module.css'
 import mobileapp from '@/styles/Mobileapp.module.css'
 import { Box, Grid, Typography } from '@mui/material'
-import SliderComponent from '../sevicesPage/Slider'
 const AppsCards = ({ content }) => {
 
   return (
@@ -21,7 +20,7 @@ const AppsCards = ({ content }) => {
           {content.title}
         </Typography>
       </Box>
-      <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+      <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
         <Grid container alignItems={'center'} justifyContent={'space-between'} spacing={'30px'}>
           {content.data.map((item, indx) => (<Grid item xs={12} sm={6} md={4} key={indx} >
             <Box className={mobileapp.card}>
@@ -33,8 +32,8 @@ const AppsCards = ({ content }) => {
           )}
         </Grid>
       </Box>
-      <Box sx={{ display: { xs: 'block', md: 'none' } }}>
-        <SliderComponent>
+      <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
+        {/* <SliderComponent> */}
           <Box className={common.slider}>
             {content.data.map((item, indx) => (
               <Box key={indx} className={mobileapp.card}>
@@ -44,7 +43,7 @@ const AppsCards = ({ content }) => {
               </Box>
             ))}
           </Box>
-        </SliderComponent>
+        {/* </SliderComponent> */}
       </Box>
     </Box>
   )

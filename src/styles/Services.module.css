@@ -153,6 +153,7 @@
 
 .planCard {
   width: 100%;
+  min-width: 300px;
   max-width: 430px;
   min-height: 724px;
   border-radius: 43px;
@@ -163,6 +164,7 @@
 
 .planCardActive {
   width: 100%;
+  min-width: 300px;
   max-width: 430px;
   min-height: 724px;
   border-radius: 43px;
@@ -441,18 +443,20 @@
     font-size: 30px !important;
   }
 
+ 
   .card {
-    max-width: 350px;
+    min-height: 270px;
     width: 100%;
-    min-height: 350px;
+    max-width: 300px;
+  }
+
+  .cardIcon {
+    width: 63px;
+    height: 63px;
   }
 
   .cardTitle {
-    font-size: 23px !important;
-  }
-
-  .cardMsg {
-    font-size: 22px !important;
+    font-size: 20px !important;
   }
 }
 
@@ -480,20 +484,6 @@
     font-size: 18px !important;
   }
 
-  .card {
-    min-height: 270px;
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .cardIcon {
-    width: 63px;
-    height: 63px;
-  }
-
-  .cardTitle {
-    font-size: 20px !important;
-  }
 
   .normal {
     font-size: 17px !important;

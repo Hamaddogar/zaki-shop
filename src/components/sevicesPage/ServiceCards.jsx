@@ -3,7 +3,6 @@ import React from 'react';
 import common from '@/styles/Common.module.css'
 import services from '@/styles/Services.module.css'
 import { Box, Grid, Typography } from '@mui/material'
-import SliderComponent from './Slider';
 const ServiceCards = ({ content }) => {
 
   return (
@@ -22,9 +21,9 @@ const ServiceCards = ({ content }) => {
         </Typography>
         {/*  */}
       </Box>
-      <Box sx={{ overflowX: 'auto' }}>
+      <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
         <Grid container alignItems={'center'} justifyContent={'space-between'} spacing={'30px'}>
-          {[...content.data, ...content.data2].map((item, indx) => (<Grid item xs={12} sm={6} md={4} key={indx} >
+          {[...content.data, ...content.data2].map((item, indx) => (<Grid item xs={6} md={4} key={indx} >
             <Box className={services.card} sx={{ minHeight: '50px' }}>
               <Box className={services.cardIcon}>{item.icon}</Box>
               <Typography color='primary' className={services.cardTitle}>{item.title}</Typography>
@@ -34,31 +33,33 @@ const ServiceCards = ({ content }) => {
           )}
         </Grid>
       </Box>
-      <Box sx={{ display: { xs: 'block', md: 'none' } }}>
-        <SliderComponent>
-          <Box className={common.slider}>
-            {content.data.map((item, indx) => (
-              <Box className={services.card} key={indx} >
-                <Box className={services.cardIcon}>{item.icon}</Box>
-                <Typography color='primary' className={services.cardTitle}>{item.title}</Typography>
-                <Typography color='primary' className={services.cardMsg}>{item.msg} </Typography>
-              </Box>
-            ))}
-          </Box>
-        </SliderComponent>
+
+      <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
+        <Box className={common.slider}>
+          {content.data.map((item, indx) => (
+            <Box className={services.card} key={indx} >
+              <Box className={services.cardIcon}>{item.icon}</Box>
+              <Typography color='primary' className={services.cardTitle}>{item.title}</Typography>
+              <Typography color='primary' className={services.cardMsg}>{item.msg} </Typography>
+            </Box>
+          ))}
+        </Box>
         <Box mt='30px'></Box>
-        <SliderComponent>
-          <Box className={common.slider}>
-            {content.data2.map((item, indx) => (
-              <Box className={services.card} key={indx} >
-                <Box className={services.cardIcon}>{item.icon}</Box>
-                <Typography color='primary' className={services.cardTitle}>{item.title}</Typography>
-                <Typography color='primary' className={services.cardMsg}>{item.msg} </Typography>
-              </Box>
-            ))}
-          </Box>
-        </SliderComponent>
+        <Box className={common.slider}  >
+          {content.data2.map((item, indx) => (
+            <Box className={services.card} key={indx} >
+              <Box className={services.cardIcon}>{item.icon}</Box>
+              <Typography color='primary' className={services.cardTitle}>{item.title}</Typography>
+              <Typography color='primary' className={services.cardMsg}>{item.msg} </Typography>
+            </Box>
+          ))}
+        </Box>
       </Box>
+
+
+
+
+
     </div>
   )
 }
