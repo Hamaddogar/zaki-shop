@@ -2,17 +2,17 @@
 import { useEffect, useState } from 'react';
 
 const knownDevices = [
-    "A2651",
-    "A2893",
-    "A2894",
-    "A2896",
-    "A2895",
-    'iPhone14,2',
-    'iPhone14,4',
-    'HUAWEI MediaPad M3',
-    'BTV-DL09',
+    'Android'
 ];
-
+// "A2651",
+//     "A2893",
+//     "A2894",
+//     "A2896",
+//     "A2895",
+//     'iPhone',
+//     'iPhone14,4',
+//     'HUAWEI MediaPad M3',
+//     'BTV-DL09',
 const useDetectDevice = () => {
     const [isKnownDevice, setIsKnownDevice] = useState(false);
 
