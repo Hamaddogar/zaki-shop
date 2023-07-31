@@ -22,7 +22,7 @@ const ServiceCards = ({ content }) => {
         </Typography>
         {/*  */}
       </Box>
-      <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+      <Box sx={{ overflowX: 'auto' }}>
         <Grid container alignItems={'center'} justifyContent={'space-between'} spacing={'30px'}>
           {[...content.data, ...content.data2].map((item, indx) => (<Grid item xs={12} sm={6} md={4} key={indx} >
             <Box className={services.card} sx={{ minHeight: '50px' }}>

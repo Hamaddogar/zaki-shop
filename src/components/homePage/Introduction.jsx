@@ -16,7 +16,13 @@ import unmuteIcon from '@/components/images/unmuteIcon.png'
 import WithBackground from '../reuse/WithBackground'
 
 const Introduction = ({ content, BTNS }) => {
-  const [playing] = React.useState(false)
+  const [playing] = React.useState(false);
+  const [device, setdevice] = React.useState(null)
+  React.useEffect(() => {
+    setdevice(window.navigator.userAgent);
+  }, [])
+
+
 
   return (
     <WithBackground>
@@ -44,9 +50,10 @@ const Introduction = ({ content, BTNS }) => {
                       fontSize={{ xs: '23px', sm: '30px', md: '53px', lg: '57px' }}
                       lineHeight={{ xs: '29px', sm: '45px', md: '59px', lg: '64px' }}
                     >
-                      {content.subtitle[0]} <br />
+                      {/* {content.subtitle[0]} <br />
                       {content.subtitle[1]}<br />
-                      {content.subtitle[2]}
+                      {content.subtitle[2]} */}
+                      {device}
                     </Typography>
                   </Box>
                   <Box sx={{ display: { xs: 'block', md: 'none' } }}>
@@ -57,7 +64,8 @@ const Introduction = ({ content, BTNS }) => {
                       maxWidth={{ xs: '330px', sm: '430px' }}
                       mx='auto'
                     >
-                      {content.subtitle2}
+                      {/* {content.subtitle2} */}
+                      {device}
                     </Typography>
                   </Box>
                 </Box>

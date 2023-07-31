@@ -127,7 +127,22 @@
 }
 
 
+.d0e632f2 {
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
 
+@media (max-width: 768px) {
+    .d0e632f2 {
+        padding-left:1.6rem;
+        padding-right: 1.6rem
+    }
+}
+
+.d0e632f2::-webkit-scrollbar {
+    /* display:none; */
+}
 
 
 .slider-container {
