@@ -8,7 +8,7 @@ import MobileNav from './MobileNav';
 import menuIcon from '@/components/images/menu.svg'
 import logomd from '@/components/images/logo-md.svg'
 import logodark from '@/components/images/logo-dark.svg'
-import useDetectDevice from './reuse/hooks'
+// import useDetectDevice from './reuse/hooks'
 
 const HeaderMobile = ({ menu = 'dark' }) => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -16,7 +16,7 @@ const HeaderMobile = ({ menu = 'dark' }) => {
   const condition = useDetectDevice();
 
   return (
-    <Box sx={{ paddingTop: condition ? '0px' : '30px' }}>
+    <Box>
       <Box className={header['main-mobile']}>
         {menu === 'light' &&
           <Stack direction='row' alignItems='center' justifyContent={'space-between'} >
