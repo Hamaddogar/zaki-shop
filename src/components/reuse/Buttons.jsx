@@ -15,6 +15,7 @@ export const PrimaryBtn = ({ text, minWidth = "200px", minHeight = "62px", borde
             minHeight: minHeight,
             justifyContent: "space-around",
             textTransform: "capitalize",
+
         }}
         onClick={onClick}
     >
@@ -30,12 +31,28 @@ export const SecondaryBtn = ({ text, minWidth = "200px", minHeight = "62px", bor
             border: border,
             minWidth: minWidth,
             minHeight: minHeight,
+            alignItems:'center',
             justifyContent: "space-around",
             textTransform: "capitalize",
+            // '& .MuiButton-endIcon': {
+            //     display: 'inline-block',
+            //     visibility:'visible',
+            //     width:'28px',
+            //     height:'28px',
+            //     paddingTop:'3px',
+            //     position:'relative',
+            // },
+            // '&:hover': {
+            //     '& .MuiButton-endIcon': {
+            //         '& svg':{
+            //             display:'none'
+            //         }
+            //     },
+            // }
         }}
         onClick={onClick}
     >
-        {text}
+        {text}h
     </Button>
 };
 
